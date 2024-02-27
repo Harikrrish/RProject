@@ -697,45 +697,62 @@
   <div class="popup-container" id="popup">
     <div class="popup-content">
       <div class="form-container">
-        <form action="#" method="post" onsubmit="return validateForm()">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
+        <!-- <form action="#" method="post" onsubmit="return validateForm(event)"> -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <button onclick="validateForm()" class="submit-btn">Submit</button>
+        <!-- </form> -->
       </div>
     </div>
     <!-- <a href="#" class="btn-close-popup" onclick="closePopup()">Submit</a> -->
   </div>
 
   <script>
-    function closePopup() {
+    async function closePopup() {
       document.getElementById("popup").style.display = "none";
       document.getElementById("overlay").style.display = "none";
     }
-    function validateForm() {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
+
+    async function validateForm() {
+      // event.preventDefault();
+      var name = document.getElementsByName("name")[0].value;
+      var email = document.getElementsByName("email")[0].value;
       var phone = document.getElementById("phone").value;
 
       // Basic validation: Check if fields are not empty
       if (name.trim() === "" || email.trim() === "" || phone.trim() === "") {
         alert("Please fill out all fields.");
         return false;
+      } else {
+        try {
+          const response = await fetch("https://rprojectmail-production.up.railway.app/send-email", {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: null,
+          });
+
+          if (!response.ok) {
+            console.log(`HTTP error! Status: ${response.status}`);
+          } else {
+            closePopup();
+          }
+        } catch (error) {
+          console.error('Fetch error:', error);
+          closePopup();
+        }
       }
-
-      // Additional validation can be added here, such as email format or phone number format.
-
-      return true; // Allow form submission if all validations pass
     }
   </script>
 
