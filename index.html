@@ -735,7 +735,7 @@
         return false;
       } else {
         try {
-          const response = await fetch("https://rprojectmail-production.up.railway.app/send-email", {
+          const response = await fetch("https://mailr.azurewebsites.net/RMail/SendEmail", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
