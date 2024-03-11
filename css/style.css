@@ -1408,11 +1408,15 @@ p.help-block li {
 }
 
 .submit-btn {
-  background-color: #3498db;
+  background-color: #224188;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+}
+.popup-label {
+  display: flex !important;
+  font-weight: 600;
 }

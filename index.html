@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Radhika's Interior Project</title>
+  <title>AlanKaar Home Interior</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Interior Design" name="keywords">
   <meta content="Interior Design" name="description">
-  <meta content="Author" name="Harriharan">
+  <meta content="Author" name="AlanKaar">
   <!-- Favicons -->
   <link href="img/logo/logo-A.jpg" rel="icon">
   <link href="img/logo/logo-A.jpg" rel="apple-touch-icon">
@@ -696,31 +696,50 @@
 
   <div class="popup-container" id="popup">
     <div class="popup-content">
-      <div class="form-container">
+      <!-- <div class="form-container"> -->
         <!-- <form action="#" method="post" onsubmit="return validateForm(event)"> -->
         <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <label class="popup-label" for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <label class="popup-label" for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
         <div class="form-group">
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required>
+          <label class="popup-label" for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
         </div>
-        <button onclick="validateForm()" class="submit-btn">Submit</button>
-        <!-- </form> -->
+        <!-- <button onclick="validateForm()" class="submit-btn">Submit</button> -->
+        <button onclick="validateForm()" class="btn btn-primary pull-right">Submit</button>
+        <!-- <div class="intro-content">
+        <div onclick="validateForm()">
+          <a href="" class="btn-get-started scrollto">Submit</a>
+        </div> -->
       </div>
+        <!-- </form> -->
+      <!-- </div> -->
     </div>
     <!-- <a href="#" class="btn-close-popup" onclick="closePopup()">Submit</a> -->
   </div>
 
   <script>
+    async function onload()
+    {
+      let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
+      if(isUserDetailsTaken && isUserDetailsTaken === "true")
+        closePopup();
+    }
     async function closePopup() {
-      document.getElementById("popup").style.display = "none";
-      document.getElementById("overlay").style.display = "none";
+      let popupElement = document.getElementById("popup");
+      if(popupElement)
+        popupElement.style.display = "none";
+
+      let overlayElement = document.getElementById("overlay");
+      if(overlayElement)
+        overlayElement.style.display = "none";
+      
+      localStorage.setItem("isUserDetailsTaken", "true");
     }
 
     async function validateForm() {
@@ -734,17 +753,23 @@
         alert("Please fill out all fields.");
         return false;
       } else {
+        let body ={
+          name,
+          email,
+          phone
+        }
         try {
           const response = await fetch("https://mailr.azurewebsites.net/RMail/SendEmail", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
-            body: null,
+            body,
           });
 
           if (!response.ok) {
             console.log(`HTTP error! Status: ${response.status}`);
+            closePopup();
           } else {
             closePopup();
           }
