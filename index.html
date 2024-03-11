@@ -738,7 +738,7 @@
       let overlayElement = document.getElementById("overlay");
       if(overlayElement)
         overlayElement.style.display = "none";
-      
+
       localStorage.setItem("isUserDetailsTaken", "true");
     }
 
@@ -753,18 +753,16 @@
         alert("Please fill out all fields.");
         return false;
       } else {
-        let body ={
-          name,
-          email,
-          phone
-        }
+        debugger;
         try {
-          const response = await fetch("https://mailr.azurewebsites.net/RMail/SendEmail", {
+          const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+          let url = `https://mailr.azurewebsites.net/RMail/SendEmail?name=${name}&email=${email}&phone=${phone}`
+          const response = await fetch(url, {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
               'Content-Type': 'application/json',
             },
-            body,
           });
 
           if (!response.ok) {
