@@ -973,6 +973,7 @@
       // Basic validation: Check if fields are not empty
       if (name.trim() && email.trim() && phone.trim() && phone.trim().length === 10) {
         sendEmail(name, email, phone);
+        closePopup();
       } else {
         alert("Please fill out all fields.");
         return false;
@@ -996,13 +997,13 @@
 
         if (!response.ok) {
           console.log(`HTTP error! Status: ${response.status}`);
-          closePopup();
+          // closePopup();
         } else {
-          closePopup();
+          // closePopup();
         }
       } catch (error) {
         console.error('Fetch error:', error);
-        closePopup();
+        // closePopup();
       }
     }
 
