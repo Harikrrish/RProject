@@ -3,14 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AlanKaar Home Interior</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Interior design consultancy" name="keywords">
-  <meta content="luxury interior design" name="keywords">
-  <meta content="commercial interior design" name="keywords">
-  <meta content="office interior design" name="keywords">
-  <meta content="We offering Interior design and Architectural plan" name="description">
-  <meta content="Author" name="Radhika">
+  <title>Alankaar Interiors - Luxury and Commercial Interior Design in Chennai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alankaar Interiors, luxury interior design, commercial interior design, residential interior design, office interiors, best interior designer in Chennai, affordable interior designers Chennai, custom furniture design, 3D interior visualization, architectural planning, space planning, Chennai interior design, home decor, custom interiors, Tamil Nadu">
+  <meta name="description" content="Alankaar Home Interiors offers exceptional luxury and commercial interior design services in Chennai. Transform your space with our tailored design solutions and architectural planning expertise.">
+  <meta name="author" content="Radhika">
+  <meta name="robots" content="index, follow">
   <!-- Favicons -->
   <link href="img/logo/logo-A.jpg" rel="icon">
   <link href="img/logo/logo-A.jpg" rel="apple-touch-icon">
@@ -35,8 +33,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="body" onload="onLoad()">
-
+<!-- <body id="body" onload="onLoad()"> -->
+  <body id="body">
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
@@ -199,7 +197,7 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div class="container-fluid" onclick="loadUserDetailsPopup()">
         <div class="row no-gutters">
 
           <div class="col-lg-3 col-md-4">
@@ -662,9 +660,9 @@
       </div>
     </div>
   </footer>
-  <div id="overlay"></div>
+  <div id="overlay" style="display: none;"></div>
 
-  <div class="popup-container" id="popup">
+  <div class="popup-container" id="popup" style="display: none;">
     <div class="popup-content">
       <div class="form-group">
         <label class="popup-label" for="name">Name</label>
@@ -684,10 +682,35 @@
   </div>
 
   <script>
-    async function onLoad() {
-      let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
-      if (isUserDetailsTaken && isUserDetailsTaken === "true")
-        closePopup();
+    let timeoutTriggered = false;
+    // async function onLoad() {
+    //   let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
+    //   if (isUserDetailsTaken && isUserDetailsTaken === "true")
+    //     closePopup();
+    // }
+    async function loadUserDetailsPopup() {
+      if (!timeoutTriggered) {
+        timeoutTriggered = true;
+        setTimeout(() => {
+          let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
+          if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
+            openPopup();
+          } 
+        }, 15000);
+      }
+    }
+    async function openPopup() {
+      const isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
+
+      if (isUserDetailsTaken !== "true") {
+        let popupElement = document.getElementById("popup");
+        if (popupElement) 
+          popupElement.style.display = "block"; 
+
+        let overlayElement = document.getElementById("overlay");
+        if (overlayElement) 
+          overlayElement.style.display = "block";  
+      }
     }
     async function closePopup() {
       let popupElement = document.getElementById("popup");
