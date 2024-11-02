@@ -651,15 +651,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box {
-  padding: 40px;
+  /* padding: 40px; */
   margin-bottom: 40px;
   background: #fff;
   transition: 0.4s;
-  border: 1px solid #dedede;
+  /* border: 1px solid #dedede; */
 }
 
 #services .box:hover {
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  border-radius: 10px;
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -1419,3 +1420,50 @@ p.help-block li {
   display: flex !important;
   font-weight: 600;
 }
+
+#footer {
+  padding: 20px 0;
+  background: #333; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  text-align: center; /* Center align the text */
+}
+
+.social-icons {
+  margin-top: 10px; /* Space above the icons */
+}
+
+.social-icon {
+  margin: 0 10px; /* Space between icons */
+  font-size: 24px; /* Icon size */
+  transition: transform 0.3s; /* Smooth effects */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+/* Specific colors for each social media icon */
+.social-icon.facebook {
+  color: #3b5998; /* Facebook blue */
+}
+
+.social-icon.instagram {
+  color: #e1306c; /* Instagram pink */
+}
+
+.social-icon.youtube {
+  color: #ff0000; /* YouTube red */
+}
+
+.social-icon.linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icon.pinterest {
+  color: #bd081c; /* Pinterest red */
+}
+
+.social-icon.twitter {
+  color: #1DA1F2; /* Twitter blue */
+}
+
