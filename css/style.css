@@ -698,7 +698,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 20px;
   display: block;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   float: left;
   margin: 0;
 }
@@ -1465,5 +1465,28 @@ p.help-block li {
 
 .social-icon.twitter {
   color: #1DA1F2; /* Twitter blue */
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.8); /* Slightly dim the image */
+  border-radius: 5px;
+}
+
+.overlay-title {
+  position: absolute;
+  bottom: 0px;
+  /* left: 15px; */
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 3px;
 }
 
