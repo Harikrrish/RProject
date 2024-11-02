@@ -60,7 +60,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left" >
-        <a href="#body" class="scrollto"><span><img src="img/logo/logo-A.png" width="70px" height="70px" /></span>
+        <a href="#body" class="scrollto"><span><img src="img/logo/logo-A.png" width="50px" height="70px" /></span>
         </a>
       </div>
 
@@ -78,7 +78,7 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2><span>Alankaar Interiors</span><br>FURNISHING YOUR HOME</h2>
+      <h2><span>Alankaar Interiors</span><br>FURNISHING YOUR SPACE</h2>
       <div>
         <a href="#contact" class="btn-get-started scrollto">Contact Us</a>
       </div>
@@ -97,7 +97,7 @@
           <p><b>Interior Design | Architecture | Space Planning</b></p>
         </div>
 
-        <div class="row">
+        <div class="row" onclick="loadUserDetailsPopup()">
           <div class="col-lg-4">
             <div class="box wow fadeInUp">
               <div class="icon"><i class="fa fa-pencil-ruler"></i></div>
@@ -179,7 +179,7 @@
           <h2>YOUR VISION, OUR CANVAS</h2>
         </div>
 
-        <div class="row">
+        <div class="row" onclick="loadUserDetailsPopup()">
           <div class="col-lg-4">
             <div class="box wow fadeInUp">
               <div class="image-overlay">
@@ -278,65 +278,52 @@
         </div>
         <div class="row">
           <div class="col-lg-6 about-img">
-            <img src="img/why-us.png" alt="">
+            <img src="img/why-us.png" style="width: 100%; height: 94%;" alt="">
           </div>
-
-          <!-- <div class="col-lg-6 content">
-            <h2>WHY PICK US?</h2>
-            <h3>We think that the best designs are both pretty and practical. They should make your life easier and make
-              you happy just looking at them. We work closely with you because it’s your space, and it should show off
-              your style
-            </h3>
-            <p>Clients choose us because we:</p>
-            <ul>
-              <li><i class="icon ion-ios-checkmark-outline"></i> Making cozy and stylish spots for you and your family
-              </li>
-              <li><i class="icon ion-ios-checkmark-outline"></i> Building places that make customers and workers happy
-              </li>
-              <li><i class="icon ion-ios-checkmark-outline"></i> Helping you figure out the best plan from the very
-                first idea</li>
-              <li><i class="icon ion-ios-checkmark-outline"></i> Making sure every inch of your place is used well</li>
-            </ul>
-          </div> -->
           <div class="col-lg-6 content">
             <h2 style="font-size: 22px; font-weight: 800;">WHY PICK US?</h2>
             <div style="margin-bottom: 15px;">
-              <h2 style="margin-bottom: 0px;">
-                Expertise & Personalized Design
+              <h2 style="margin-bottom: 0px; font-style: italic;">
+                <i class="icon ion-ios-checkmark-outline" style="margin-right: 5px;"></i>
+                Expertised Design
               </h2>
-              <p>
+              <p style="font-size: 14px; margin-top: 5px; margin-left: 30px;">
                 We combine expertise and personalized design to create spaces that reflect your unique lifestyle
               </p>
             </div>
             <div style="margin-bottom: 15px;">
-              <h2 style="margin-bottom: 0px;">
-                Innovative Creativity & Meticulous Detail
+              <h2 style="margin-bottom: 0px; font-style: italic;">
+                <i class="icon ion-ios-checkmark-outline" style="margin-right: 5px;"></i>
+                Innovative Creativity
               </h2>
-              <p>
+              <p style="font-size: 14px; margin-top: 5px; margin-left: 30px;">
                 With innovative creativity and meticulous detail, we deliver stunning and functional results
               </p>
             </div>
             <div style="margin-bottom: 15px;">
-              <h2 style="margin-bottom: 0px;">
+              <h2 style="margin-bottom: 0px; font-style: italic;">
+                <i class="icon ion-ios-checkmark-outline" style="margin-right: 5px;"></i>
                 Collaborative Approach
               </h2>
-              <p>
+              <p style="font-size: 14px; margin-top: 5px; margin-left: 30px;">
                 Our collaborative approach invites your ideas as we manage every aspect of the process seamlessly
               </p>
             </div>
             <div style="margin-bottom: 15px;">
-              <h2 style="margin-bottom: 0px;">
+              <h2 style="margin-bottom: 0px; font-style: italic;">
+                <i class="icon ion-ios-checkmark-outline" style="margin-right: 5px;"></i>
                 Sustainability Commitment
               </h2>
-              <p>
+              <p style="font-size: 14px; margin-top: 5px; margin-left: 30px;">
                 Committed to sustainability, we use eco-friendly materials and leverage strong supplier connections for top quality
               </p>
             </div>
             <div>
-              <h2 style="margin-bottom: 0px;">
+              <h2 style="margin-bottom: 0px; font-style: italic;">
+                <i class="icon ion-ios-checkmark-outline" style="margin-right: 5px;"></i>
                 Transparent Communication
               </h2>
-              <p>
+              <p style="font-size: 14px; margin-top: 5px; margin-left: 30px;">
                 With transparent communication, we keep you engaged every step of the way, ensuring results that inspire
               </p>
             </div>
@@ -868,12 +855,12 @@
     async function loadUserDetailsPopup() {
       if (!timeoutTriggered) {
         timeoutTriggered = true;
-        setTimeout(() => {
+        // setTimeout(() => {
           let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
           if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
             openPopup();
           } 
-        }, 15000);
+        // }, 15000);
       }
     }
     async function openPopup() {
