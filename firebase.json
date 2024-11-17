@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "public",  
+    "site": "alankaar-interiors",  
+    "redirects": [
+      {
+        "source": "https://www.alankaarinteriors.com/**",
+        "destination": "https://alankaarinteriors.com/**",
+        "type": 301
+      }
+    ],
+    "rewrites": [],
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
