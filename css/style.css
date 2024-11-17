@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #261f1566;
 }
 
-#intro .intro-content h2 {
+#intro .intro-content h1 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 24px;
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-#intro .intro-content h2 span {
+#intro .intro-content h1 span {
   font-size: 55px;
   text-transform: uppercase;
   color: #FF9800;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
-  #intro .intro-content h2 {
+  #intro .intro-content h1 {
     font-size: 22px;
     padding: 15px;
   }
