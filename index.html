@@ -55,41 +55,29 @@
 
   gtag('config', 'AW-16767062044');
 </script>
+<script>
+function loadFile(containerId, filePath) {
+  fetch(filePath)
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById(containerId).innerHTML = data;
+    })
+    .catch(error => console.error(`Could not load ${filePath}:`, error));
+}
+
+// Load header and footer
+loadFile('header', '../includes/header.html');
+loadFile('footer', '../includes/footer.html');
+
+</script>
 </head>
 
 <body id="body">
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:alankaarinteriors@gmail.com">alankaarinteriors@gmail.com</a>
-        <i class="fa fa-phone"></i> <a href="tel:+919994958369">+91 9994958369</a>
-      </div>
-      <div class="social-links float-right">
-        <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
-        <!-- <div class="social-icons">
-          <div class="icons"> -->
-        <a href="https://www.facebook.com/profile.php?id=61567708596403" target="_blank" class="social-icon facebook"><i
-            class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/alankaar_interiors/" target="_blank" class="social-icon instagram"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@AlankaarInteriors-AI" target="_blank" class="social-icon youtube"><i
-            class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/alankaar-interiors-ai" target="_blank" class="social-icon linkedin"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://in.pinterest.com/alankaarinteriors" target="_blank" class="social-icon pinterest"><i
-            class="fab fa-pinterest"></i></a>
-        <a href="https://x.com/AlankaarAI" target="_blank" class="social-icon twitter"><i
-            class="fab fa-twitter"></i></a>
-        <!-- </div>
-        </div> -->
-      </div>
-    </div>
-  </section>
-  <header id="header">
+  <div id="header"></div>
+  <!-- <header id="header">
     <div class="container">
 
       <div id="logo" class="pull-left">
@@ -113,8 +101,7 @@
       </nav>
 
     </div>
-
-  </header>
+  </header> -->
   <section id="intro">
 
     <div class="intro-content">
@@ -1804,18 +1791,8 @@
     </section>
 
   </main>
-
+  <div id="footer"></div>
   <!-- <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Alankaar Interiors</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Developed by <a href="">Alankaar Interiors</a>
-      </div>
-    </div>
-  </footer> -->
-  <footer id="footer">
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Alankaar Interiors</strong>. All Rights Reserved
@@ -1840,7 +1817,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div id="overlay" style="display: none;"></div>
 
   <div class="popup-container" id="popup" style="display: none;">
@@ -1864,11 +1841,6 @@
 
   <script>
     let timeoutTriggered = false;
-    // async function onLoad() {
-    //   let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
-    //   if (isUserDetailsTaken && isUserDetailsTaken === "true")
-    //     closePopup();
-    // }
     async function isUserDetailsTaken() {
         let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
         if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
@@ -1894,12 +1866,10 @@
     async function loadUserDetailsPopup() {
       if (!timeoutTriggered) {
         timeoutTriggered = true;
-        // setTimeout(() => {
         let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
         if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
           openPopup();
         }
-        // }, 15000);
       }
     }
     async function openPopup() {
@@ -1959,13 +1929,10 @@
 
         if (!response.ok) {
           console.log(`HTTP error! Status: ${response.status}`);
-          // closePopup();
         } else {
-          // closePopup();
         }
       } catch (error) {
         console.error('Fetch error:', error);
-        // closePopup();
       }
     }
 
