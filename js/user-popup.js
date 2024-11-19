@@ -10,13 +10,13 @@ async function isUserDetailsTaken() {
 }
 
 async function loadUserDetailsPopup() {
-    if (!timeoutTriggered) {
-        timeoutTriggered = true;
+    // if (!timeoutTriggered) {
+        // timeoutTriggered = true;
         let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
         if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
             openPopup();
         }
-    }
+    // }
 }
 
 async function openPopup() {
