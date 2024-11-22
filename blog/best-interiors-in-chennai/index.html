@@ -58,6 +58,28 @@
 
 <script src="../../js/user-popup.js"></script>
 
+<script>
+  function loadFile(containerId, filePath) {
+    fetch(filePath)
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById(containerId).innerHTML = data;
+      })
+      .catch(error => console.error(`Could not load ${filePath}:`, error));
+  }
+  
+  // Load header and footer
+  loadFile('header', '../../includes/header.html');
+  loadFile('services', '../../includes/services.html');
+  loadFile('customservices', '../../includes/customer-services.html');
+  loadFile('footer', '../../includes/footer.html');
+  loadFile('popup', '../../includes/popup.html');
+  loadFile('contact', '../../includes/contact.html');
+  </script>
+
 </head>
 
 <body id="body">
@@ -1070,28 +1092,6 @@
   <script src="../../lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="../../lib/sticky/sticky.js"></script>
   <script src="../../js/main.js"></script>
-
-  <script>
-    function loadFile(containerId, filePath) {
-      fetch(filePath)
-        .then(response => {
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById(containerId).innerHTML = data;
-        })
-        .catch(error => console.error(`Could not load ${filePath}:`, error));
-    }
-    
-    // Load header and footer
-    loadFile('header', '../../includes/header.html');
-    loadFile('services', '../../includes/services.html');
-    loadFile('customservices', '../../includes/customer-services.html');
-    loadFile('footer', '../../includes/footer.html');
-    loadFile('popup', '../../includes/popup.html');
-    loadFile('contact', '../../includes/contact.html');
-    </script>
 
 </body>
 
