@@ -1343,9 +1343,6 @@ loadFile('contact', '../../includes/contact.html');
       </div>
     </section>
 
-    <!--==========================
-      Testimonials Section
-    ============================-->
     <section id="testimonials" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
@@ -1427,8 +1424,7 @@ loadFile('contact', '../../includes/contact.html');
 
       </div>
     </section>
-    <div id="contact"></div>
-    <!-- <section id="contact" class="wow fadeInUp">
+    <section id="contact" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
           <h2>Contact Us</h2>
@@ -1487,10 +1483,9 @@ loadFile('contact', '../../includes/contact.html');
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
   </main>
-  <!-- <div id="footer"></div> -->
   <footer id="footer">
     <div class="container">
       <div class="copyright">
@@ -1520,24 +1515,6 @@ loadFile('contact', '../../includes/contact.html');
   <div id="overlay" style="display: none;"></div>
 
   <div class="popup-container" id="popup" style="display: none;"></div>
-
-  <!-- <div class="popup-container" id="popup" style="display: none;">
-    <div class="popup-content">
-      <div class="form-group">
-        <label class="popup-label" for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      </div>
-      <div class="form-group">
-        <label class="popup-label" for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label class="popup-label" for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
-      </div>
-      <button onclick="validateForm()" class="btn btn-primary pull-right">Submit</button>
-    </div>
-  </div> -->
   </div>
 
   <script src="./js/user-popup.js"></script>
@@ -1556,118 +1533,6 @@ loadFile('contact', '../../includes/contact.html');
         });
     });
 </script>
-  <!-- <script>
-    let timeoutTriggered = false;
-    async function isUserDetailsTaken() {
-        let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
-        if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
-          return true;
-        }
-        else {
-          return false;
-        }
-    }
-    document.addEventListener("DOMContentLoaded", async () => {
-      const linkElement = document.getElementById("renovation-link");
-      const userDetailsNotTaken = await isUserDetailsTaken();
-
-      if (userDetailsNotTaken) {
-        linkElement.addEventListener("click", (event) => {
-          event.preventDefault(); 
-          openPopup();
-        });
-      } else {
-        linkElement.setAttribute("href", "#renovation-section");
-      }
-    });
-    async function loadUserDetailsPopup() {
-      if (!timeoutTriggered) {
-        timeoutTriggered = true;
-        let isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
-        if (!isUserDetailsTaken || (isUserDetailsTaken && isUserDetailsTaken !== "true")) {
-          openPopup();
-        }
-      }
-    }
-    async function openPopup() {
-      const isUserDetailsTaken = localStorage.getItem("isUserDetailsTaken");
-
-      if (isUserDetailsTaken !== "true") {
-        let popupElement = document.getElementById("popup");
-        if (popupElement)
-          popupElement.style.display = "block";
-
-        let overlayElement = document.getElementById("overlay");
-        if (overlayElement)
-          overlayElement.style.display = "block";
-      }
-    }
-    async function closePopup() {
-      let popupElement = document.getElementById("popup");
-      if (popupElement)
-        popupElement.style.display = "none";
-
-      let overlayElement = document.getElementById("overlay");
-      if (overlayElement)
-        overlayElement.style.display = "none";
-
-      localStorage.setItem("isUserDetailsTaken", "true");
-    }
-
-    async function validateForm() {
-      var name = document.getElementById("name")?.value;
-      var email = document.getElementById("email")?.value;
-      var phone = document.getElementById("phone")?.value;
-
-      // Basic validation: Check if fields are not empty
-      if (name.trim() && email.trim() && phone.trim() && phone.trim().length === 10) {
-        sendEmail(name, email, phone);
-        closePopup();
-      } else {
-        alert("Please fill out all fields.");
-        return false;
-      }
-    }
-
-    async function sendEmail(name, email, phone) {
-      let bodyParams = {
-        name: name,
-        email: email,
-        phone: phone
-      }
-      try {
-        const response = await fetch("https://rprojectmail-production.up.railway.app", {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(bodyParams),
-        });
-
-        if (!response.ok) {
-          console.log(`HTTP error! Status: ${response.status}`);
-        } else {
-        }
-      } catch (error) {
-        console.error('Fetch error:', error);
-      }
-    }
-
-    async function sendContactEmail() {
-      var name = document.getElementById("contactname");
-      var email = document.getElementById("contactemail");
-      var phone = document.getElementById("contactphone");
-      if (name?.value.trim() && email?.value.trim() && phone?.value.trim().length === 10) {
-        sendEmail(name?.value, email?.value, phone?.value);
-        name.value = "";
-        email.value = "";
-        phone.value = "";
-        alert("Thankyou for contacting us. Will contact you shortly!");
-      } else {
-        alert("Please fill out all fields.");
-      }
-    }
-  </script> -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
