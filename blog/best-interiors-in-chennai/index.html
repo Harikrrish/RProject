@@ -39,44 +39,6 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
-  <script>
-    function loadFile(containerId, filePath) {
-      fetch(filePath)
-        .then(response => {
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById(containerId).innerHTML = data;
-        })
-        .catch(error => console.error(`Could not load ${filePath}:`, error));
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      loadFile('header', 'https://alankaarinteriors.com/includes/header.html');
-      loadFile('services', 'https://alankaarinteriors.com/includes/services.html');
-      loadFile('customservices', 'https://alankaarinteriors.com/includes/customer-services.html');
-      loadFile('popup', 'https://alankaarinteriors.com/includes/popup.html');
-      loadFile('contact', 'https://alankaarinteriors.com/includes/contact.html');
-      loadFile('footer', 'https://alankaarinteriors.com/includes/footer.html');
-      loadFile('ourdesign', 'https://alankaarinteriors.com/includes/our-design.html');
-    });
-    
-  </script>
-
-<script src="https://alankaarinteriors.com/js/user-popup.js"></script>
-<script src="https://alankaarinteriors.com/lib/jquery/jquery.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/jquery/jquery-migrate.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/easing/easing.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/superfish/hoverIntent.js"></script>
-<script src="https://alankaarinteriors.com/lib/superfish/superfish.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/wow/wow.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/magnific-popup/magnific-popup.min.js"></script>
-<script src="https://alankaarinteriors.com/lib/sticky/sticky.js"></script>
-<script src="https://alankaarinteriors.com/js/main.js"></script>
-
 </head>
 
 <body id="body">
@@ -119,6 +81,44 @@
   </div>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script>
+    function loadFile(containerId, filePath) {
+      fetch(filePath)
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(containerId).innerHTML = data;
+        })
+        .catch(error => console.error(`Could not load ${filePath}:`, error));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFile('header', 'https://alankaarinteriors.com/includes/header.html');
+      loadFile('services', 'https://alankaarinteriors.com/includes/services.html');
+      loadFile('customservices', 'https://alankaarinteriors.com/includes/customer-services.html');
+      loadFile('popup', 'https://alankaarinteriors.com/includes/popup.html');
+      loadFile('contact', 'https://alankaarinteriors.com/includes/contact.html');
+      loadFile('footer', 'https://alankaarinteriors.com/includes/footer.html');
+      loadFile('ourdesign', 'https://alankaarinteriors.com/includes/our-design.html');
+    });
+    
+  </script>
+
+<script src="https://alankaarinteriors.com/js/user-popup.js"></script>
+<script src="https://alankaarinteriors.com/lib/jquery/jquery.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/jquery/jquery-migrate.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/easing/easing.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/superfish/hoverIntent.js"></script>
+<script src="https://alankaarinteriors.com/lib/superfish/superfish.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/wow/wow.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="https://alankaarinteriors.com/lib/sticky/sticky.js"></script>
+<script src="https://alankaarinteriors.com/js/main.js"></script>
 
 </body>
 
