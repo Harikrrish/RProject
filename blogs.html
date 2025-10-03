@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blogs | Alankaar Interiors - Interior Design Tips & Inspiration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Interior Design Blogs, Home Decor Tips, Office Interior Ideas, Chennai Interior Design, Design Inspiration">
+  <meta name="description" content="Explore our collection of interior design blogs featuring tips, inspiration, and insights for home and office interiors in Chennai and beyond.">
+  <meta name="author" content="Alankaar Interiors">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Blogs | Alankaar Interiors">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alankaarinteriors.com/blogs.html">
+  <meta property="og:image" content="https://alankaarinteriors.com/img/logo/logo-A.png">
+  <meta property="og:description" content="Explore our collection of interior design blogs featuring tips, inspiration, and insights for home and office interiors.">
+  <meta property="og:site_name" content="Alankaar Interiors">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alankaarinteriors.com/blogs.html">
+
+  <!-- Favicons -->
+  <link href="img/logo/logo-A.png" rel="icon">
+  <link href="img/logo/logo-A.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom Blog Styles -->
+  <style>
+    .blog-section {
+      padding: 80px 0;
+      background: #f8f9fa;
+    }
+    
+    .blog-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .blog-header h1 {
+      color: #224188;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    
+    .blog-header p {
+      font-size: 1.2rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .blog-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .blog-image {
+      height: 200px;
+      background: linear-gradient(45deg, #224188, #FF9800);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .blog-content {
+      padding: 25px;
+    }
+    
+    .blog-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #224188;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    
+    .blog-excerpt {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+    }
+    
+    .blog-category {
+      background: #FF9800;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    
+    .read-more {
+      color: #224188;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .read-more:hover {
+      color: #FF9800;
+      text-decoration: none;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+    }
+    
+    @media (max-width: 768px) {
+      .blog-header h1 {
+        font-size: 2rem;
+      }
+      
+      .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .blog-section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body id="body">
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div id="logo" class="pull-left">
+        <a href="index.html"><span><img src="img/logo/logo-A.png" width="50px" height="70px" alt="Alankaar Interiors Logo" /></span></a>
+      </div>
+
+      <div id="free-quote-mobile">
+        <div class="free-quote-btn" onclick="loadUserDetailsPopup()"><a class="btn-get-started scrollto">Get Free Quote</a></div>
+        <div class="free-quote-btn-phone"><a href="tel:+919994958369" style="color: #FF9800 !important;" class="btn-get-started scrollto">+91 9994958369</a></div>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#ourdesign">Portfolio</a></li>
+          <li class="menu-active"><a href="blogs.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li id="nav-phone" style="background: #FF9800; margin-left: 20px !important; border-radius: 5px;" onclick="loadUserDetailsPopup()"><a class="btn-get-started scrollto">Get Free Quote</a></li>
+          <li id="nav-phone-number" style="color: white; margin-left: 20px !important; border-radius: 5px;"><a href="tel:+919994958369" class="scrollto">+91 9994958369</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="blog-header">
+        <h1>Interior Design Blogs</h1>
+        <p>Discover the latest trends, tips, and inspiration for creating beautiful spaces that reflect your style and personality.</p>
+      </div>
+      
+      <div id="blog-loading" class="loading">
+        <i class="fa fa-spinner fa-spin fa-2x"></i>
+        <p>Loading blogs...</p>
+      </div>
+      
+      <div id="blog-grid" class="blog-grid" style="display: none;">
+        <!-- Blog cards will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Popup Structure -->
+  <div id="overlay" style="display: none;"></div>
+  <div class="popup-container" id="popup" style="display: none;"></div>
+
+  <!-- User Details Popup -->
+  <div id="user-popup"></div>
+
+  <!-- JavaScript Files -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/user-popup.js"></script>
+
+  <!-- Blog Loading Script -->
+  <script>
+    // Blog data with titles and descriptions
+    const blogData = [
+      {
+        folder: 'best-interiors-in-chennai',
+        title: 'Best Interiors in Chennai',
+        excerpt: 'Discover the finest interior design solutions in Chennai with our expert team. From luxury homes to modern offices, we create spaces that inspire.',
+        category: 'City Guide'
+      },
+      {
+        folder: 'interior-designer-in-chennai',
+        title: 'Interior Designer in Chennai',
+        excerpt: 'Looking for a professional interior designer in Chennai? Learn about our comprehensive design services and how we transform spaces.',
+        category: 'Services'
+      },
+      {
+        folder: 'interior-works-in-chennai',
+        title: 'Interior Works in Chennai',
+        excerpt: 'Explore our portfolio of interior works across Chennai. From residential to commercial projects, see how we bring visions to life.',
+        category: 'Portfolio'
+      },
+      {
+        folder: 'top-interior-designers-in-sholinganallur',
+        title: 'Top Interior Designers in Sholinganallur',
+        excerpt: 'Meet the top interior designers in Sholinganallur who are transforming homes and offices with innovative design solutions.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-annanagar',
+        title: 'Best Interiors in Anna Nagar',
+        excerpt: 'Anna Nagar residents trust us for the best interior designs. Discover our premium services in this upscale Chennai locality.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-ecr',
+        title: 'Best Interiors in ECR',
+        excerpt: 'East Coast Road (ECR) homes deserve exceptional interiors. See how we blend coastal charm with modern design aesthetics.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-koyambedu',
+        title: 'Best Interiors in Koyambedu',
+        excerpt: 'Transform your Koyambedu property with our expert interior design services. From traditional to contemporary styles.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-madipakkam',
+        title: 'Best Interiors in Madipakkam',
+        excerpt: 'Madipakkam homeowners choose us for our exceptional interior design expertise and attention to detail.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-omr',
+        title: 'Best Interiors in OMR',
+        excerpt: 'Old Mahabalipuram Road (OMR) is home to modern living. Discover our contemporary interior design solutions for OMR residents.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-perungudi',
+        title: 'Best Interiors in Perungudi',
+        excerpt: 'Perungudi properties get the premium treatment with our specialized interior design services and custom solutions.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-porur',
+        title: 'Best Interiors in Porur',
+        excerpt: 'Porur residents trust us for creating beautiful, functional interiors that reflect their lifestyle and preferences.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-tambaram',
+        title: 'Best Interiors in Tambaram',
+        excerpt: 'Tambaram homes deserve the best. Explore our comprehensive interior design services for this vibrant Chennai suburb.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-thiruvanmiyur',
+        title: 'Best Interiors in Thiruvanmiyur',
+        excerpt: 'Thiruvanmiyur properties get our premium interior design treatment with coastal-inspired and modern design elements.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-thuraipakkam',
+        title: 'Best Interiors in Thuraipakkam',
+        excerpt: 'Thuraipakkam homeowners choose our expert interior design services for creating stunning, personalized living spaces.',
+        category: 'Area Guide'
+      },
+      {
+        folder: 'best-interiors-in-velacherry',
+        title: 'Best Interiors in Velachery',
+        excerpt: 'Velachery residents enjoy our premium interior design services that combine style, functionality, and affordability.',
+        category: 'Area Guide'
+      }
+    ];
+
+    // Function to load blog cards
+    function loadBlogs() {
+      const blogGrid = document.getElementById('blog-grid');
+      const loading = document.getElementById('blog-loading');
+      
+      // Sort blogs alphabetically by title (you can change this to date-based sorting)
+      const sortedBlogs = blogData.sort((a, b) => b.title.localeCompare(a.title));
+      
+      // Generate blog cards HTML
+      let blogsHTML = '';
+      sortedBlogs.forEach(blog => {
+        blogsHTML += `
+          <div class="blog-card" onclick="window.location.href='blog/${blog.folder}/'">
+            <div class="blog-image">
+              <div>${blog.title}</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">${blog.title}</h3>
+              <p class="blog-excerpt">${blog.excerpt}</p>
+              <div class="blog-meta">
+                <span class="blog-category">${blog.category}</span>
+                <a href="blog/${blog.folder}/" class="read-more">
+                  Read More <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      
+      // Hide loading and show blogs
+      setTimeout(() => {
+        loading.style.display = 'none';
+        blogGrid.innerHTML = blogsHTML;
+        blogGrid.style.display = 'grid';
+      }, 500);
+    }
+
+    // Load includes
+    function loadFile(containerId, filePath) {
+      fetch(filePath)
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(containerId).innerHTML = data;
+        })
+        .catch(error => {
+          console.log('Error loading file:', error);
+        });
+    }
+
+    // Load footer and popup when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      loadFile('footer', 'includes/footer.html');
+      loadFile('popup', 'includes/popup.html');
+      loadBlogs();
+    });
+
+    // User popup function (referenced in header)
+    function loadUserDetailsPopup() {
+      // This function should be defined in your user-popup.js file
+      if (typeof showUserPopup === 'function') {
+        showUserPopup();
+      } else {
+        console.log('User popup function not available');
+      }
+    }
+  </script>
+</body>
+
+</html>
