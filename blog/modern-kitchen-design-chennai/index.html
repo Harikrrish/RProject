@@ -35,6 +35,189 @@
   <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../../css/style.css" rel="stylesheet">
 
+  <!-- Custom Kitchen Portfolio Styles -->
+  <style>
+    /* Kitchen Portfolio Section Styles */
+    .kitchen-portfolio-section {
+      margin: 40px 0;
+    }
+
+    .kitchen-carousel .kitchen-item {
+      margin: 0 10px;
+    }
+
+    /* Portfolio Item Container */
+    .kitchen-carousel .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      height: 350px; /* Fixed height for consistency */
+      display: block;
+    }
+
+    .kitchen-carousel .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Kitchen Images */
+    .kitchen-carousel .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+
+    /* Portfolio Overlay */
+    .kitchen-carousel .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(74, 144, 226, 0.85), rgba(52, 168, 83, 0.85));
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .kitchen-carousel .portfolio-item:hover .portfolio-overlay {
+      opacity: 1;
+    }
+
+    .kitchen-carousel .portfolio-info {
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .kitchen-carousel .portfolio-info h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .kitchen-carousel .portfolio-info p {
+      font-size: 14px;
+      margin: 0;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+
+    /* Owl Carousel Custom Styles for Kitchen */
+    .kitchen-carousel.owl-carousel .owl-nav {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .kitchen-carousel.owl-carousel .owl-nav button {
+      background: #4a90e2 !important;
+      color: white !important;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      margin: 0 15px;
+      font-size: 20px;
+      border: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(74, 144, 226, 0.3);
+    }
+
+    .kitchen-carousel.owl-carousel .owl-nav button:hover {
+      background: #357abd !important;
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(74, 144, 226, 0.5);
+    }
+
+    .kitchen-carousel.owl-carousel .owl-dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .kitchen-carousel.owl-carousel .owl-dots .owl-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 8px;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .kitchen-carousel.owl-carousel .owl-dots .owl-dot.active {
+      background: #4a90e2;
+      transform: scale(1.3);
+      box-shadow: 0 2px 8px rgba(74, 144, 226, 0.4);
+    }
+
+    /* Section Styling */
+    #kitchen-portfolio {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    }
+
+    #kitchen-portfolio h2 {
+      color: #2c3e50;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    #kitchen-portfolio h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(45deg, #4a90e2, #34a853);
+      border-radius: 2px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .kitchen-carousel .portfolio-item {
+        height: 280px;
+      }
+      
+      .kitchen-carousel .portfolio-info h4 {
+        font-size: 18px;
+      }
+      
+      .kitchen-carousel .portfolio-info p {
+        font-size: 13px;
+      }
+
+      .kitchen-carousel.owl-carousel .owl-nav button {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        margin: 0 10px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .kitchen-carousel .portfolio-item {
+        height: 250px;
+      }
+
+      .kitchen-carousel .portfolio-info h4 {
+        font-size: 16px;
+      }
+      
+      .kitchen-carousel .portfolio-info p {
+        font-size: 12px;
+      }
+    }
+  </style>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
@@ -601,6 +784,103 @@
                 </div>
               </div>
 
+              <!-- Our Modern Kitchen Designs Portfolio -->
+              <h2>Our Modern Kitchen Designs</h2>
+              <p class="mb-4">Explore our stunning collection of modern kitchen designs executed for Chennai homeowners. Each project showcases innovative solutions, premium materials, and contemporary aesthetics perfect for Chennai's lifestyle.</p>
+              
+              <div class="kitchen-portfolio-section mb-5">
+                <div class="kitchen-carousel owl-carousel owl-theme">
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/1.png" alt="Modern L-Shaped Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Contemporary L-Shaped Kitchen</h5>
+                          <p>Sleek design with smart storage solutions</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/2.png" alt="Modern Island Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Luxury Island Kitchen</h5>
+                          <p>Perfect for entertaining and family gatherings</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/3.png" alt="Modern Straight Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Minimalist Straight Kitchen</h5>
+                          <p>Space-efficient design for compact homes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/4.png" alt="Modern U-Shaped Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Spacious U-Shaped Kitchen</h5>
+                          <p>Maximum storage and counter space</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/5.png" alt="Modern Parallel Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Efficient Parallel Kitchen</h5>
+                          <p>Dual-counter design for smooth workflow</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/6.png" alt="Modern Open Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Contemporary Open Kitchen</h5>
+                          <p>Seamless integration with living spaces</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/7.png" alt="Modern Kitchen with Breakfast Counter Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Kitchen with Breakfast Counter</h5>
+                          <p>Multi-functional design for modern families</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kitchen-item">
+                    <div class="kitchen-image-container">
+                      <img src="../../img/modular-kitchen/8.png" alt="Luxury Modern Kitchen Design Chennai" class="kitchen-image">
+                      <div class="kitchen-overlay">
+                        <div class="kitchen-info">
+                          <h5>Premium Luxury Kitchen</h5>
+                          <p>High-end finishes and smart appliances</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <h2>Maintenance Tips for Modern Chennai Kitchens</h2>
 
               <h3>Daily Maintenance</h3>
@@ -763,18 +1043,55 @@
       $('#customservices').load('../../includes/customer-services.html');
       $('#contact').load('../../includes/contact.html');
       
-      // Initialize kitchen carousel
+      // Initialize kitchen carousel with improved settings
       $('.kitchen-carousel').owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
         loop: true,
         nav: true,
-        dots: false,
+        dots: true,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        margin: 20,
+        stagePadding: 0,
         responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          992: { items: 3 }
+          0: { 
+            items: 1,
+            margin: 10
+          },
+          576: { 
+            items: 1,
+            margin: 15
+          },
+          768: { 
+            items: 2,
+            margin: 20
+          },
+          992: { 
+            items: 3,
+            margin: 20
+          },
+          1200: { 
+            items: 3,
+            margin: 30
+          }
+        }
+      });
+
+      // Initialize magnific popup for kitchen images
+      $('.kitchen-carousel').magnificPopup({
+        delegate: 'a.portfolio-popup',
+        type: 'image',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1]
+        },
+        image: {
+          titleSrc: function(item) {
+            return item.el.find('img').attr('alt');
+          }
         }
       });
     });
