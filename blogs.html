@@ -83,11 +83,35 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      position: relative;
+    }
+    
+    .blog-card.featured {
+      border: 3px solid #FF9800;
+      box-shadow: 0 15px 40px rgba(255, 152, 0, 0.2);
+    }
+    
+    .blog-card.featured::before {
+      content: "FEATURED";
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #FF9800;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      z-index: 2;
     }
     
     .blog-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .blog-card.featured:hover {
+      box-shadow: 0 25px 50px rgba(255, 152, 0, 0.3);
     }
     
     .blog-image {
@@ -249,6 +273,34 @@
     // Blog data with titles and descriptions
     const blogData = [
       {
+        folder: 'bedroom-interior-design-ideas-chennai',
+        title: 'Bedroom Interior Design Ideas Chennai',
+        excerpt: 'Transform your bedroom with stunning interior design ideas in Chennai. Expert bedroom design solutions, storage ideas, and modern decor tips for creating your perfect sanctuary.',
+        category: 'Bedroom Design',
+        featured: true
+      },
+      {
+        folder: 'budget-interior-design-chennai',
+        title: 'Budget Interior Design Chennai',
+        excerpt: 'Transform your home with budget-friendly interior design in Chennai. Get stunning interiors at affordable prices starting from ₹50,000. Expert tips and smart solutions.',
+        category: 'Budget Design',
+        featured: true
+      },
+      {
+        folder: 'small-house-interior-design-chennai',
+        title: 'Small House Interior Design Chennai',
+        excerpt: 'Maximize your small house in Chennai with clever interior design ideas. Expert space-saving solutions, storage hacks, and beautiful designs for compact homes.',
+        category: 'Space Planning',
+        featured: true
+      },
+      {
+        folder: 'modern-kitchen-design-chennai',
+        title: 'Modern Kitchen Design Chennai',
+        excerpt: 'Discover the latest modern kitchen design trends in Chennai 2024. Expert modular kitchen solutions, smart appliances, and contemporary designs by professionals.',
+        category: 'Kitchen Design',
+        featured: true
+      },
+      {
         folder: 'best-interiors-in-chennai',
         title: 'Best Interiors in Chennai',
         excerpt: 'Discover the finest interior design solutions in Chennai with our expert team. From luxury homes to modern offices, we create spaces that inspire.',
@@ -345,16 +397,24 @@
       const blogGrid = document.getElementById('blog-grid');
       const loading = document.getElementById('blog-loading');
       
-      // Sort blogs alphabetically by title (you can change this to date-based sorting)
-      const sortedBlogs = blogData.sort((a, b) => b.title.localeCompare(a.title));
+      // Sort blogs: featured first, then alphabetically by title
+      const sortedBlogs = blogData.sort((a, b) => {
+        if (a.featured && !b.featured) return -1;
+        if (!a.featured && b.featured) return 1;
+        return a.title.localeCompare(b.title);
+      });
       
       // Generate blog cards HTML
       let blogsHTML = '';
       sortedBlogs.forEach(blog => {
+        const featuredClass = blog.featured ? 'featured' : '';
+        const featuredBadge = blog.featured ? '<div class="featured-badge">NEW</div>' : '';
+        
         blogsHTML += `
-          <div class="blog-card" onclick="window.location.href='blog/${blog.folder}/'">
+          <div class="blog-card ${featuredClass}" onclick="window.location.href='blog/${blog.folder}/'">
             <div class="blog-image">
               <div>${blog.title}</div>
+              ${featuredBadge}
             </div>
             <div class="blog-content">
               <h3 class="blog-title">${blog.title}</h3>
