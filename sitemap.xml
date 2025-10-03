@@ -5,66 +5,98 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://alankaarinteriors.com</loc>
-    <lastmod>2024-11-15</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-chennai</loc>
-    <lastmod>2024-11-27</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
    <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-omr</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-thuraipakkam</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-perungudi</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/top-interior-designers-in-sholinganallur</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
    <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-velacherry</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-ecr</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-porur</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-tambaram</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-madipakkam</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-annanagar</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-thiruvanmiyur</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/best-interiors-in-koyambedu</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/interior-works-in-chennai</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alankaarinteriors.com/blog/interior-designer-in-chennai</loc>
-    <lastmod>2024-12-05</lastmod>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

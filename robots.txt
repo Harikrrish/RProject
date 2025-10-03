@@ -1,4 +1,16 @@
 User-agent: *
-Disallow: 
+Allow: /
 Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow specific important files
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /lib/
+
 Sitemap: https://alankaarinteriors.com/sitemap.xml
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 1

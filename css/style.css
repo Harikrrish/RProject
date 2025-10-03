@@ -137,6 +137,13 @@ h1, h2, h3, h4, h5, h6 {
   border-top: solid 2px #224188;
 }
 
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
 #header #logo h1 {
   font-size: 32px;
   margin: 0;
@@ -166,22 +173,67 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo {
-  margin-top: -15px; 
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   #header {
-    padding: 20px 0;
-    height: 74px;
+    padding: 10px 0;
+    height: auto;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #intro {
+    margin-top: 70px;
+  }
+  
+  #header .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 24px;
   }
   #header #logo img {
-    /* max-height: 40px; */
+    max-height: 40px;
+    width: auto;
   }
   #logo {
-    margin-top: -20px; 
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  #free-quote-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    flex: 1;
+    max-width: none;
+    margin: 0 10px;
+  }
+  
+  #free-quote-mobile .free-quote-btn,
+  #free-quote-mobile .free-quote-btn-phone {
+    padding: 4px 8px;
+    font-size: 9px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    max-width: 110px;
   }
 }
 
@@ -199,20 +251,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-content {
   position: absolute;
-  bottom: 20%;
-  /* top: 0; */
-  /* left: 0; */
+  top: 0;
+  left: 0;
   right: 0;
+  bottom: 0;
   z-index: 10;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: left;
-  background: #00000036;
-  right: 0px;
-  text-align: left;
-  top: 0;
-  bottom: 0;
+  text-align: center;
   background: #261f1566;
 }
 
@@ -250,11 +297,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 32px;
   border-radius: 2px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 15px auto;
   color: #fff;
   width: 52%;
   text-align: center;
-  margin: 15px auto;
 }
 
 #intro .intro-content .btn-get-started {
@@ -364,7 +410,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
+  display: flex;
+  align-items: center;
   margin: 0;
 }
 
@@ -1254,12 +1301,11 @@ p.help-block li {
 }
 
 #contact .contact-info address, #contact .contact-info p {
-  margin-bottom: 0;
+  margin-bottom: 15px;
   color: #000;
   display: flex;
   float: left;
   width: 100%;
-  margin-bottom: 15px;
   padding: 0;
   margin-top: 0;
   margin-left: 16px;
@@ -1299,11 +1345,6 @@ p.help-block li {
   #contact .contact-address, #contact .contact-phone, #contact .contact-email {
     padding: 0;
     text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  #contact .contact-phone {
   }
 }
 
@@ -1705,9 +1746,10 @@ p.help-block li {
 }
 
 #free-quote-mobile {
-  float: right;
-  margin-right: 60px;
-  margin-top: -14px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 #free-quote-mobile .free-quote-btn {
@@ -1731,9 +1773,29 @@ p.help-block li {
   border: 1px solid #FF9800;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   #free-quote-mobile {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #free-quote-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-left: 10px;
+  }
+  
+  #free-quote-mobile .free-quote-btn,
+  #free-quote-mobile .free-quote-btn-phone {
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
   }
 }
 
