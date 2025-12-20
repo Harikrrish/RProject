@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Interior Estimation | Alankaar Interiors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Interior Estimation, Room Cost Estimation, Interior Design Cost, Alankaar Interiors">
+  <meta name="description" content="Estimate the cost of your interior design project with our simple and intuitive tool.">
+  <meta name="author" content="Alankaar Interiors">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Interior Estimation | Alankaar Interiors">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alankaarinteriors.com/interior-estimation.html">
+  <meta property="og:image" content="../../img/logo/logo-A.png">
+  <meta property="og:description" content="Estimate the cost of your interior design project with our simple and intuitive tool.">
+  <meta property="og:site_name" content="Alankaar Interiors">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alankaarinteriors.com/interior-estimation.html">
+
+  <!-- Favicons -->
+  <link href="../../img/logo/logo-A.png" rel="icon">
+  <link href="../../img/logo/logo-A.png" rel="apple-touch-icon">
+
+  <!-- CSS Files -->
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px 0;
+      min-height: 100vh;
+    }
+
+    .stepper {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px auto;
+      max-width: 800px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .stepper li {
+      text-align: center;
+      flex: 1;
+      position: relative;
+    }
+
+    .stepper li::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.3);
+      z-index: 0;
+      transition: all 0.4s ease;
+    }
+
+    .stepper li:first-child::before {
+      left: 50%;
+    }
+
+    .stepper li:last-child::before {
+      right: 50%;
+    }
+
+    .stepper li.completed::before {
+      background: linear-gradient(90deg, #28a745, #20c997);
+      box-shadow: 0 2px 10px rgba(40, 167, 69, 0.4);
+    }
+
+    .stepper li .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 0 auto 10px;
+      line-height: 50px;
+      color: #fff;
+      font-weight: bold;
+      z-index: 1;
+      position: relative;
+      font-size: 18px;
+      transition: all 0.4s ease;
+      border: 3px solid transparent;
+    }
+
+    .stepper li.active .circle {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-color: #fff;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+      transform: scale(1.1);
+    }
+
+    .stepper li.completed .circle {
+      background: linear-gradient(135deg, #28a745, #20c997);
+      box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+    }
+
+    .stepper li.active .label {
+      color: #fff;
+      font-weight: 700;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .stepper li.completed .label {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .stepper li .label {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.8);
+      transition: all 0.3s ease;
+    }
+
+    .step-content {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .step-content.active {
+      display: block;
+    }
+
+    .estimation-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 50px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .estimation-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #4facfe);
+      background-size: 300% 100%;
+      animation: gradient 3s ease infinite;
+    }
+
+    @keyframes gradient {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .estimation-container h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .bhk-selection {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .bhk-selection button {
+      padding: 0;
+      font-size: 16px;
+      border: 3px solid transparent;
+      border-radius: 15px;
+      background: #fff;
+      color: #2c3e50;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bhk-selection button img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .bhk-selection button .bhk-label {
+      padding: 15px;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      transition: all 0.4s ease;
+    }
+
+    .bhk-selection button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+      border-color: #667eea;
+    }
+
+    .bhk-selection button:hover .bhk-label,
+    .bhk-selection button.selected .bhk-label {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+
+    .bhk-selection button.selected {
+      border-color: #667eea;
+      transform: translateY(-5px);
+    }
+
+    .size-selection {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 2px solid #e0e0e0;
+      display: none;
+    }
+
+    .size-selection.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .size-selection h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .size-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .size-buttons button {
+      padding: 20px 40px;
+      font-size: 18px;
+      border: 3px solid transparent;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #2c3e50;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .size-buttons button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    }
+
+    .size-buttons button:hover,
+    .size-buttons button.selected {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      border-color: #667eea;
+    }
+
+    .room-selection .room {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 2px solid transparent;
+      border-radius: 15px;
+      background: #fff;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .room-selection .room:hover {
+      transform: translateX(10px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+      border-color: #667eea;
+    }
+
+    .room-selection .room .room-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex: 1;
+    }
+
+    .room-selection .room img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .room-selection .room label {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .room-selection .room .counter {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .room-selection .room button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    }
+
+    .room-selection .room button:hover:not(:disabled) {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+
+    .room-selection .room button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .room-selection .room span {
+      font-size: 20px;
+      font-weight: 700;
+      min-width: 40px;
+      text-align: center;
+      color: #667eea;
+    }
+
+    .package-selection .package {
+      margin-bottom: 25px;
+      padding: 0;
+      border: 3px solid transparent;
+      border-radius: 20px;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .package-selection .package:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 50px rgba(102, 126, 234, 0.3);
+      border-color: #667eea;
+    }
+
+    .package-selection .package.selected {
+      border-color: #667eea;
+      box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+      transform: translateY(-10px);
+    }
+
+    .package-selection .package img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .package-selection .package:hover img {
+      transform: scale(1.05);
+    }
+
+    .package-selection .package .package-content {
+      padding: 25px;
+    }
+
+    .package-selection .package h3 {
+      margin-bottom: 12px;
+      font-size: 24px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+
+    .package-selection .package p {
+      font-size: 15px;
+      color: #666;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 30px auto;
+      gap: 20px;
+    }
+
+    .navigation-buttons button {
+      flex: 1;
+      padding: 16px 30px;
+      font-size: 18px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .navigation-buttons #prev-btn {
+      background: linear-gradient(135deg, #636363, #a2ab58);
+      color: #fff;
+    }
+
+    .navigation-buttons #prev-btn:hover:not(:disabled) {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(99, 99, 99, 0.4);
+    }
+
+    .navigation-buttons #prev-btn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .navigation-buttons #next-btn {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+
+    .navigation-buttons #next-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+    }
+
+    .result {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #28a745, #20c997);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: rgba(40, 167, 69, 0.05);
+      animation: pulse 2s ease infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    @media (max-width: 768px) {
+      .stepper {
+        max-width: 90%;
+      }
+
+      .stepper li .circle {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+      }
+
+      .stepper li .label {
+        font-size: 10px;
+      }
+
+      .estimation-container {
+        padding: 30px 20px;
+      }
+
+      .estimation-container h1 {
+        font-size: 24px;
+      }
+
+      .bhk-selection {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 15px;
+      }
+
+      .bhk-selection button img {
+        height: 90px;
+      }
+
+      .bhk-selection button .bhk-label {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .size-buttons {
+        flex-direction: column;
+      }
+
+      .size-buttons button {
+        padding: 15px 30px;
+      }
+
+      .room-selection .room img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .room-selection .room {
+        padding: 15px;
+      }
+
+      .room-selection .room label {
+        font-size: 16px;
+      }
+
+      .result {
+        font-size: 28px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <!-- Stepper Navigation -->
+  <ul class="stepper">
+    <li class="active">
+      <div class="circle">1</div>
+      <div class="label">BHK Type</div>
+    </li>
+    <li>
+      <div class="circle">2</div>
+      <div class="label">Rooms to Design</div>
+    </li>
+    <li>
+      <div class="circle">3</div>
+      <div class="label">Package</div>
+    </li>
+    <li>
+      <div class="circle">4</div>
+      <div class="label">Get Quote</div>
+    </li>
+  </ul>
+
+  <!-- Step 1: BHK Type Selection -->
+  <div class="step-content active" id="step-1">
+    <div class="estimation-container">
+      <h1>Select Your BHK Type</h1>
+      <div class="bhk-selection">
+        <button data-bhk="1">
+          <img src="./img/estimation/1bhk.png" alt="1 BHK">
+          <div class="bhk-label">1 BHK</div>
+        </button>
+        <button data-bhk="2">
+          <img src="./img/estimation/2bhk.png" alt="2 BHK">
+          <div class="bhk-label">2 BHK</div>
+        </button>
+        <button data-bhk="3">
+          <img src="./img/estimation/3bhk.png" alt="3 BHK">
+          <div class="bhk-label">3 BHK</div>
+        </button>
+        <button data-bhk="4">
+          <img src="./img/estimation/4bhk.png" alt="4 BHK">
+          <div class="bhk-label">4 BHK</div>
+        </button>
+        <button data-bhk="5">
+          <img src="./img/estimation/5bhk.png" alt="5 BHK+">
+          <div class="bhk-label">5 BHK+</div>
+        </button>
+      </div>
+
+      <div class="size-selection" id="size-selection">
+        <h2>Select Size</h2>
+        <div class="size-buttons">
+          <button data-size="small">Small</button>
+          <button data-size="large">Large</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 2: Room Selection -->
+  <div class="step-content" id="step-2">
+    <div class="estimation-container">
+      <h1>Select Rooms to Design</h1>
+      <div class="room-selection">
+        <div class="room">
+          <div class="room-info">
+            <img src="./img/estimation/living-room.png" alt="Living Room">
+            <label>Living Room</label>
+          </div>
+          <div class="counter">
+            <button class="decrease" data-room="living">-</button>
+            <span class="count" data-room="living">1</span>
+            <button class="increase" data-room="living">+</button>
+          </div>
+        </div>
+        <div class="room">
+          <div class="room-info">
+            <img src="./img/estimation/kitchen.png" alt="Kitchen">
+            <label>Kitchen</label>
+          </div>
+          <div class="counter">
+            <button class="decrease" data-room="kitchen">-</button>
+            <span class="count" data-room="kitchen">1</span>
+            <button class="increase" data-room="kitchen">+</button>
+          </div>
+        </div>
+        <div class="room">
+          <div class="room-info">
+            <img src="./img/estimation/bedroom.png" alt="Bedroom">
+            <label>Bedroom</label>
+          </div>
+          <div class="counter">
+            <button class="decrease" data-room="bedroom">-</button>
+            <span class="count" data-room="bedroom">1</span>
+            <button class="increase" data-room="bedroom">+</button>
+          </div>
+        </div>
+        <div class="room">
+          <div class="room-info">
+            <img src="./img/estimation/bathroom.png" alt="Bathroom">
+            <label>Bathroom</label>
+          </div>
+          <div class="counter">
+            <button class="decrease" data-room="bathroom">-</button>
+            <span class="count" data-room="bathroom">1</span>
+            <button class="increase" data-room="bathroom">+</button>
+          </div>
+        </div>
+        <div class="room">
+          <div class="room-info">
+            <img src="./img/estimation/dining.png" alt="Dining">
+            <label>Dining</label>
+          </div>
+          <div class="counter">
+            <button class="decrease" data-room="dining">-</button>
+            <span class="count" data-room="dining">0</span>
+            <button class="increase" data-room="dining">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 3: Package Selection -->
+  <div class="step-content" id="step-3">
+    <div class="estimation-container">
+      <h1>Pick Your Package</h1>
+      <div class="package-selection">
+        <div class="package" data-package="essentials" data-multiplier="1">
+          <img src="./img/estimation/essential.png" alt="Essentials Package">
+          <div class="package-content">
+            <h3>Essentials (₹₹)</h3>
+            <p>Affordable pricing with basic accessories. Perfect for budget-conscious homeowners.</p>
+          </div>
+        </div>
+        <div class="package" data-package="premium" data-multiplier="1.5">
+          <img src="./img/estimation/premium.png" alt="Premium Package">
+          <div class="package-content">
+            <h3>Premium (₹₹₹)</h3>
+            <p>Mid-range pricing with premium designs. Ideal for those seeking quality and style.</p>
+          </div>
+        </div>
+        <div class="package" data-package="luxe" data-multiplier="2">
+          <img src="./img/estimation/luxe.png" alt="Luxe Package">
+          <div class="package-content">
+            <h3>Luxe (₹₹₹₹)</h3>
+            <p>Elite pricing with lavish designs. For those who demand the absolute best.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 4: Get Quote -->
+  <div class="step-content" id="step-4">
+    <div class="estimation-container">
+      <h1>Get Your Quote</h1>
+      <p style="text-align: center; color: #666; margin-bottom: 20px;">Based on your selections, here's your estimated cost:</p>
+      <div class="result" id="final-result">Estimated Cost: ₹0</div>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="navigation-buttons">
+    <button id="prev-btn" disabled>Previous</button>
+    <button id="next-btn">Next</button>
+  </div>
+
+  <div id="footer"></div>
+
+  <!-- JavaScript Files -->
+  <script src="../../lib/jquery/jquery.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(function() {
+      $("#header").load("../../header.html");
+      $("#footer").load("../../footer.html");
+    });
+
+    let currentStep = 1;
+    let selectedBHK = null;
+    let selectedSize = null;
+    let selectedPackage = null;
+    let roomCounts = { living: 1, kitchen: 1, bedroom: 1, bathroom: 1, dining: 0 };
+    const roomCosts = { living: 150000, kitchen: 200000, bedroom: 120000, bathroom: 80000, dining: 100000 };
+
+    document.querySelectorAll('.bhk-selection button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.bhk-selection button').forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+        selectedBHK = this.dataset.bhk;
+        document.getElementById('size-selection').classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.size-buttons button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.size-buttons button').forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+        selectedSize = this.dataset.size;
+      });
+    });
+
+    document.querySelectorAll('.room-selection .increase').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const room = this.dataset.room;
+        roomCounts[room]++;
+        updateRoomCount(room);
+      });
+    });
+
+    document.querySelectorAll('.room-selection .decrease').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const room = this.dataset.room;
+        if (roomCounts[room] > 0) {
+          roomCounts[room]--;
+          updateRoomCount(room);
+        }
+      });
+    });
+
+    function updateRoomCount(room) {
+      const countSpan = document.querySelector(`.count[data-room="${room}"]`);
+      countSpan.textContent = roomCounts[room];
+      const decreaseBtn = document.querySelector(`.decrease[data-room="${room}"]`);
+      decreaseBtn.disabled = roomCounts[room] === 0;
+    }
+
+    document.querySelectorAll('.package-selection .package').forEach(pkg => {
+      pkg.addEventListener('click', function() {
+        document.querySelectorAll('.package-selection .package').forEach(p => p.classList.remove('selected'));
+        this.classList.add('selected');
+        selectedPackage = parseFloat(this.dataset.multiplier);
+      });
+    });
+
+    document.getElementById('next-btn').addEventListener('click', function() {
+      if (currentStep === 1 && (!selectedBHK || !selectedSize)) {
+        alert('Please select a BHK type and size');
+        return;
+      }
+      if (currentStep === 3 && !selectedPackage) {
+        alert('Please select a package');
+        return;
+      }
+      if (currentStep < 4) {
+        currentStep++;
+        updateSteps();
+        if (currentStep === 4) calculateEstimate();
+      }
+    });
+
+    document.getElementById('prev-btn').addEventListener('click', function() {
+      if (currentStep > 1) {
+        currentStep--;
+        updateSteps();
+      }
+    });
+
+    function updateSteps() {
+      document.querySelectorAll('.step-content').forEach((step, index) => {
+        step.classList.toggle('active', index + 1 === currentStep);
+      });
+      document.querySelectorAll('.stepper li').forEach((li, index) => {
+        li.classList.remove('active', 'completed');
+        if (index + 1 < currentStep) li.classList.add('completed');
+        else if (index + 1 === currentStep) li.classList.add('active');
+      });
+      document.getElementById('prev-btn').disabled = currentStep === 1;
+      document.getElementById('next-btn').textContent = currentStep === 4 ? 'Start Over' : 'Next';
+      if (currentStep === 4) {
+        document.getElementById('next-btn').onclick = function() { resetEstimator(); };
+      }
+    }
+
+    function calculateEstimate() {
+      let totalCost = 0;
+      for (const room in roomCounts) {
+        totalCost += roomCounts[room] * roomCosts[room];
+      }
+      if (selectedSize === 'large') totalCost *= 1.3;
+      else if (selectedSize === 'small') totalCost *= 0.8;
+      totalCost *= selectedPackage;
+      document.getElementById('final-result').textContent = `Estimated Cost: ₹${totalCost.toLocaleString('en-IN')}`;
+    }
+
+    function resetEstimator() {
+      currentStep = 1;
+      selectedBHK = null;
+      selectedSize = null;
+      selectedPackage = null;
+      roomCounts = { living: 1, kitchen: 1, bedroom: 1, bathroom: 1, dining: 0 };
+      document.querySelectorAll('.bhk-selection button').forEach(b => b.classList.remove('selected'));
+      document.querySelectorAll('.size-buttons button').forEach(b => b.classList.remove('selected'));
+      document.querySelectorAll('.package-selection .package').forEach(p => p.classList.remove('selected'));
+      document.getElementById('size-selection').classList.remove('active');
+      document.querySelectorAll('.room-selection .count').forEach(span => {
+        const room = span.dataset.room;
+        span.textContent = roomCounts[room];
+        updateRoomCount(room);
+      });
+      updateSteps();
+      document.getElementById('next-btn').onclick = null;
+    }
+  </script>
+</body>
+</html>
