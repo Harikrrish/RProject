@@ -279,6 +279,22 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
+    /* Subtext under Small/Large buttons */
+    .size-buttons button .size-subtext {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      opacity: 0.8;
+      line-height: 1.2;
+    }
+
+    /* Ensure subtext stays readable on selected/hover (white text already applies) */
+    .size-buttons button.selected .size-subtext,
+    .size-buttons button:hover .size-subtext {
+      opacity: 0.9;
+    }
+
     .size-buttons button:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
@@ -612,8 +628,14 @@
       <div class="size-selection" id="size-selection">
         <h2>Select Size</h2>
         <div class="size-buttons">
-          <button data-size="small">Small</button>
-          <button data-size="large">Large</button>
+          <button data-size="small">
+            Small
+            <span class="size-subtext">Less than 600 sqft</span>
+          </button>
+          <button data-size="large">
+            Large
+            <span class="size-subtext">More than 600 sqft</span>
+          </button>
         </div>
       </div>
     </div>
