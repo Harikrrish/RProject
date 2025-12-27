@@ -588,6 +588,10 @@
     </li>
     <li>
       <div class="circle">4</div>
+      <div class="label">Your Details</div>
+    </li>
+    <li>
+      <div class="circle">5</div>
       <div class="label">Get Quote</div>
     </li>
   </ul>
@@ -729,8 +733,26 @@
     </div>
   </div>
 
-  <!-- Step 4: Get Quote -->
+  <!-- Step 4: User Information -->
   <div class="step-content" id="step-4">
+    <div class="estimation-container">
+      <h1>Enter Your Details</h1>
+      <p style="text-align: center; color: #666; margin-bottom: 30px;">Please provide your information to receive your personalized quote.</p>
+      <form id="user-info-form">
+        <div style="margin-bottom: 25px;">
+          <label for="user-name" style="display: block; margin-bottom: 10px; font-size: 16px; font-weight: 600; color: #2c3e50;">Name *</label>
+          <input type="text" id="user-name" required style="width: 100%; padding: 15px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease; box-sizing: border-box;">
+        </div>
+        <div style="margin-bottom: 25px;">
+          <label for="user-phone" style="display: block; margin-bottom: 10px; font-size: 16px; font-weight: 600; color: #2c3e50;">Phone Number *</label>
+          <input type="tel" id="user-phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" style="width: 100%; padding: 15px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease; box-sizing: border-box;">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Step 5: Get Quote -->
+  <div class="step-content" id="step-5">
     <div class="estimation-container">
       <h1>Get Your Quote</h1>
       <p style="text-align: center; color: #666; margin-bottom: 20px;">Based on your selections, here's your estimated cost:</p>
@@ -762,6 +784,8 @@
     let selectedPackage = null;
     let roomCounts = { living: 1, kitchen: 1, bedroom: 1, bathroom: 1, dining: 0 };
     const roomCosts = { living: 150000, kitchen: 200000, bedroom: 120000, bathroom: 80000, dining: 100000 };
+    let userName = '';
+    let userPhone = '';
 
     document.querySelectorAll('.bhk-selection button').forEach(btn => {
       btn.addEventListener('click', function() {
@@ -822,10 +846,26 @@
         alert('Please select a package');
         return;
       }
-      if (currentStep < 4) {
+      if (currentStep === 4) {
+        const nameInput = document.getElementById('user-name');
+        const phoneInput = document.getElementById('user-phone');
+        if (!nameInput.value.trim()) {
+          alert('Please enter your name');
+          nameInput.focus();
+          return;
+        }
+        if (!phoneInput.value.match(/^[0-9]{10}$/)) {
+          alert('Please enter a valid 10-digit phone number');
+          phoneInput.focus();
+          return;
+        }
+        userName = nameInput.value.trim();
+        userPhone = phoneInput.value.trim();
+      }
+      if (currentStep < 5) {
         currentStep++;
         updateSteps();
-        if (currentStep === 4) calculateEstimate();
+        if (currentStep === 5) calculateEstimate();
       }
     });
 
@@ -846,8 +886,8 @@
         else if (index + 1 === currentStep) li.classList.add('active');
       });
       document.getElementById('prev-btn').disabled = currentStep === 1;
-      document.getElementById('next-btn').textContent = currentStep === 4 ? 'Start Over' : 'Next';
-      if (currentStep === 4) {
+      document.getElementById('next-btn').textContent = currentStep === 5 ? 'Start Over' : 'Next';
+      if (currentStep === 5) {
         document.getElementById('next-btn').onclick = function() { resetEstimator(); };
       }
     }
@@ -869,6 +909,10 @@
       selectedSize = null;
       selectedPackage = null;
       roomCounts = { living: 1, kitchen: 1, bedroom: 1, bathroom: 1, dining: 0 };
+      userName = '';
+      userPhone = '';
+      document.getElementById('user-name').value = '';
+      document.getElementById('user-phone').value = '';
       document.querySelectorAll('.bhk-selection button').forEach(b => b.classList.remove('selected'));
       document.querySelectorAll('.size-buttons button').forEach(b => b.classList.remove('selected'));
       document.querySelectorAll('.package-selection .package').forEach(p => p.classList.remove('selected'));
