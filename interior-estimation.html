@@ -279,7 +279,6 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
-    /* Subtext under Small/Large buttons */
     .size-buttons button .size-subtext {
       display: block;
       margin-top: 6px;
@@ -289,7 +288,6 @@
       line-height: 1.2;
     }
 
-    /* Ensure subtext stays readable on selected/hover (white text already applies) */
     .size-buttons button.selected .size-subtext,
     .size-buttons button:hover .size-subtext {
       opacity: 0.9;
@@ -410,7 +408,6 @@
       width: 100%;
       height: 220px;
       object-fit: cover;
-      /* transition: transform 0.4s ease; */
     }
 
     .package-selection .package .package-content {
@@ -495,6 +492,52 @@
       border-radius: 15px;
       background-color: rgba(40, 167, 69, 0.05);
       animation: pulse 2s ease infinite;
+    }
+
+    .phone-input-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .phone-input-container .country-code-select {
+      position: relative;
+      min-width: 120px;
+    }
+
+    .phone-input-container select {
+      width: 100%;
+      padding: 15px 10px 15px 15px;
+      font-size: 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      background-color: #fff;
+      color: #2c3e50;
+      font-weight: 600;
+      cursor: pointer;
+      appearance: none;
+      transition: all 0.3s ease;
+    }
+
+    .phone-input-container select:focus {
+      outline: none;
+      border-color: #224188;
+      box-shadow: 0 0 0 3px rgba(34, 65, 136, 0.1);
+    }
+
+    .phone-input-container .country-code-select::after {
+      content: '▼';
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      font-size: 10px;
+      color: #2c3e50;
+    }
+
+    .phone-input-container input[type="tel"] {
+      flex: 1;
     }
 
     @keyframes pulse {
@@ -745,7 +788,190 @@
         </div>
         <div style="margin-bottom: 25px;">
           <label for="user-phone" style="display: block; margin-bottom: 10px; font-size: 16px; font-weight: 600; color: #2c3e50;">Phone Number *</label>
-          <input type="tel" id="user-phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" style="width: 100%; padding: 15px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease; box-sizing: border-box;">
+          <div class="phone-input-container">
+            <div class="country-code-select">
+              <select id="country-code">
+                <!-- +1 -->
+                <option value="+1" data-code="US">🇺🇸 +1 (USA)</option>
+                <option value="+1" data-code="CA">🇨🇦 +1 (Canada)</option>
+              
+                <!-- +7 -->
+                <option value="+7" data-code="RU">🇷🇺 +7 (Russia)</option>
+                <option value="+7" data-code="KZ">🇰🇿 +7 (Kazakhstan)</option>
+              
+                <!-- +20 -->
+                <option value="+20" data-code="EG">🇪🇬 +20 (Egypt)</option>
+              
+                <!-- +27 -->
+                <option value="+27" data-code="ZA">🇿🇦 +27 (South Africa)</option>
+              
+                <!-- +30 -->
+                <option value="+30" data-code="GR">🇬🇷 +30 (Greece)</option>
+              
+                <!-- +31 -->
+                <option value="+31" data-code="NL">🇳🇱 +31 (Netherlands)</option>
+              
+                <!-- +32 -->
+                <option value="+32" data-code="BE">🇧🇪 +32 (Belgium)</option>
+              
+                <!-- +33 -->
+                <option value="+33" data-code="FR">🇫🇷 +33 (France)</option>
+              
+                <!-- +34 -->
+                <option value="+34" data-code="ES">🇪🇸 +34 (Spain)</option>
+              
+                <!-- +36 -->
+                <option value="+36" data-code="HU">🇭🇺 +36 (Hungary)</option>
+              
+                <!-- +39 -->
+                <option value="+39" data-code="IT">🇮🇹 +39 (Italy)</option>
+              
+                <!-- +40 -->
+                <option value="+40" data-code="RO">🇷🇴 +40 (Romania)</option>
+              
+                <!-- +41 -->
+                <option value="+41" data-code="CH">🇨🇭 +41 (Switzerland)</option>
+              
+                <!-- +43 -->
+                <option value="+43" data-code="AT">🇦🇹 +43 (Austria)</option>
+              
+                <!-- +44 -->
+                <option value="+44" data-code="GB">🇬🇧 +44 (UK)</option>
+              
+                <!-- +45 -->
+                <option value="+45" data-code="DK">🇩🇰 +45 (Denmark)</option>
+              
+                <!-- +46 -->
+                <option value="+46" data-code="SE">🇸🇪 +46 (Sweden)</option>
+              
+                <!-- +47 -->
+                <option value="+47" data-code="NO">🇳🇴 +47 (Norway)</option>
+              
+                <!-- +48 -->
+                <option value="+48" data-code="PL">🇵🇱 +48 (Poland)</option>
+              
+                <!-- +49 -->
+                <option value="+49" data-code="DE">🇩🇪 +49 (Germany)</option>
+              
+                <!-- +51 -->
+                <option value="+51" data-code="PE">🇵🇪 +51 (Peru)</option>
+              
+                <!-- +52 -->
+                <option value="+52" data-code="MX">🇲🇽 +52 (Mexico)</option>
+              
+                <!-- +53 -->
+                <option value="+53" data-code="CU">🇨🇺 +53 (Cuba)</option>
+              
+                <!-- +54 -->
+                <option value="+54" data-code="AR">🇦🇷 +54 (Argentina)</option>
+              
+                <!-- +55 -->
+                <option value="+55" data-code="BR">🇧🇷 +55 (Brazil)</option>
+              
+                <!-- +56 -->
+                <option value="+56" data-code="CL">🇨🇱 +56 (Chile)</option>
+              
+                <!-- +57 -->
+                <option value="+57" data-code="CO">🇨🇴 +57 (Colombia)</option>
+              
+                <!-- +58 -->
+                <option value="+58" data-code="VE">🇻🇪 +58 (Venezuela)</option>
+              
+                <!-- +60 -->
+                <option value="+60" data-code="MY">🇲🇾 +60 (Malaysia)</option>
+              
+                <!-- +61 -->
+                <option value="+61" data-code="AU">🇦🇺 +61 (Australia)</option>
+              
+                <!-- +62 -->
+                <option value="+62" data-code="ID">🇮🇩 +62 (Indonesia)</option>
+              
+                <!-- +63 -->
+                <option value="+63" data-code="PH">🇵🇭 +63 (Philippines)</option>
+              
+                <!-- +64 -->
+                <option value="+64" data-code="NZ">🇳🇿 +64 (New Zealand)</option>
+              
+                <!-- +65 -->
+                <option value="+65" data-code="SG">🇸🇬 +65 (Singapore)</option>
+              
+                <!-- +66 -->
+                <option value="+66" data-code="TH">🇹🇭 +66 (Thailand)</option>
+              
+                <!-- +81 -->
+                <option value="+81" data-code="JP">🇯🇵 +81 (Japan)</option>
+              
+                <!-- +82 -->
+                <option value="+82" data-code="KR">🇰🇷 +82 (South Korea)</option>
+              
+                <!-- +86 -->
+                <option value="+86" data-code="CN">🇨🇳 +86 (China)</option>
+              
+                <!-- +91 -->
+                <option value="+91" data-code="IN" selected>🇮🇳 +91 (India)</option>
+              
+                <!-- +92 -->
+                <option value="+92" data-code="PK">🇵🇰 +92 (Pakistan)</option>
+              
+                <!-- +93 -->
+                <option value="+93" data-code="AF">🇦🇫 +93 (Afghanistan)</option>
+              
+                <!-- +94 -->
+                <option value="+94" data-code="LK">🇱🇰 +94 (Sri Lanka)</option>
+              
+                <!-- +95 -->
+                <option value="+95" data-code="MM">🇲🇲 +95 (Myanmar)</option>
+              
+                <!-- +98 -->
+                <option value="+98" data-code="IR">🇮🇷 +98 (Iran)</option>
+              
+                <!-- +212 -->
+                <option value="+212" data-code="MA">🇲🇦 +212 (Morocco)</option>
+              
+                <!-- +213 -->
+                <option value="+213" data-code="DZ">🇩🇿 +213 (Algeria)</option>
+              
+                <!-- +216 -->
+                <option value="+216" data-code="TN">🇹🇳 +216 (Tunisia)</option>
+              
+                <!-- +218 -->
+                <option value="+218" data-code="LY">🇱🇾 +218 (Libya)</option>
+              
+                <!-- +220 -->
+                <option value="+220" data-code="GM">🇬🇲 +220 (Gambia)</option>
+              
+                <!-- +221 -->
+                <option value="+221" data-code="SN">🇸🇳 +221 (Senegal)</option>
+              
+                <!-- +234 -->
+                <option value="+234" data-code="NG">🇳🇬 +234 (Nigeria)</option>
+              
+                <!-- +251 -->
+                <option value="+251" data-code="ET">🇪🇹 +251 (Ethiopia)</option>
+              
+                <!-- +254 -->
+                <option value="+254" data-code="KE">🇰🇪 +254 (Kenya)</option>
+              
+                <!-- +256 -->
+                <option value="+256" data-code="UG">🇺🇬 +256 (Uganda)</option>
+              
+                <!-- +260 -->
+                <option value="+260" data-code="ZM">🇿🇲 +260 (Zambia)</option>
+              
+                <!-- +263 -->
+                <option value="+263" data-code="ZW">🇿🇼 +263 (Zimbabwe)</option>
+              
+                <!-- +971 -->
+                <option value="+971" data-code="AE">🇦🇪 +971 (UAE)</option>
+              
+                <!-- +966 -->
+                <option value="+966" data-code="SA">🇸🇦 +966 (Saudi Arabia)</option>
+              
+              </select>
+              
+            </div>
+            <input type="tel" id="user-phone" required pattern="[0-9]{6,15}" placeholder="Enter phone number" maxlength="15" style="width: 100%; padding: 15px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease; box-sizing: border-box;">
+          </div>
         </div>
       </form>
     </div>
