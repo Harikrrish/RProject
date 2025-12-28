@@ -779,7 +779,7 @@
     let selectedSize = null;
     let selectedPackage = null;
     let roomCounts = { living: 1, kitchen: 1, bedroom: 1, bathroom: 1, dining: 0 };
-    const roomCosts = { living: 120000, kitchen: 170000, bedroom: 90000, bathroom: 50000, dining: 70000 };
+    const roomCosts = { living: 60000, kitchen: 120000, bedroom: 70000, bathroom: 15000, dining: 15000 };
     let userName = '';
     let userPhone = '';
 
@@ -789,7 +789,7 @@
         this.classList.add('selected');
         selectedBHK = this.dataset.bhk;
         roomCounts.bedroom = selectedBHK ? parseInt(selectedBHK) : 1;
-        updateRoomCount('bedroom'); // Update the bedroom counter display
+        updateRoomCount('bedroom'); 
         document.getElementById('size-selection').classList.add('active');
       });
     });
