@@ -773,17 +773,13 @@
   <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // $(function() {
-    //   $("#header").load("../../header.html");
-    //   $("#footer").load("../../footer.html");
-    // });
 
     let currentStep = 1;
     let selectedBHK = null;
     let selectedSize = null;
     let selectedPackage = null;
     let roomCounts = { living: 1, kitchen: 1, bedroom: 1, bathroom: 1, dining: 0 };
-    const roomCosts = { living: 150000, kitchen: 200000, bedroom: 120000, bathroom: 80000, dining: 100000 };
+    const roomCosts = { living: 120000, kitchen: 170000, bedroom: 90000, bathroom: 50000, dining: 70000 };
     let userName = '';
     let userPhone = '';
 
@@ -792,6 +788,8 @@
         document.querySelectorAll('.bhk-selection button').forEach(b => b.classList.remove('selected'));
         this.classList.add('selected');
         selectedBHK = this.dataset.bhk;
+        roomCounts.bedroom = selectedBHK ? parseInt(selectedBHK) : 1;
+        updateRoomCount('bedroom'); // Update the bedroom counter display
         document.getElementById('size-selection').classList.add('active');
       });
     });
@@ -889,6 +887,11 @@
       document.getElementById('next-btn').textContent = currentStep === 5 ? 'Start Over' : 'Next';
       if (currentStep === 5) {
         document.getElementById('next-btn').onclick = function() { resetEstimator(); };
+      }
+      
+      // Update bedroom count when returning to step 2
+      if (currentStep === 2 && selectedBHK) {
+        updateRoomCount('bedroom');
       }
     }
 
