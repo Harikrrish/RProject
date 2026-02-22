@@ -1,0 +1,49 @@
+﻿{
+	"sceneArray": [
+		{
+			"cameraPos":
+			{
+				"x": 1065.3157764870327,
+				"y": -1434.6527221788051,
+				"z": 123.12246486539073
+			},
+			"cameraRotate":
+			{
+				"x": -176.64086887349939,
+				"y": -0.26985225081443792,
+				"z": 0
+			},
+			"relativePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": -0
+			},
+			"relativeYaw": 0,
+			"imageDir": "images/56bfeced9a824dbba1363fcbef2a3037",
+			"tilesDir": "tiles/56bfeced9a824dbba1363fcbef2a3037",
+			"depthImageUrl": "images/56bfeced9a824dbba1363fcbef2a3037_ZDepth.png",
+			"normalImageUrl": "images/56bfeced9a824dbba1363fcbef2a3037_Normal.png",
+			"sceneName": "scene_56bfeced9a824dbba1363fcbef2a3037",
+			"sceneTitle": "Untitled 2",
+			"hotspotArray": [],
+			"startScene": true,
+			"thumbnailPath": "PanoThumbnail/ec2dc2479b39482a861d98713c1fd9ba.png",
+			"depthWhiteDistance": 3000,
+			"depthBlackDistance": 0,
+			"sceneCameraPivotType": "Floor",
+			"resolution": "16K",
+			"colorImageUrl": "images/56bfeced9a824dbba1363fcbef2a3037.png",
+			"bgImageUrl": "images/56bfeced9a824dbba1363fcbef2a3037_bg.png"
+		}
+	],
+	"pivotColor":
+	{
+		"r": 0.14699999988079071,
+		"g": 0.73799997568130493,
+		"b": 0.98199999332427979,
+		"a": 1
+	},
+	"region": "usa",
+	"version": "2.10.0"
+}

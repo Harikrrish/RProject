@@ -1,0 +1,6 @@
+﻿
+<krpano>
+  <tour_settings tourname="" tourdesc="" />
+  <autorotate enabled="true" waittime="0.000000" speed="21.000000" />
+  <view fov="90" fovmax="120" fovmin="40" limitview="range" horizontalEnable="true" verticalEnable="true" />
+</krpano>

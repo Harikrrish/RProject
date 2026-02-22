@@ -1,0 +1,65 @@
+<krpano>
+    <hotspot name="mouse_pivot" url="res/pivot-mouse.png"
+             distorted="true"
+             enabled="false" keep="true"
+             ath="0" atv="0"
+             scale="0.15"
+    />
+
+    <display depthmaprendermode="3dmodel" depthrange="0.1,2000000"/>
+
+    <hotspot name="temp" url="res/pivot-mouse.png"
+             distorted="true"
+             enabled="false" keep="true" visible="false"
+             ath="0" atv="0"
+             scale="0.06"
+    />
+
+    <set var="dollhouse" val="disable"/>
+
+    <action name="on_init" type="Javascript" autorun="true"><![CDATA[
+        d5.on_init(krpano);
+    ]]></action>
+
+    <action name="hotspot_trans_action" type="Javascript" args="hotspot_name"><![CDATA[
+        d5.trans_action(krpano, args[1]);
+    ]]></action>
+
+    <action name="on_click" type="Javascript" args=""><![CDATA[
+        d5.on_click(krpano);
+    ]]></action>
+
+    <action name="on_frame" type="Javascript" args=""><![CDATA[
+        d5.on_frame(krpano);
+    ]]></action>
+
+    <action name="on_keyup" type="Javascript" args=""><![CDATA[
+        d5.on_keyup(krpano);
+    ]]></action>
+
+    <action name="on_keydown" type="Javascript" args=""><![CDATA[
+        d5.on_keydown(krpano);
+    ]]></action>
+
+    <action name="on_resize" type="Javascript" args=""><![CDATA[
+        d5.on_resize(krpano);
+    ]]></action>
+
+    <action name="on_newscene" type="Javascript" args=""><![CDATA[
+        d5.on_newscene(krpano);
+    ]]></action>
+
+    <action name="on_wheel" type="Javascript" args=""><![CDATA[
+        d5.on_wheel(krpano);
+    ]]></action>
+
+    <events
+            onclick="on_click()"
+            onframe="on_frame()"
+            onkeyup="on_keyup()"
+            onkeydown="on_keydown()"
+            onresize="on_resize()"
+            onnewscene="on_newscene()"
+            onwheel="on_wheel()"
+    />
+</krpano>

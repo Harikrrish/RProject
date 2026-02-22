@@ -1,0 +1,33 @@
+﻿<krpano>  <scene name="scene_2ef38477ff42413798f2a37f8d6cbb2a" title="Untitled 2" clientCameraType="Floor" autoload="true" thumburl="PanoThumbnail/d5808ec029474b7bb01d31eedc0783d8.png">  <if check="get(env)==='online'"><image tilesize="512" baseindex="0" ox="0.000000" oy="0.000000" oz="-0.000000">
+<level tiledimagewidth="1024" tiledimageheight="1024" if="dollhouse != enable">
+    <cube url="images/2ef38477ff42413798f2a37f8d6cbb2a/cubemap/l1/%s.jpg?x-oss-process=image/indexcrop,x_512,i_%h|image/indexcrop,y_512,i_%v"/>
+</level>
+
+<level tiledimagewidth="2048" tiledimageheight="2048" if="dollhouse != enable">
+    <cube url="images/2ef38477ff42413798f2a37f8d6cbb2a/cubemap/l2/%s.jpg?x-oss-process=image/indexcrop,x_512,i_%h|image/indexcrop,y_512,i_%v"/>
+</level>
+
+<level tiledimagewidth="4096" tiledimageheight="4096" if="dollhouse != enable">
+    <cube url="images/2ef38477ff42413798f2a37f8d6cbb2a/cubemap/l3/%s.jpg?x-oss-process=image/indexcrop,x_512,i_%h|image/indexcrop,y_512,i_%v"/>
+</level>
+
+<depthmap if="dollhouse==disable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" backgroundurl="images/2ef38477ff42413798f2a37f8d6cbb2a_bg.png"/>
+
+<depthmap if="dollhouse==enable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" texurl="images/mesh_tex.png"/>
+</image></if><if check="get(env)!=='online'"><image  tilesize="1024" baseindex="0" ox="0.000000" oy="0.000000" oz="-0.000000">
+<level tiledimagewidth="1024" tiledimageheight="1024" if="dollhouse != enable">
+    <cube url="tiles/2ef38477ff42413798f2a37f8d6cbb2a/cubemap/l1/%s_h%h_v%v.jpg"/>
+</level>
+
+<level tiledimagewidth="2048" tiledimageheight="2048" if="dollhouse != enable">
+    <cube url="tiles/2ef38477ff42413798f2a37f8d6cbb2a/cubemap/l2/%s_h%h_v%v.jpg"/>
+</level>
+
+<level tiledimagewidth="4096" tiledimageheight="4096" if="dollhouse != enable">
+    <cube url="tiles/2ef38477ff42413798f2a37f8d6cbb2a/cubemap/l3/%s_h%h_v%v.jpg"/>
+</level>
+
+<depthmap if="dollhouse==disable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" backgroundurl="images/2ef38477ff42413798f2a37f8d6cbb2a_bg.png"/>
+
+<depthmap if="dollhouse==enable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" texurl="images/mesh_tex.png"/>
+</image></if></scene></krpano>
