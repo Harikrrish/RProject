@@ -32,7 +32,7 @@ export async function mergeGallery({ root = process.cwd() } = {}) {
   gallery.imageCount = gallery.items.length;
   gallery.generatedCount = concepts.length;
   gallery.categoryCounts = Object.fromEntries(gallery.categories.map(category => [category, gallery.items.filter(item => item.category === category).length]));
-  gallery.provenance = 'Complete supplied collection, plus individually generated design concepts labelled on cards and in the image viewer. Generated images do not document completed client projects.';
+  gallery.provenance = 'Complete supplied collection, plus individually generated design concepts with provenance retained in the image records. Generated images do not document completed client projects.';
   await writeFile(path, JSON.stringify(gallery, null, 2) + '\n');
   return gallery;
 }

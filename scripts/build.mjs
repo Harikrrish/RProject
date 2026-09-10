@@ -21,7 +21,7 @@ for (const entry of await readdir(output)) await rm(join(output, entry), { recur
 for (const entry of entries) {
   await cp(join(root, entry), join(output, entry), {
     recursive: true,
-    filter: source => !source.split('/').some(part => part.startsWith('.')) && !source.endsWith('.ttf')
+    filter: source => !source.split('/').some(part => part.startsWith('.')) && !/\.(ttf|exr)$/i.test(source)
   });
 }
 console.log('Built Firebase site in public/. Automation, source records and secrets are excluded.');

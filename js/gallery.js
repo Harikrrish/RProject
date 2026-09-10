@@ -51,7 +51,7 @@
       image.src = card.href;
       image.alt = card.querySelector('img').alt;
       title.textContent = card.dataset.label;
-      room.textContent = card.dataset.room + (card.dataset.kind === 'generated-concept' ? ' · AI-generated design concept' : ' · Alankaar collection');
+      room.textContent = card.dataset.room;
       position.textContent = `${selected + 1} of ${matches.length} designs`;
     }
     cards.forEach(card => card.addEventListener('click', event => {

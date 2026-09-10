@@ -27,12 +27,12 @@ npm test
 npx firebase deploy --only hosting
 ```
 
-The existing Firebase project alias is `alankaar-interiors`. Deployment needs an account with access to that project. This update has not been deployed. The blog workflow prepares draft pull requests; it does not deploy Firebase.
+The existing Firebase project alias is `alankaar-interiors`. Deployment needs an account with access to that project. The site is published at https://alankaarinteriors.com. The blog workflow prepares draft pull requests; it does not deploy Firebase.
 
 ## What changed
 
 - Orange `#FF9800` retained, with new shared layouts and locally hosted Manrope typography throughout, rounded buttons, softer cards and responsive image galleries.
-- All 120 original room images are represented by 119 distinct designs, alongside 180 new generated concepts: 15 for each of 12 categories, giving 299 designs in total. The homepage shows 24 initially; choosing a room shows that entire category. Full images open in an accessible dialog. Original files are preserved, and generated concepts are labelled.
+- All 120 original room images are represented by 119 distinct designs, alongside 180 new generated concepts: 15 for each of 12 categories, giving 299 designs in total. The homepage shows 24 initially; choosing a room shows that entire category. Full images open in an accessible dialog. Original files and generated-image provenance are preserved in the source records. The homepage uses a collection-wide disclosure, with clean titles on cards and room names in the image viewer.
 - Five original customer testimonials restored verbatim, with names and roles from the supplied site; no star ratings or third-party verification added. Source recorded in `content/testimonials.json`.
 - All seven core journal guides have distinct covers and contextual reference images. Three new premium editorial illustrations are documented in [journal image prompts](docs/journal-image-prompts.md).
 - Five matching room visualisations show shell, first fix, joinery, finishing and completed home. The first three include five workers, with three in the finishing stage. Controls support keyboard activation and reduced motion.
