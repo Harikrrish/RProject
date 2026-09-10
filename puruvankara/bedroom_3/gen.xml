@@ -1,33 +1,15 @@
-﻿<krpano>  <scene name="scene_56bfeced9a824dbba1363fcbef2a3037" title="Untitled 2" clientCameraType="Floor" autoload="true" thumburl="PanoThumbnail/ec2dc2479b39482a861d98713c1fd9ba.png">  <if check="get(env)==='online'"><image tilesize="512" baseindex="0" ox="0.000000" oy="0.000000" oz="-0.000000">
-<level tiledimagewidth="1024" tiledimageheight="1024" if="dollhouse != enable">
-    <cube url="images/56bfeced9a824dbba1363fcbef2a3037/cubemap/l1/%s.jpg?x-oss-process=image/indexcrop,x_512,i_%h|image/indexcrop,y_512,i_%v"/>
-</level>
-
-<level tiledimagewidth="2048" tiledimageheight="2048" if="dollhouse != enable">
-    <cube url="images/56bfeced9a824dbba1363fcbef2a3037/cubemap/l2/%s.jpg?x-oss-process=image/indexcrop,x_512,i_%h|image/indexcrop,y_512,i_%v"/>
-</level>
-
-<level tiledimagewidth="4096" tiledimageheight="4096" if="dollhouse != enable">
-    <cube url="images/56bfeced9a824dbba1363fcbef2a3037/cubemap/l3/%s.jpg?x-oss-process=image/indexcrop,x_512,i_%h|image/indexcrop,y_512,i_%v"/>
-</level>
-
-<depthmap if="dollhouse==disable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" backgroundurl="images/56bfeced9a824dbba1363fcbef2a3037_bg.png"/>
-
-<depthmap if="dollhouse==enable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" texurl="images/mesh_tex.png"/>
-</image></if><if check="get(env)!=='online'"><image  tilesize="1024" baseindex="0" ox="0.000000" oy="0.000000" oz="-0.000000">
-<level tiledimagewidth="1024" tiledimageheight="1024" if="dollhouse != enable">
-    <cube url="tiles/56bfeced9a824dbba1363fcbef2a3037/cubemap/l1/%s_h%h_v%v.jpg"/>
-</level>
-
-<level tiledimagewidth="2048" tiledimageheight="2048" if="dollhouse != enable">
-    <cube url="tiles/56bfeced9a824dbba1363fcbef2a3037/cubemap/l2/%s_h%h_v%v.jpg"/>
-</level>
-
-<level tiledimagewidth="4096" tiledimageheight="4096" if="dollhouse != enable">
-    <cube url="tiles/56bfeced9a824dbba1363fcbef2a3037/cubemap/l3/%s_h%h_v%v.jpg"/>
-</level>
-
-<depthmap if="dollhouse==disable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" backgroundurl="images/56bfeced9a824dbba1363fcbef2a3037_bg.png"/>
-
-<depthmap if="dollhouse==enable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" texurl="images/mesh_tex.png"/>
-</image></if></scene></krpano>
+<krpano>
+  <scene name="scene_56bfeced9a824dbba1363fcbef2a3037" title="Untitled 2" clientCameraType="Floor" autoload="true" thumburl="PanoThumbnail/ec2dc2479b39482a861d98713c1fd9ba.png">
+    <!-- Packaged static tiles: 1024px and 2048px cube faces. The original l3 export is not a higher-resolution level. -->
+    <image tilesize="1024" baseindex="0" ox="0.000000" oy="0.000000" oz="-0.000000">
+      <level tiledimagewidth="1024" tiledimageheight="1024" if="dollhouse != enable">
+        <cube url="tiles/56bfeced9a824dbba1363fcbef2a3037/cubemap/l1/%s_h%h_v%v.jpg" />
+      </level>
+      <level tiledimagewidth="2048" tiledimageheight="2048" if="dollhouse != enable">
+        <cube url="tiles/56bfeced9a824dbba1363fcbef2a3037/cubemap/l2/%s_h%h_v%v.jpg" />
+      </level>
+      <depthmap if="dollhouse==disable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" backgroundurl="images/56bfeced9a824dbba1363fcbef2a3037_bg.png" />
+      <depthmap if="dollhouse==enable" subdiv="0" url="images/mesh.obj" origin="-0.000000|-0.000000|0.000000" align="0|-0.000000|0" background="none" texurl="images/mesh_tex.png" />
+    </image>
+  </scene>
+</krpano>

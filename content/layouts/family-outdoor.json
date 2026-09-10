@@ -1,0 +1,2918 @@
+[
+  {
+    "id": "kids-4k-01",
+    "envelope": {
+      "width": 5.8,
+      "depth": 5.2,
+      "height": 2.8,
+      "wallColor": "#e8e0d2",
+      "floorColor": "#c7ac87",
+      "floorStyle": "wood"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": 0.7,
+        "width": 1.65,
+        "height": 1.45,
+        "bottom": 0.85
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": -1.7,
+        "width": 0.8,
+        "height": 2.12,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "bed",
+        "x": 1.83,
+        "z": -0.55,
+        "width": 1.15,
+        "depth": 1.95,
+        "height": 0.88,
+        "rotation": -90,
+        "color": "#b99669",
+        "accent": "#a3ad91"
+      },
+      {
+        "type": "cabinet",
+        "x": 2.54,
+        "z": -1.47,
+        "width": 0.46,
+        "depth": 0.4,
+        "height": 0.5,
+        "rotation": -90,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "wardrobe",
+        "x": 2.57,
+        "z": 1.25,
+        "width": 1.8,
+        "depth": 0.54,
+        "height": 2.4,
+        "rotation": -90,
+        "color": "#b99669"
+      },
+      {
+        "type": "shelf",
+        "x": 2.55,
+        "z": 2.24,
+        "width": 0.42,
+        "depth": 0.5,
+        "height": 2.4,
+        "rotation": -90,
+        "color": "#b99669",
+        "count": 4
+      },
+      {
+        "type": "desk",
+        "x": -2.57,
+        "z": 0.7,
+        "width": 2.25,
+        "depth": 0.62,
+        "height": 0.69,
+        "rotation": 90,
+        "color": "#b99669",
+        "accent": "#a3ad91"
+      },
+      {
+        "type": "chair",
+        "x": -1.92,
+        "z": 0.7,
+        "width": 0.45,
+        "depth": 0.45,
+        "height": 0.75,
+        "rotation": -90,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "rug",
+        "x": -1.1,
+        "z": 0.55,
+        "width": 1.45,
+        "depth": 1.6,
+        "height": 0.025,
+        "rotation": 0,
+        "color": "#d7d0b7",
+        "accent": "#a3ad91"
+      },
+      {
+        "type": "artwork",
+        "x": 2.86,
+        "z": -0.55,
+        "width": 0.45,
+        "depth": 0.035,
+        "height": 0.3,
+        "rotation": -90,
+        "color": "#a3ad91",
+        "y": 1.63
+      },
+      {
+        "type": "lamp",
+        "x": 2.52,
+        "z": -1.47,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 0.32,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 0.66
+      },
+      {
+        "type": "fan",
+        "x": 0,
+        "z": 0,
+        "width": 1.12,
+        "depth": 1.12,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 2.56
+      }
+    ],
+    "highlights": [
+      {
+        "id": "rest",
+        "title": "A soft place to rest",
+        "description": "A low timber bed pairs with sage bedding and a matching bedside drawer.",
+        "yaw": 270,
+        "pitch": -14
+      },
+      {
+        "id": "study",
+        "title": "Daylight at the desk",
+        "description": "A study desk sits below the window, with drawers and a small green chair.",
+        "yaw": 90,
+        "pitch": -8
+      },
+      {
+        "id": "storage",
+        "title": "Storage at the room edge",
+        "description": "Tall timber storage combines closed doors with rounded open shelves.",
+        "yaw": 315,
+        "pitch": -5
+      },
+      {
+        "id": "play",
+        "title": "Room for play",
+        "description": "A patterned rug and clear floor space sit between the desk and bed.",
+        "yaw": 120,
+        "pitch": -23
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          1.8,
+          1,
+          -0.55
+        ]
+      },
+      {
+        "id": "study",
+        "title": "Beside the study area",
+        "position": [
+          -0.85,
+          1.5,
+          -1.25
+        ],
+        "target": [
+          -2.4,
+          1,
+          0.6
+        ]
+      },
+      {
+        "id": "storage",
+        "title": "See the storage wall",
+        "position": [
+          0.65,
+          1.5,
+          1.45
+        ],
+        "target": [
+          2.5,
+          1.3,
+          1.2
+        ]
+      },
+      {
+        "id": "bed",
+        "title": "Facing the bed",
+        "position": [
+          0,
+          1.5,
+          -1.65
+        ],
+        "target": [
+          1.8,
+          0.8,
+          -0.5
+        ]
+      }
+    ],
+    "notes": "Estimated envelope and furniture from native panorama and six directional views. One single bed, desk on the left wall and tall storage on the right toward the rear. Rug artwork and small shelf objects are simplified; no surveyed dimensions."
+  },
+  {
+    "id": "kids-4k-02",
+    "envelope": {
+      "width": 5.8,
+      "depth": 5.8,
+      "height": 2.8,
+      "wallColor": "#e8e0d2",
+      "floorColor": "#c7ac87",
+      "floorStyle": "wood"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": 0.55,
+        "width": 1.8,
+        "height": 1.45,
+        "bottom": 0.85
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": -1.95,
+        "width": 0.82,
+        "height": 2.1,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "bed",
+        "x": -0.66,
+        "z": 1.7,
+        "width": 1.3,
+        "depth": 2.08,
+        "height": 0.92,
+        "rotation": 180,
+        "color": "#b99669",
+        "accent": "#d7aaa7"
+      },
+      {
+        "type": "bed",
+        "x": 0.66,
+        "z": 1.7,
+        "width": 1.3,
+        "depth": 2.08,
+        "height": 0.92,
+        "rotation": 180,
+        "color": "#b99669",
+        "accent": "#9eafb8"
+      },
+      {
+        "type": "desk",
+        "x": 2.54,
+        "z": -0.25,
+        "width": 2.65,
+        "depth": 0.64,
+        "height": 0.72,
+        "rotation": -90,
+        "color": "#b99669"
+      },
+      {
+        "type": "chair",
+        "x": 1.86,
+        "z": -0.93,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.86,
+        "rotation": 90,
+        "color": "#bf9388"
+      },
+      {
+        "type": "chair",
+        "x": 1.86,
+        "z": 0.43,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.86,
+        "rotation": 90,
+        "color": "#a9b5bd"
+      },
+      {
+        "type": "cabinet",
+        "x": 2.61,
+        "z": -0.25,
+        "width": 2.68,
+        "depth": 0.44,
+        "height": 0.66,
+        "rotation": -90,
+        "color": "#9aaab2",
+        "y": 2.05
+      },
+      {
+        "type": "shelf",
+        "x": 2.6,
+        "z": -0.25,
+        "width": 2.68,
+        "depth": 0.4,
+        "height": 0.3,
+        "rotation": -90,
+        "color": "#b99669",
+        "y": 1.56,
+        "count": 1
+      },
+      {
+        "type": "cabinet",
+        "x": 0.7,
+        "z": -2.57,
+        "width": 1.85,
+        "depth": 0.5,
+        "height": 0.6,
+        "rotation": 0,
+        "color": "#9aaab2",
+        "accent": "#b99669"
+      },
+      {
+        "type": "lamp",
+        "x": 0.2,
+        "z": -2.57,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 0.3,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 0.75
+      },
+      {
+        "type": "fan",
+        "x": 0,
+        "z": -0.1,
+        "width": 1.12,
+        "depth": 1.12,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#b99669",
+        "y": 2.56
+      }
+    ],
+    "highlights": [
+      {
+        "id": "shared-bed",
+        "title": "A shared sleeping space",
+        "description": "Two adjoining sleeping places use pink and blue accents around a timber headboard.",
+        "yaw": 0,
+        "pitch": -14
+      },
+      {
+        "id": "two-desks",
+        "title": "Two places to study",
+        "description": "A long timber desktop gives each child a chair and task light.",
+        "yaw": 270,
+        "pitch": -9
+      },
+      {
+        "id": "overhead",
+        "title": "Storage above the desk",
+        "description": "Blue cupboards and open cubbies keep books and small belongings nearby.",
+        "yaw": 270,
+        "pitch": 12
+      },
+      {
+        "id": "daylight",
+        "title": "Soft light at the window",
+        "description": "A fabric blind filters light through the large window beside the beds.",
+        "yaw": 90,
+        "pitch": 0
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          0.85,
+          1.7
+        ]
+      },
+      {
+        "id": "desks",
+        "title": "Across from the desks",
+        "position": [
+          0.7,
+          1.5,
+          -1.55
+        ],
+        "target": [
+          2.5,
+          1,
+          -0.3
+        ]
+      },
+      {
+        "id": "window",
+        "title": "Near the window",
+        "position": [
+          -1.75,
+          1.5,
+          0.35
+        ],
+        "target": [
+          0,
+          0.9,
+          1.7
+        ]
+      },
+      {
+        "id": "storage",
+        "title": "Across the clear floor",
+        "position": [
+          -0.7,
+          1.5,
+          -1.4
+        ],
+        "target": [
+          0.7,
+          0.9,
+          -2.5
+        ]
+      }
+    ],
+    "notes": "The panorama joins the two sleeping places into a shared-looking headboard. Model uses two touching single beds, not widely separated twins. Desk has two seats and blue overhead storage. Window/door positions and furniture sizes are estimates."
+  },
+  {
+    "id": "kids-4k-03",
+    "envelope": {
+      "width": 6,
+      "depth": 5.2,
+      "height": 2.9,
+      "wallColor": "#e8e0d2",
+      "floorColor": "#e0d7c5",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": 0.35,
+        "width": 2.05,
+        "height": 1.4,
+        "bottom": 0.85
+      },
+      {
+        "type": "door",
+        "wall": "right",
+        "offset": -1.86,
+        "width": 0.82,
+        "height": 2.14,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "cabinet",
+        "x": 0,
+        "z": -2.32,
+        "width": 2.65,
+        "depth": 0.46,
+        "height": 0.58,
+        "rotation": 0,
+        "color": "#b99669"
+      },
+      {
+        "type": "artwork",
+        "x": 0,
+        "z": -2.56,
+        "width": 1.7,
+        "depth": 0.035,
+        "height": 0.8,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 1.34
+      },
+      {
+        "type": "round-table",
+        "x": -1.3,
+        "z": 0.25,
+        "width": 1.08,
+        "depth": 1.08,
+        "height": 0.55,
+        "rotation": 0,
+        "color": "#b99669"
+      },
+      {
+        "type": "chair",
+        "x": -2.08,
+        "z": 0.25,
+        "width": 0.42,
+        "depth": 0.43,
+        "height": 0.68,
+        "rotation": 90,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "chair",
+        "x": -0.82,
+        "z": -0.48,
+        "width": 0.42,
+        "depth": 0.43,
+        "height": 0.68,
+        "rotation": -35,
+        "color": "#839aa8"
+      },
+      {
+        "type": "chair",
+        "x": -0.82,
+        "z": 1,
+        "width": 0.42,
+        "depth": 0.43,
+        "height": 0.68,
+        "rotation": -145,
+        "color": "#bc785b"
+      },
+      {
+        "type": "rug",
+        "x": -1.3,
+        "z": 0.25,
+        "width": 1.85,
+        "depth": 1.85,
+        "height": 0.025,
+        "rotation": 0,
+        "color": "#b99f78"
+      },
+      {
+        "type": "cabinet",
+        "x": 2.68,
+        "z": 0.33,
+        "width": 3.46,
+        "depth": 0.5,
+        "height": 0.61,
+        "rotation": -90,
+        "color": "#bc785b",
+        "accent": "#b99669"
+      },
+      {
+        "type": "shelf",
+        "x": 2.7,
+        "z": 0.33,
+        "width": 3.46,
+        "depth": 0.44,
+        "height": 1.36,
+        "rotation": -90,
+        "color": "#b99669",
+        "y": 1.34,
+        "count": 3
+      },
+      {
+        "type": "pouf",
+        "x": 1.87,
+        "z": 1.84,
+        "width": 0.82,
+        "depth": 0.82,
+        "height": 0.27,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "rug",
+        "x": 1.87,
+        "z": 1.84,
+        "width": 1.04,
+        "depth": 1.04,
+        "height": 0.022,
+        "rotation": 0,
+        "color": "#b99f78"
+      },
+      {
+        "type": "fan",
+        "x": -1.25,
+        "z": 0,
+        "width": 1.03,
+        "depth": 1.03,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 2.66
+      },
+      {
+        "type": "fan",
+        "x": 1.25,
+        "z": 0,
+        "width": 1.03,
+        "depth": 1.03,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 2.66
+      }
+    ],
+    "highlights": [
+      {
+        "id": "make",
+        "title": "A wall for making things",
+        "description": "A wide paper roll sits above low drawers and open activity storage.",
+        "yaw": 180,
+        "pitch": -3
+      },
+      {
+        "id": "gather",
+        "title": "A child-sized table",
+        "description": "Three small chairs surround a round table beside the window.",
+        "yaw": 90,
+        "pitch": -17
+      },
+      {
+        "id": "organise",
+        "title": "Open shelves and closed storage",
+        "description": "Timber shelving and terracotta cupboard fronts organise the right wall.",
+        "yaw": 270,
+        "pitch": -2
+      },
+      {
+        "id": "quiet",
+        "title": "A quiet floor corner",
+        "description": "A soft green floor cushion creates a simple reading spot near the shelves.",
+        "yaw": 325,
+        "pitch": -21
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1.1,
+          -2.3
+        ]
+      },
+      {
+        "id": "activity",
+        "title": "Facing the activity wall",
+        "position": [
+          0.4,
+          1.5,
+          -1.2
+        ],
+        "target": [
+          0,
+          1.25,
+          -2.3
+        ]
+      },
+      {
+        "id": "shelves",
+        "title": "Across from the shelves",
+        "position": [
+          1.2,
+          1.5,
+          -0.65
+        ],
+        "target": [
+          2.65,
+          1.2,
+          0.3
+        ]
+      },
+      {
+        "id": "play",
+        "title": "Beside the play zone",
+        "position": [
+          0.35,
+          1.5,
+          1.22
+        ],
+        "target": [
+          -1.3,
+          0.6,
+          0.3
+        ]
+      }
+    ],
+    "notes": "This image is a playroom, with no bed. Low activity storage, paper roll, three chairs and a table occupy separate zones. The artwork primitive represents the visible blank paper roll. Ceiling cassette air conditioning is not represented by the supported furniture types."
+  },
+  {
+    "id": "workspaces-4k-01",
+    "envelope": {
+      "width": 6.4,
+      "depth": 5.6,
+      "height": 2.85,
+      "wallColor": "#d4c9b7",
+      "floorColor": "#a79a87",
+      "floorStyle": "carpet"
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": 1.58,
+        "width": 0.85,
+        "height": 2.15,
+        "bottom": 0
+      },
+      {
+        "type": "window",
+        "wall": "right",
+        "offset": -0.5,
+        "width": 1.85,
+        "height": 1.38,
+        "bottom": 1.02
+      }
+    ],
+    "objects": [
+      {
+        "type": "desk",
+        "x": -1.65,
+        "z": -0.28,
+        "width": 2.12,
+        "depth": 0.85,
+        "height": 0.77,
+        "rotation": 90,
+        "color": "#795a40"
+      },
+      {
+        "type": "chair",
+        "x": -2.47,
+        "z": -0.28,
+        "width": 0.62,
+        "depth": 0.66,
+        "height": 1.2,
+        "rotation": 90,
+        "color": "#292b28"
+      },
+      {
+        "type": "armchair",
+        "x": -0.75,
+        "z": -0.9,
+        "width": 0.62,
+        "depth": 0.68,
+        "height": 0.88,
+        "rotation": -90,
+        "color": "#d9cfbd"
+      },
+      {
+        "type": "armchair",
+        "x": -0.75,
+        "z": 0.4,
+        "width": 0.62,
+        "depth": 0.68,
+        "height": 0.88,
+        "rotation": -90,
+        "color": "#d9cfbd"
+      },
+      {
+        "type": "tv",
+        "x": -1.9,
+        "z": -0.65,
+        "width": 0.58,
+        "depth": 0.05,
+        "height": 0.39,
+        "rotation": -90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "wardrobe",
+        "x": -2.97,
+        "z": 1.58,
+        "width": 0.75,
+        "depth": 0.43,
+        "height": 2.38,
+        "rotation": 90,
+        "color": "#795a40"
+      },
+      {
+        "type": "shelf",
+        "x": -2.97,
+        "z": 0.71,
+        "width": 0.86,
+        "depth": 0.43,
+        "height": 2.38,
+        "rotation": 90,
+        "color": "#795a40",
+        "count": 4
+      },
+      {
+        "type": "artwork",
+        "x": -3.15,
+        "z": -0.76,
+        "width": 1.2,
+        "depth": 0.035,
+        "height": 0.95,
+        "rotation": 90,
+        "color": "#e7decd",
+        "y": 1.92,
+        "accent": "#292b28"
+      },
+      {
+        "type": "round-table",
+        "x": 1.95,
+        "z": -0.3,
+        "width": 1.05,
+        "depth": 1.05,
+        "height": 0.73,
+        "rotation": 0,
+        "color": "#795a40"
+      },
+      {
+        "type": "armchair",
+        "x": 1.95,
+        "z": -1.16,
+        "width": 0.65,
+        "depth": 0.68,
+        "height": 0.85,
+        "rotation": 0,
+        "color": "#d9cfbd"
+      },
+      {
+        "type": "armchair",
+        "x": 1.95,
+        "z": 0.57,
+        "width": 0.65,
+        "depth": 0.68,
+        "height": 0.85,
+        "rotation": 180,
+        "color": "#d9cfbd"
+      },
+      {
+        "type": "plant",
+        "x": 2.72,
+        "z": -1.98,
+        "width": 0.42,
+        "depth": 0.42,
+        "height": 1.4,
+        "rotation": 0,
+        "color": "#a3ad91"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "main-desk",
+        "title": "The main workspace",
+        "description": "A timber desk and adjustable chair face a pair of visitor seats.",
+        "yaw": 90,
+        "pitch": -9
+      },
+      {
+        "id": "storage",
+        "title": "Shelves behind the desk",
+        "description": "Open shelving and a tall cupboard provide a backdrop to the main work area.",
+        "yaw": 60,
+        "pitch": 3
+      },
+      {
+        "id": "meeting",
+        "title": "A smaller meeting spot",
+        "description": "Two upholstered seats and a round table sit beside the window.",
+        "yaw": 270,
+        "pitch": -7
+      },
+      {
+        "id": "light",
+        "title": "Daylight beside the seating",
+        "description": "The side window brings daylight into the meeting corner.",
+        "yaw": 270,
+        "pitch": 7
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          -1.7,
+          1,
+          -0.3
+        ]
+      },
+      {
+        "id": "entry",
+        "title": "Across the main desk",
+        "position": [
+          -0.2,
+          1.5,
+          -1.7
+        ],
+        "target": [
+          -1.6,
+          0.95,
+          -0.3
+        ]
+      },
+      {
+        "id": "storage",
+        "title": "Toward the work wall",
+        "position": [
+          0,
+          1.5,
+          1.65
+        ],
+        "target": [
+          -2.5,
+          1.4,
+          0.6
+        ]
+      },
+      {
+        "id": "meeting",
+        "title": "Beside the meeting area",
+        "position": [
+          1.05,
+          1.5,
+          1.55
+        ],
+        "target": [
+          1.95,
+          0.95,
+          -0.3
+        ]
+      }
+    ],
+    "notes": "An executive office, not a generic home office: one main desk, two visitor seats and a separate two-person round meeting table. The tv primitive represents the desktop monitor. Ceiling cassette and recessed lights are omitted from the furniture approximation."
+  },
+  {
+    "id": "workspaces-4k-02",
+    "envelope": {
+      "width": 6.8,
+      "depth": 5.8,
+      "height": 2.85,
+      "wallColor": "#e3d4bb",
+      "floorColor": "#b4a795",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 4.3,
+        "height": 1.3,
+        "bottom": 1.06
+      },
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -1.65,
+        "width": 0.85,
+        "height": 2.15,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "desk",
+        "x": -2.72,
+        "z": 0,
+        "width": 4.25,
+        "depth": 0.73,
+        "height": 0.75,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "desk",
+        "x": 2.72,
+        "z": 0,
+        "width": 4.25,
+        "depth": 0.73,
+        "height": 0.75,
+        "rotation": -90,
+        "color": "#b99669"
+      },
+      {
+        "type": "chair",
+        "x": -1.94,
+        "z": -1.4,
+        "width": 0.59,
+        "depth": 0.64,
+        "height": 1.06,
+        "rotation": -90,
+        "color": "#292b28"
+      },
+      {
+        "type": "chair",
+        "x": 1.94,
+        "z": -1.4,
+        "width": 0.59,
+        "depth": 0.64,
+        "height": 1.06,
+        "rotation": 90,
+        "color": "#292b28"
+      },
+      {
+        "type": "tv",
+        "x": -2.91,
+        "z": -1.4,
+        "width": 0.55,
+        "depth": 0.05,
+        "height": 0.34,
+        "rotation": 90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "tv",
+        "x": 2.91,
+        "z": -1.4,
+        "width": 0.55,
+        "depth": 0.05,
+        "height": 0.34,
+        "rotation": -90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "chair",
+        "x": -1.94,
+        "z": 0,
+        "width": 0.59,
+        "depth": 0.64,
+        "height": 1.06,
+        "rotation": -90,
+        "color": "#292b28"
+      },
+      {
+        "type": "chair",
+        "x": 1.94,
+        "z": 0,
+        "width": 0.59,
+        "depth": 0.64,
+        "height": 1.06,
+        "rotation": 90,
+        "color": "#292b28"
+      },
+      {
+        "type": "tv",
+        "x": -2.91,
+        "z": 0,
+        "width": 0.55,
+        "depth": 0.05,
+        "height": 0.34,
+        "rotation": 90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "tv",
+        "x": 2.91,
+        "z": 0,
+        "width": 0.55,
+        "depth": 0.05,
+        "height": 0.34,
+        "rotation": -90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "chair",
+        "x": -1.94,
+        "z": 1.4,
+        "width": 0.59,
+        "depth": 0.64,
+        "height": 1.06,
+        "rotation": -90,
+        "color": "#292b28"
+      },
+      {
+        "type": "chair",
+        "x": 1.94,
+        "z": 1.4,
+        "width": 0.59,
+        "depth": 0.64,
+        "height": 1.06,
+        "rotation": 90,
+        "color": "#292b28"
+      },
+      {
+        "type": "tv",
+        "x": -2.91,
+        "z": 1.4,
+        "width": 0.55,
+        "depth": 0.05,
+        "height": 0.34,
+        "rotation": 90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "tv",
+        "x": 2.91,
+        "z": 1.4,
+        "width": 0.55,
+        "depth": 0.05,
+        "height": 0.34,
+        "rotation": -90,
+        "color": "#292b28",
+        "y": 1.1,
+        "variant": "monitor"
+      },
+      {
+        "type": "shelf",
+        "x": 3.25,
+        "z": 0,
+        "width": 4.32,
+        "depth": 0.22,
+        "height": 1.32,
+        "rotation": -90,
+        "color": "#795a40",
+        "y": 1.89,
+        "count": 3,
+        "accent": "#cfc5b4"
+      },
+      {
+        "type": "artwork",
+        "x": -3.36,
+        "z": 0,
+        "width": 4.2,
+        "depth": 0.035,
+        "height": 0.8,
+        "rotation": 90,
+        "color": "#a49c82",
+        "y": 1.87
+      },
+      {
+        "type": "wardrobe",
+        "x": 0.7,
+        "z": 2.63,
+        "width": 1.4,
+        "depth": 0.42,
+        "height": 2.3,
+        "rotation": 180,
+        "color": "#795a40"
+      },
+      {
+        "type": "plant",
+        "x": -2.65,
+        "z": 2.48,
+        "width": 0.38,
+        "depth": 0.38,
+        "height": 1.3,
+        "rotation": 0,
+        "color": "#a3ad91"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "team-desks",
+        "title": "Two rows of workstations",
+        "description": "Long timber desktops and adjustable chairs line both sides of the room.",
+        "yaw": 100,
+        "pitch": -9
+      },
+      {
+        "id": "materials",
+        "title": "Materials within reach",
+        "description": "Illuminated shelving displays finish samples above the right-hand desks.",
+        "yaw": 270,
+        "pitch": 2
+      },
+      {
+        "id": "acoustic",
+        "title": "Panels above the desks",
+        "description": "A row of muted wall panels sits above the opposite workstations.",
+        "yaw": 90,
+        "pitch": 8
+      },
+      {
+        "id": "daylight",
+        "title": "A bright end wall",
+        "description": "The wide window lights the shared central aisle.",
+        "yaw": 180,
+        "pitch": 0
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.7,
+          1.2,
+          0
+        ]
+      },
+      {
+        "id": "window",
+        "title": "By the window end",
+        "position": [
+          0,
+          1.5,
+          -1.8
+        ],
+        "target": [
+          2.7,
+          1.5,
+          -0.3
+        ]
+      },
+      {
+        "id": "entry",
+        "title": "At the entry end",
+        "position": [
+          0,
+          1.5,
+          1.75
+        ],
+        "target": [
+          -2.7,
+          1.1,
+          0
+        ]
+      },
+      {
+        "id": "aisle",
+        "title": "Along the central aisle",
+        "position": [
+          0.55,
+          1.5,
+          -0.45
+        ],
+        "target": [
+          0,
+          1.4,
+          -2.8
+        ]
+      }
+    ],
+    "notes": "A six-seat design/materials workspace. Three chairs and monitors per side are inferred from the visible workstation rhythm. Shelf primitive represents the material display; artwork primitive represents the opposite acoustic/sample panels. Central aisle remains clear."
+  },
+  {
+    "id": "workspaces-4k-03",
+    "envelope": {
+      "width": 5.6,
+      "depth": 5.2,
+      "height": 2.8,
+      "wallColor": "#bbb3a6",
+      "floorColor": "#b68d60",
+      "floorStyle": "wood"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 1.85,
+        "height": 1.3,
+        "bottom": 1.04
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": 1.73,
+        "width": 0.8,
+        "height": 2.13,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "desk",
+        "x": 0,
+        "z": -2.14,
+        "width": 1.8,
+        "depth": 0.67,
+        "height": 0.75,
+        "rotation": 0,
+        "color": "#795a40"
+      },
+      {
+        "type": "chair",
+        "x": 0,
+        "z": -1.27,
+        "width": 0.57,
+        "depth": 0.63,
+        "height": 1.05,
+        "rotation": 180,
+        "color": "#526373"
+      },
+      {
+        "type": "shelf",
+        "x": -2.54,
+        "z": -0.28,
+        "width": 3.16,
+        "depth": 0.44,
+        "height": 2.26,
+        "rotation": 90,
+        "color": "#795a40",
+        "count": 4
+      },
+      {
+        "type": "cabinet",
+        "x": 2.5,
+        "z": 0.65,
+        "width": 1.7,
+        "depth": 0.48,
+        "height": 0.74,
+        "rotation": -90,
+        "color": "#795a40"
+      },
+      {
+        "type": "armchair",
+        "x": 2.04,
+        "z": -0.83,
+        "width": 0.75,
+        "depth": 0.76,
+        "height": 0.98,
+        "rotation": -90,
+        "color": "#c6c1b7",
+        "accent": "#526373"
+      },
+      {
+        "type": "lamp",
+        "x": 2.35,
+        "z": -1.5,
+        "width": 0.28,
+        "depth": 0.28,
+        "height": 1.65,
+        "rotation": 0,
+        "color": "#a68b52"
+      },
+      {
+        "type": "artwork",
+        "x": 2.76,
+        "z": -0.77,
+        "width": 0.62,
+        "depth": 0.035,
+        "height": 0.89,
+        "rotation": -90,
+        "color": "#efe9dc",
+        "y": 1.83,
+        "accent": "#526373"
+      },
+      {
+        "type": "rug",
+        "x": 0,
+        "z": 0.35,
+        "width": 2.45,
+        "depth": 1.85,
+        "height": 0.025,
+        "rotation": 0,
+        "color": "#4d6174"
+      },
+      {
+        "type": "plant",
+        "x": 1.75,
+        "z": 1.82,
+        "width": 0.36,
+        "depth": 0.36,
+        "height": 0.7,
+        "rotation": 0,
+        "color": "#a3ad91"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "window-desk",
+        "title": "A desk by the window",
+        "description": "A timber desk and blue chair sit beneath a blue fabric blind.",
+        "yaw": 180,
+        "pitch": -7
+      },
+      {
+        "id": "library",
+        "title": "A full wall of books",
+        "description": "Tall timber shelves combine open book storage with closed cupboards below.",
+        "yaw": 90,
+        "pitch": 0
+      },
+      {
+        "id": "reading",
+        "title": "A separate reading seat",
+        "description": "An upholstered armchair and floor lamp form a quiet corner.",
+        "yaw": 270,
+        "pitch": -5
+      },
+      {
+        "id": "blue",
+        "title": "Blue accents on warm timber",
+        "description": "The blue rug and chair give the timber-lined room a restrained colour accent.",
+        "yaw": 180,
+        "pitch": -24
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1,
+          -2
+        ]
+      },
+      {
+        "id": "library",
+        "title": "Across from the bookshelves",
+        "position": [
+          -1.05,
+          1.5,
+          0.95
+        ],
+        "target": [
+          -2.5,
+          1.3,
+          -0.3
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Near the reading corner",
+        "position": [
+          1.02,
+          1.5,
+          0.85
+        ],
+        "target": [
+          2,
+          0.9,
+          -0.8
+        ]
+      },
+      {
+        "id": "room",
+        "title": "Across the whole study",
+        "position": [
+          0,
+          1.5,
+          1.65
+        ],
+        "target": [
+          0,
+          1.1,
+          -2
+        ]
+      }
+    ],
+    "notes": "Home library with one window-facing desk, not the executive-office or multi-seat studio arrangement. Window, reading chair and cabinetry are positioned from the four wall views. Small book and desktop details remain simplified."
+  },
+  {
+    "id": "balconies-4k-01",
+    "envelope": {
+      "width": 6,
+      "depth": 3.8,
+      "height": 2.8,
+      "wallColor": "#d9c3a0",
+      "floorColor": "#a19d96",
+      "floorStyle": "stone",
+      "openSides": [
+        "front"
+      ]
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -1.95,
+        "width": 1.25,
+        "height": 2.3,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "railing",
+        "x": 0,
+        "z": -1.8,
+        "width": 5.8,
+        "depth": 0.075,
+        "height": 1.12,
+        "rotation": 0,
+        "color": "#5e6460",
+        "variant": "glass"
+      },
+      {
+        "type": "bench",
+        "x": -2.42,
+        "z": -0.28,
+        "width": 1.38,
+        "depth": 0.64,
+        "height": 0.86,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "round-table",
+        "x": -1.67,
+        "z": 0.33,
+        "width": 0.53,
+        "depth": 0.53,
+        "height": 0.43,
+        "rotation": 0,
+        "color": "#cfc5b4"
+      },
+      {
+        "type": "plant",
+        "x": 2.49,
+        "z": -1.03,
+        "width": 0.46,
+        "depth": 0.46,
+        "height": 1.35,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.44,
+        "z": -0.43,
+        "width": 0.42,
+        "depth": 0.42,
+        "height": 0.88,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.57,
+        "z": 0.18,
+        "width": 0.38,
+        "depth": 0.38,
+        "height": 0.6,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.25,
+        "z": 0.49,
+        "width": 0.4,
+        "depth": 0.4,
+        "height": 0.67,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.5,
+        "z": 1.04,
+        "width": 0.48,
+        "depth": 0.48,
+        "height": 1.6,
+        "rotation": 0,
+        "color": "#a3ad91"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "outlook",
+        "title": "An open green outlook",
+        "description": "A glass-and-metal guard keeps the view over the treetops open.",
+        "yaw": 180,
+        "pitch": 0
+      },
+      {
+        "id": "bench",
+        "title": "A simple outdoor seat",
+        "description": "A timber bench and small stone table sit beside the sliding door.",
+        "yaw": 90,
+        "pitch": -11
+      },
+      {
+        "id": "plants",
+        "title": "A planted corner",
+        "description": "Pots of different heights soften the right-hand corner.",
+        "yaw": 270,
+        "pitch": -10
+      },
+      {
+        "id": "covered",
+        "title": "Shelter overhead",
+        "description": "A continuous ceiling covers the seating and circulation space.",
+        "yaw": 180,
+        "pitch": 23
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Balcony centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1.3,
+          -2.1
+        ]
+      },
+      {
+        "id": "seating",
+        "title": "Beside the seating",
+        "position": [
+          -0.75,
+          1.5,
+          0.8
+        ],
+        "target": [
+          -2.35,
+          0.8,
+          -0.25
+        ]
+      },
+      {
+        "id": "planting",
+        "title": "Across from the plants",
+        "position": [
+          0.95,
+          1.5,
+          0.8
+        ],
+        "target": [
+          2.4,
+          1,
+          0.2
+        ]
+      },
+      {
+        "id": "outlook",
+        "title": "Near the open edge",
+        "position": [
+          0,
+          1.5,
+          -0.8
+        ],
+        "target": [
+          0,
+          1.4,
+          -4
+        ]
+      }
+    ],
+    "notes": "Covered balcony with one open side and a glass guard; it is not an enclosed interior. Side/rear walls and bench/plant groups follow the panorama. Exterior skyline is not measured geometry. Plant count and exact leaf forms are simplified."
+  },
+  {
+    "id": "balconies-4k-02",
+    "envelope": {
+      "width": 6.2,
+      "depth": 4,
+      "height": 2.8,
+      "wallColor": "#d4c5b0",
+      "floorColor": "#b9ac99",
+      "floorStyle": "stone",
+      "openSides": [
+        "front"
+      ]
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": 2.1,
+        "width": 1.2,
+        "height": 2.32,
+        "bottom": 0
+      },
+      {
+        "type": "opening",
+        "wall": "left",
+        "offset": -1.05,
+        "width": 1.62,
+        "height": 2.48,
+        "bottom": 0.22
+      }
+    ],
+    "objects": [
+      {
+        "type": "railing",
+        "x": 0,
+        "z": -1.91,
+        "width": 5.98,
+        "depth": 0.065,
+        "height": 1.14,
+        "rotation": 0,
+        "color": "#454940"
+      },
+      {
+        "type": "railing",
+        "x": -3.04,
+        "z": -1.08,
+        "width": 1.67,
+        "depth": 0.065,
+        "height": 1.14,
+        "rotation": 90,
+        "color": "#454940"
+      },
+      {
+        "type": "round-table",
+        "x": -1.83,
+        "z": -0.1,
+        "width": 0.94,
+        "depth": 0.94,
+        "height": 0.72,
+        "rotation": 0,
+        "color": "#b99669"
+      },
+      {
+        "type": "armchair",
+        "x": -2.6,
+        "z": -0.1,
+        "width": 0.61,
+        "depth": 0.64,
+        "height": 0.87,
+        "rotation": 90,
+        "color": "#d9cfbd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "armchair",
+        "x": -1.22,
+        "z": 0.67,
+        "width": 0.61,
+        "depth": 0.64,
+        "height": 0.87,
+        "rotation": -140,
+        "color": "#d9cfbd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "counter",
+        "x": 0,
+        "z": -1.64,
+        "width": 5.62,
+        "depth": 0.42,
+        "height": 0.43,
+        "rotation": 0,
+        "color": "#92613d",
+        "variant": "planter"
+      },
+      {
+        "type": "plant",
+        "x": -2.15,
+        "z": -1.62,
+        "width": 0.43,
+        "depth": 0.36,
+        "height": 0.87,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": -0.73,
+        "z": -1.62,
+        "width": 0.48,
+        "depth": 0.36,
+        "height": 0.85,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 0.73,
+        "z": -1.62,
+        "width": 0.48,
+        "depth": 0.36,
+        "height": 0.85,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.14,
+        "z": -1.62,
+        "width": 0.43,
+        "depth": 0.36,
+        "height": 0.85,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": -2.7,
+        "z": 1.28,
+        "width": 0.47,
+        "depth": 0.47,
+        "height": 1.5,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "bench",
+        "x": 2.72,
+        "z": -0.64,
+        "width": 1.46,
+        "depth": 0.54,
+        "height": 0.5,
+        "rotation": -90,
+        "color": "#795a40",
+        "accent": "#a9a397"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "sunset",
+        "title": "Space for an evening pause",
+        "description": "A compact table and two chairs face the evening view.",
+        "yaw": 140,
+        "pitch": -8
+      },
+      {
+        "id": "planters",
+        "title": "A long planted edge",
+        "description": "Raised timber-toned planters run along the balcony guard.",
+        "yaw": 180,
+        "pitch": -14
+      },
+      {
+        "id": "bench",
+        "title": "Storage with a seat",
+        "description": "A low built-in bench uses the sheltered end of the balcony.",
+        "yaw": 270,
+        "pitch": -11
+      },
+      {
+        "id": "connection",
+        "title": "A glazed connection indoors",
+        "description": "A tall sliding door connects the covered balcony to the home.",
+        "yaw": 320,
+        "pitch": 0
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Balcony centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1.3,
+          -2.2
+        ]
+      },
+      {
+        "id": "table",
+        "title": "Across from the table",
+        "position": [
+          -0.45,
+          1.5,
+          1.1
+        ],
+        "target": [
+          -1.8,
+          0.9,
+          -0.1
+        ]
+      },
+      {
+        "id": "planters",
+        "title": "Facing the planted edge",
+        "position": [
+          0.85,
+          1.5,
+          0.85
+        ],
+        "target": [
+          0,
+          0.8,
+          -1.65
+        ]
+      },
+      {
+        "id": "bench",
+        "title": "Near the quiet end",
+        "position": [
+          1.3,
+          1.5,
+          -0.65
+        ],
+        "target": [
+          2.7,
+          0.65,
+          -0.65
+        ]
+      }
+    ],
+    "notes": "Covered balcony with an additional opening near the front of the left wall. Long planter trough is approximated by a low counter with plant forms intentionally sharing its footprint. No extra room, kitchen or sofa is inferred."
+  },
+  {
+    "id": "balconies-4k-03",
+    "envelope": {
+      "width": 7,
+      "depth": 5.4,
+      "height": 2.95,
+      "wallColor": "#e4ddd0",
+      "floorColor": "#bcb7ae",
+      "floorStyle": "stone",
+      "openSides": [
+        "front",
+        "right"
+      ],
+      "ceiling": false
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -1.6,
+        "width": 2.65,
+        "height": 2.35,
+        "bottom": 0,
+        "variant": "glass"
+      }
+    ],
+    "objects": [
+      {
+        "type": "pergola",
+        "x": 0,
+        "z": 0,
+        "width": 6.75,
+        "depth": 5.14,
+        "height": 2.87,
+        "rotation": 0,
+        "color": "#795a40"
+      },
+      {
+        "type": "counter",
+        "x": 0,
+        "z": -2.59,
+        "width": 6.75,
+        "depth": 0.16,
+        "height": 0.82,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "variant": "plain"
+      },
+      {
+        "type": "railing",
+        "x": 0,
+        "z": -2.6,
+        "width": 6.75,
+        "depth": 0.065,
+        "height": 1.11,
+        "rotation": 0,
+        "color": "#393e36"
+      },
+      {
+        "type": "counter",
+        "x": 3.38,
+        "z": 0,
+        "width": 5.08,
+        "depth": 0.16,
+        "height": 0.82,
+        "rotation": -90,
+        "color": "#efe9dc",
+        "variant": "plain"
+      },
+      {
+        "type": "railing",
+        "x": 3.4,
+        "z": 0,
+        "width": 5.1,
+        "depth": 0.065,
+        "height": 1.11,
+        "rotation": -90,
+        "color": "#393e36"
+      },
+      {
+        "type": "sofa",
+        "x": -2.46,
+        "z": 0.33,
+        "width": 1.8,
+        "depth": 0.8,
+        "height": 0.9,
+        "rotation": 90,
+        "color": "#d9cfbd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "armchair",
+        "x": -1.4,
+        "z": -0.85,
+        "width": 0.7,
+        "depth": 0.72,
+        "height": 0.9,
+        "rotation": 0,
+        "color": "#d9cfbd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "armchair",
+        "x": -1.4,
+        "z": 1.52,
+        "width": 0.7,
+        "depth": 0.72,
+        "height": 0.9,
+        "rotation": 180,
+        "color": "#d9cfbd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "table",
+        "x": -1.38,
+        "z": 0.34,
+        "width": 1.08,
+        "depth": 0.75,
+        "height": 0.43,
+        "rotation": 0,
+        "color": "#795a40"
+      },
+      {
+        "type": "plant",
+        "x": 2.83,
+        "z": -1.75,
+        "width": 0.55,
+        "depth": 0.5,
+        "height": 0.75,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.55,
+        "z": -0.85,
+        "width": 0.53,
+        "depth": 0.53,
+        "height": 1.65,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.87,
+        "z": 0.55,
+        "width": 0.6,
+        "depth": 0.52,
+        "height": 0.86,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.86,
+        "z": 1.78,
+        "width": 0.58,
+        "depth": 0.52,
+        "height": 1.06,
+        "rotation": 0,
+        "color": "#a3ad91"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "lounge",
+        "title": "Outdoor seating under timber",
+        "description": "A woven sofa and two chairs gather around a low table.",
+        "yaw": 100,
+        "pitch": -10
+      },
+      {
+        "id": "pergola",
+        "title": "An open timber canopy",
+        "description": "The pergola shades the terrace while leaving sky visible between its slats.",
+        "yaw": 180,
+        "pitch": 24
+      },
+      {
+        "id": "green-edge",
+        "title": "Planting along the terrace",
+        "description": "Potted palms and smaller plants line the open right-hand edge.",
+        "yaw": 270,
+        "pitch": -8
+      },
+      {
+        "id": "glazing",
+        "title": "A wide connection to the house",
+        "description": "Broad glazed doors link the terrace seating to the interior.",
+        "yaw": 50,
+        "pitch": 0
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Terrace centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          -1.6,
+          1,
+          0.3
+        ]
+      },
+      {
+        "id": "rear",
+        "title": "Across the terrace",
+        "position": [
+          0,
+          1.5,
+          1.5
+        ],
+        "target": [
+          2.7,
+          1,
+          -0.5
+        ]
+      },
+      {
+        "id": "outlook",
+        "title": "Toward the open edge",
+        "position": [
+          0.65,
+          1.5,
+          -1.35
+        ],
+        "target": [
+          0,
+          1.4,
+          -3.8
+        ]
+      },
+      {
+        "id": "canopy",
+        "title": "Under the pergola",
+        "position": [
+          1.55,
+          1.5,
+          0.6
+        ],
+        "target": [
+          -1.4,
+          1.4,
+          0.3
+        ]
+      }
+    ],
+    "notes": "Open pergola terrace, not a ceilinged room. Front/right parapets and guards are explicit objects; skyline is background only. Pergola footprint is estimated and its regular slats simplify a small source-image termination irregularity. Walking viewpoints stay within the terrace perimeter."
+  },
+  {
+    "id": "renovation-4k-01",
+    "envelope": {
+      "width": 5.6,
+      "depth": 4.8,
+      "height": 2.75,
+      "wallColor": "#e7dfd0",
+      "floorColor": "#c9c1af",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": -1.86,
+        "width": 0.83,
+        "height": 2.12,
+        "bottom": 0
+      },
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": 0.18,
+        "width": 1.3,
+        "height": 1.7,
+        "bottom": 0.62
+      }
+    ],
+    "objects": [
+      {
+        "type": "tv",
+        "x": 0,
+        "z": -2.36,
+        "width": 1.45,
+        "depth": 0.055,
+        "height": 0.84,
+        "rotation": 0,
+        "color": "#292b28",
+        "y": 1.52
+      },
+      {
+        "type": "cabinet",
+        "x": 0,
+        "z": -2.1,
+        "width": 2.23,
+        "depth": 0.44,
+        "height": 0.45,
+        "rotation": 0,
+        "color": "#795a40",
+        "accent": "#cfc5b4"
+      },
+      {
+        "type": "sofa",
+        "x": 2.22,
+        "z": 0.37,
+        "width": 2.27,
+        "depth": 0.88,
+        "height": 0.87,
+        "rotation": -90,
+        "color": "#d9cfbd",
+        "accent": "#b19a80"
+      },
+      {
+        "type": "table",
+        "x": 1.26,
+        "z": 0.37,
+        "width": 1.05,
+        "depth": 0.66,
+        "height": 0.4,
+        "rotation": -90,
+        "color": "#cfc5b4",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "armchair",
+        "x": -1.91,
+        "z": 0.34,
+        "width": 0.73,
+        "depth": 0.75,
+        "height": 0.86,
+        "rotation": 90,
+        "color": "#d9cfbd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "wardrobe",
+        "x": 1.9,
+        "z": -2.1,
+        "width": 0.77,
+        "depth": 0.44,
+        "height": 2.15,
+        "rotation": 0,
+        "color": "#795a40"
+      },
+      {
+        "type": "artwork",
+        "x": 2.76,
+        "z": 0.3,
+        "width": 0.82,
+        "depth": 0.03,
+        "height": 0.66,
+        "rotation": -90,
+        "color": "#e7decd",
+        "y": 1.76
+      },
+      {
+        "type": "rug",
+        "x": 1.56,
+        "z": 0.38,
+        "width": 2.4,
+        "depth": 1.7,
+        "height": 0.024,
+        "rotation": -90,
+        "color": "#b69a70"
+      },
+      {
+        "type": "plant",
+        "x": -2.35,
+        "z": 1.53,
+        "width": 0.4,
+        "depth": 0.4,
+        "height": 0.73,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "plant",
+        "x": 2.21,
+        "z": -1.32,
+        "width": 0.4,
+        "depth": 0.4,
+        "height": 0.94,
+        "rotation": 0,
+        "color": "#a3ad91"
+      },
+      {
+        "type": "fan",
+        "x": 0,
+        "z": -0.12,
+        "width": 1.14,
+        "depth": 1.14,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#795a40",
+        "y": 2.5
+      }
+    ],
+    "highlights": [
+      {
+        "id": "seating",
+        "title": "A calmer living area",
+        "description": "An ivory sofa and timber-framed armchair define a simple seating arrangement.",
+        "yaw": 300,
+        "pitch": -10
+      },
+      {
+        "id": "media",
+        "title": "A lighter media wall",
+        "description": "A wall-mounted screen sits above a low timber and stone-toned cabinet.",
+        "yaw": 180,
+        "pitch": -3
+      },
+      {
+        "id": "daylight",
+        "title": "An existing window, softened",
+        "description": "Full-length pale curtains frame the side window.",
+        "yaw": 90,
+        "pitch": 0
+      },
+      {
+        "id": "finishes",
+        "title": "Warm, restrained finishes",
+        "description": "A low stone-toned table and woven rug add texture beside the sofa.",
+        "yaw": 285,
+        "pitch": -23
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.15,
+          0.95,
+          0.3
+        ]
+      },
+      {
+        "id": "media",
+        "title": "Across from the media wall",
+        "position": [
+          -0.75,
+          1.5,
+          -0.6
+        ],
+        "target": [
+          0,
+          1.3,
+          -2.1
+        ]
+      },
+      {
+        "id": "seating",
+        "title": "Facing the seating",
+        "position": [
+          0,
+          1.5,
+          1.38
+        ],
+        "target": [
+          2.1,
+          0.9,
+          0.3
+        ]
+      },
+      {
+        "id": "window",
+        "title": "Beside the clear circulation",
+        "position": [
+          0.62,
+          1.5,
+          -0.9
+        ],
+        "target": [
+          -1.9,
+          1,
+          0.3
+        ]
+      }
+    ],
+    "notes": "Finished living-room renovation concept, not a worksite. One sofa, one armchair and a TV wall match the visible room; no invented dining zone. Source design is spacious between furniture and the model keeps that circulation clear."
+  },
+  {
+    "id": "renovation-4k-02",
+    "envelope": {
+      "width": 5.8,
+      "depth": 5,
+      "height": 2.8,
+      "wallColor": "#e5ddcd",
+      "floorColor": "#d5cbb8",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 1.58,
+        "height": 1.25,
+        "bottom": 1.03
+      },
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": -2.05,
+        "width": 0.82,
+        "height": 2.14,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "cabinet",
+        "x": 0,
+        "z": -2.14,
+        "width": 3,
+        "depth": 0.64,
+        "height": 0.91,
+        "rotation": 0,
+        "color": "#8a947b",
+        "accent": "#e7decd"
+      },
+      {
+        "type": "sink",
+        "x": 0,
+        "z": -2.08,
+        "width": 0.65,
+        "depth": 0.42,
+        "height": 0.075,
+        "rotation": 0,
+        "color": "#626763",
+        "y": 0.97
+      },
+      {
+        "type": "cabinet",
+        "x": -2.53,
+        "z": -0.25,
+        "width": 1.72,
+        "depth": 0.66,
+        "height": 0.91,
+        "rotation": 90,
+        "color": "#8a947b",
+        "accent": "#e7decd"
+      },
+      {
+        "type": "hob",
+        "x": -2.5,
+        "z": -0.25,
+        "width": 0.64,
+        "depth": 0.43,
+        "height": 0.06,
+        "rotation": 90,
+        "color": "#292b28",
+        "y": 0.98
+      },
+      {
+        "type": "cabinet",
+        "x": -2.63,
+        "z": -0.25,
+        "width": 1.74,
+        "depth": 0.43,
+        "height": 0.65,
+        "rotation": 90,
+        "color": "#b99669",
+        "y": 2.04,
+        "accent": "#8a947b"
+      },
+      {
+        "type": "fridge",
+        "x": 2.45,
+        "z": -0.63,
+        "width": 0.88,
+        "depth": 0.74,
+        "height": 1.92,
+        "rotation": -90,
+        "color": "#b6b8b4"
+      },
+      {
+        "type": "wardrobe",
+        "x": 2.57,
+        "z": -1.66,
+        "width": 0.83,
+        "depth": 0.57,
+        "height": 2.36,
+        "rotation": -90,
+        "color": "#8a947b"
+      },
+      {
+        "type": "counter",
+        "x": 2.58,
+        "z": 1.25,
+        "width": 1.43,
+        "depth": 0.47,
+        "height": 0.99,
+        "rotation": -90,
+        "color": "#e7decd",
+        "baseColor": "#795a40"
+      },
+      {
+        "type": "chair",
+        "x": 1.85,
+        "z": 0.82,
+        "width": 0.43,
+        "depth": 0.46,
+        "height": 0.94,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "chair",
+        "x": 1.85,
+        "z": 1.66,
+        "width": 0.43,
+        "depth": 0.46,
+        "height": 0.94,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "shelf",
+        "x": -1.2,
+        "z": -2.37,
+        "width": 0.65,
+        "depth": 0.22,
+        "height": 0.63,
+        "rotation": 0,
+        "color": "#b99669",
+        "y": 1.83,
+        "count": 2
+      },
+      {
+        "type": "shelf",
+        "x": 1.2,
+        "z": -2.37,
+        "width": 0.65,
+        "depth": 0.22,
+        "height": 0.63,
+        "rotation": 0,
+        "color": "#b99669",
+        "y": 1.83,
+        "count": 2
+      },
+      {
+        "type": "fan",
+        "x": 0,
+        "z": 0,
+        "width": 1.05,
+        "depth": 1.05,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#efe9dc",
+        "y": 2.56
+      }
+    ],
+    "highlights": [
+      {
+        "id": "wash",
+        "title": "Sink beneath the window",
+        "description": "A central sink and a broad counter make use of the daylight.",
+        "yaw": 180,
+        "pitch": -5
+      },
+      {
+        "id": "cook",
+        "title": "A separate cooking alcove",
+        "description": "The hob and fitted cupboards occupy the left-hand alcove.",
+        "yaw": 90,
+        "pitch": -5
+      },
+      {
+        "id": "storage",
+        "title": "Tall storage around the fridge",
+        "description": "Sage cabinetry and open cubbies sit beside the refrigerator.",
+        "yaw": 270,
+        "pitch": 1
+      },
+      {
+        "id": "breakfast",
+        "title": "A compact breakfast ledge",
+        "description": "Two timber stools tuck beside the narrow breakfast counter.",
+        "yaw": 305,
+        "pitch": -12
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Kitchen centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1.15,
+          -2.1
+        ]
+      },
+      {
+        "id": "cooking",
+        "title": "Facing the cooking alcove",
+        "position": [
+          -0.85,
+          1.5,
+          0.85
+        ],
+        "target": [
+          -2.5,
+          1,
+          -0.25
+        ]
+      },
+      {
+        "id": "storage",
+        "title": "Across from the tall storage",
+        "position": [
+          0.75,
+          1.5,
+          0.1
+        ],
+        "target": [
+          2.5,
+          1.3,
+          -0.8
+        ]
+      },
+      {
+        "id": "sink",
+        "title": "Near the preparation area",
+        "position": [
+          0,
+          1.5,
+          -1
+        ],
+        "target": [
+          0,
+          1.12,
+          -2.1
+        ]
+      }
+    ],
+    "notes": "Finished kitchen renovation with a separate cooking alcove, sink/window wall, tall fridge storage and a two-seat breakfast ledge. No island is present. The breakfast chair primitive represents the visible stools; sink and hob intentionally share the base-unit footprints."
+  },
+  {
+    "id": "renovation-4k-03",
+    "envelope": {
+      "width": 5.6,
+      "depth": 5.6,
+      "height": 2.8,
+      "wallColor": "#e4d9c5",
+      "floorColor": "#bd9260",
+      "floorStyle": "wood"
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": 1.02,
+        "width": 0.8,
+        "height": 2.12,
+        "bottom": 0
+      },
+      {
+        "type": "window",
+        "wall": "back",
+        "offset": 1.55,
+        "width": 1.52,
+        "height": 1.45,
+        "bottom": 0.85
+      }
+    ],
+    "objects": [
+      {
+        "type": "bed",
+        "x": -1.64,
+        "z": -0.2,
+        "width": 1.72,
+        "depth": 2.05,
+        "height": 1.04,
+        "rotation": 90,
+        "color": "#aa9b84",
+        "accent": "#c2b7a5"
+      },
+      {
+        "type": "cabinet",
+        "x": -2.41,
+        "z": -1.33,
+        "width": 0.49,
+        "depth": 0.43,
+        "height": 0.52,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "cabinet",
+        "x": -2.41,
+        "z": 0.95,
+        "width": 0.49,
+        "depth": 0.43,
+        "height": 0.52,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "wardrobe",
+        "x": 2.44,
+        "z": -0.32,
+        "width": 3.91,
+        "depth": 0.6,
+        "height": 2.36,
+        "rotation": -90,
+        "color": "#9d978a"
+      },
+      {
+        "type": "desk",
+        "x": -2.53,
+        "z": 1.97,
+        "width": 1.12,
+        "depth": 0.42,
+        "height": 0.77,
+        "rotation": 90,
+        "color": "#b99669"
+      },
+      {
+        "type": "chair",
+        "x": -1.82,
+        "z": 1.97,
+        "width": 0.54,
+        "depth": 0.55,
+        "height": 0.86,
+        "rotation": -90,
+        "color": "#d9cfbd"
+      },
+      {
+        "type": "mirror",
+        "x": -2.765,
+        "z": 1.97,
+        "width": 0.8,
+        "depth": 0.035,
+        "height": 1.06,
+        "rotation": 90,
+        "color": "#bdc6c1",
+        "y": 1.59
+      },
+      {
+        "type": "bench",
+        "x": 1.53,
+        "z": 2.45,
+        "width": 1.67,
+        "depth": 0.61,
+        "height": 0.5,
+        "rotation": 180,
+        "color": "#b99669",
+        "accent": "#d9cfbd"
+      },
+      {
+        "type": "artwork",
+        "x": -2.765,
+        "z": -0.2,
+        "width": 0.61,
+        "depth": 0.035,
+        "height": 0.73,
+        "rotation": 90,
+        "color": "#e7decd",
+        "y": 1.9
+      },
+      {
+        "type": "rug",
+        "x": -1.05,
+        "z": -0.2,
+        "width": 2.32,
+        "depth": 2.44,
+        "height": 0.024,
+        "rotation": 90,
+        "color": "#b9a382"
+      },
+      {
+        "type": "fan",
+        "x": -0.1,
+        "z": 0,
+        "width": 1.13,
+        "depth": 1.13,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#795a40",
+        "y": 2.56
+      }
+    ],
+    "highlights": [
+      {
+        "id": "bed",
+        "title": "An upholstered sleeping area",
+        "description": "Neutral bedding and a tall upholstered headboard soften the timber floor.",
+        "yaw": 120,
+        "pitch": -11
+      },
+      {
+        "id": "wardrobes",
+        "title": "A full storage wall",
+        "description": "Tall taupe wardrobe doors use the right-hand wall from floor to ceiling.",
+        "yaw": 270,
+        "pitch": 0
+      },
+      {
+        "id": "dressing",
+        "title": "A dedicated dressing corner",
+        "description": "A compact timber dressing desk and mirror sit beside the bed.",
+        "yaw": 65,
+        "pitch": -3
+      },
+      {
+        "id": "window-seat",
+        "title": "A seat beneath the window",
+        "description": "A cushioned timber bench creates a quiet spot by the window.",
+        "yaw": 330,
+        "pitch": -12
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          -1.6,
+          1,
+          -0.2
+        ]
+      },
+      {
+        "id": "bed",
+        "title": "Facing the bed",
+        "position": [
+          0.35,
+          1.5,
+          -1.25
+        ],
+        "target": [
+          -1.7,
+          0.9,
+          -0.2
+        ]
+      },
+      {
+        "id": "storage",
+        "title": "Across from the wardrobes",
+        "position": [
+          0.75,
+          1.5,
+          0.5
+        ],
+        "target": [
+          2.4,
+          1.3,
+          -0.3
+        ]
+      },
+      {
+        "id": "dressing",
+        "title": "Near the dressing corner",
+        "position": [
+          0,
+          1.5,
+          1.65
+        ],
+        "target": [
+          -2.4,
+          1.2,
+          1.97
+        ]
+      }
+    ],
+    "notes": "Finished bedroom renovation with bed along the left wall, full wardrobes opposite, dressing station toward the back-left and a window bench at the back-right. Mirror geometry is a simplified surface; its reflected image is not another room or extra window."
+  }
+]

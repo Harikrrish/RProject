@@ -5,6 +5,301 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-annanagar",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-annanagar/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-annanagar/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-ecr",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-ecr/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-ecr/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-koyambedu",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-koyambedu/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-koyambedu/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-madipakkam",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-madipakkam/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-madipakkam/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-omr",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-omr/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-omr/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-perungudi",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-perungudi/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-perungudi/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-porur",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-porur/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-porur/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-tambaram",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-tambaram/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-tambaram/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-thiruvanmiyur",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-thiruvanmiyur/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-thiruvanmiyur/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-thuraipakkam",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-thuraipakkam/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-thuraipakkam/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-velacherry",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-velacherry/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-velacherry/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/top-interior-designers-in-sholinganallur",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/top-interior-designers-in-sholinganallur/",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/top-interior-designers-in-sholinganallur/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/budget-interior-design-chennai/index.html",
+        "destination": "/blog/budget-interior-design-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/modern-kitchen-design-chennai/index.html",
+        "destination": "/blog/modern-kitchen-design-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/small-house-interior-design-chennai/index.html",
+        "destination": "/blog/small-house-interior-design-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/bedroom-interior-design-ideas-chennai/index.html",
+        "destination": "/blog/bedroom-interior-design-ideas-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/best-interiors-in-chennai/index.html",
+        "destination": "/blog/best-interiors-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/interior-designer-in-chennai/index.html",
+        "destination": "/blog/interior-designer-in-chennai/",
+        "type": 301
+      },
+      {
+        "source": "/blog/interior-works-in-chennai/index.html",
+        "destination": "/blog/interior-works-in-chennai/",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "camera=(), microphone=(), geolocation=()"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(webp|png|jpg|jpeg|svg|woff|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/sitemap.xml",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/blog/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      }
     ]
   }
 }

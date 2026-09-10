@@ -1,0 +1,31 @@
+{
+  "business": {
+    "name": "Alankaar Interiors",
+    "siteUrl": "https://alankaarinteriors.com",
+    "city": "Chennai",
+    "address": "No. 253/44, Chandra Sekar Avenue 1st Street, Thuraipakkam, Chennai - 600097",
+    "phone": "+919994958369",
+    "services": ["home interiors", "modular kitchens", "wardrobes", "space planning", "office interiors", "renovation"]
+  },
+  "model": "gpt-5.5",
+  "timezone": "Asia/Kolkata",
+  "scheduleDays": ["Mon", "Wed", "Fri"],
+  "maxPostsPerWeek": 3,
+  "minWords": 650,
+  "maxWords": 1200,
+  "freshnessDays": 120,
+  "competitors": [
+    { "name": "Livspace", "domain": "livspace.com", "url": "https://www.livspace.com/in/magazine" },
+    { "name": "HomeLane", "domain": "homelane.com", "url": "https://www.homelane.com/design-ideas/" },
+    { "name": "DesignCafe", "domain": "designcafe.com", "url": "https://www.designcafe.com/blog/" }
+  ],
+  "primarySourceDomains": ["ikea.com", "asianpaints.com", "hafeleindia.com", "hettich.com", "greenply.com", "centuryply.com", "blum.com", "energy.gov", "epa.gov", "bis.gov.in"],
+  "topics": ["Chennai apartment storage", "modular kitchen planning", "materials for humid coastal homes", "renovation sequencing", "lighting and ventilation", "wardrobe layouts", "small home layouts", "practical interior budget planning"],
+  "internalLinks": [
+    { "url": "/#services", "label": "Explore our interior services" },
+    { "url": "/#contact", "label": "Discuss your home with Alankaar Interiors" },
+    { "url": "/blog/modern-kitchen-design-chennai/", "label": "Plan a practical kitchen" },
+    { "url": "/blog/budget-interior-design-chennai/", "label": "Plan your interior budget" },
+    { "url": "/blog/small-house-interior-design-chennai/", "label": "Make a smaller home work better" }
+  ]
+}

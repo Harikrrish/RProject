@@ -1,4 +1,17 @@
 {
+  "name": "alankaar-interiors",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --public",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser-check.mjs && node tests/studio-browser-check.mjs",
+    "blog:generate": "node scripts/blog-generate.mjs",
+    "blog:render": "node scripts/blog-render.mjs",
+    "blog:dry-run": "node scripts/blog-generate.mjs --dry-run"
+  },
   "dependencies": {
     "firebase-tools": "^13.27.0"
   }

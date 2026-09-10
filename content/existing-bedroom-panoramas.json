@@ -1,0 +1,54 @@
+[
+  {
+    "id": "bedroom-suite-01",
+    "category": "Bedrooms",
+    "title": "Warm timber and woven detail",
+    "src": "/img/panoramas/bedroom-suite-01-4k.webp",
+    "preview": "/img/panoramas/bedroom-suite-01-preview.webp",
+    "width": 4096,
+    "height": 2048,
+    "kind": "existing-visualisation",
+    "description": "A bedroom visualisation with warm timber and woven wardrobe panels, a window bench, a small desk and a dressing corner.",
+    "alt": "Spherical bedroom visualisation with a timber bed, woven wardrobe panels, window bench and dressing table",
+    "sourcePath": "/puruvankara/bedroom_1/images/95eee52d2bf04c08a40aab19d7d61abf.png"
+  },
+  {
+    "id": "bedroom-suite-02",
+    "category": "Bedrooms",
+    "title": "Deep green and walnut",
+    "src": "/img/panoramas/bedroom-suite-02-4k.webp",
+    "preview": "/img/panoramas/bedroom-suite-02-preview.webp",
+    "width": 4096,
+    "height": 2048,
+    "kind": "existing-visualisation",
+    "description": "A bedroom visualisation with deep green overhead storage, walnut joinery, a compact study area and sliding wardrobe doors.",
+    "alt": "Spherical bedroom visualisation with green cabinetry, a walnut headboard, sliding wardrobe doors and a study desk",
+    "sourcePath": "/puruvankara/bedroom_2/images/2ef38477ff42413798f2a37f8d6cbb2a.png"
+  },
+  {
+    "id": "bedroom-suite-03",
+    "category": "Bedrooms",
+    "title": "Navy, cane and warm wood",
+    "src": "/img/panoramas/bedroom-suite-03-4k.webp",
+    "preview": "/img/panoramas/bedroom-suite-03-preview.webp",
+    "width": 4096,
+    "height": 2048,
+    "kind": "existing-visualisation",
+    "description": "A bedroom visualisation with navy wardrobe frames, woven panels, warm timber finishes and a matching desk by the bed.",
+    "alt": "Spherical bedroom visualisation with navy and cane wardrobes, a timber headboard wall and a matching study desk",
+    "sourcePath": "/puruvankara/bedroom_3/images/56bfeced9a824dbba1363fcbef2a3037.png"
+  },
+  {
+    "id": "bedroom-suite-04",
+    "category": "Bedrooms",
+    "title": "Charcoal storage around the bed",
+    "src": "/img/panoramas/bedroom-suite-04-4k.webp",
+    "preview": "/img/panoramas/bedroom-suite-04-preview.webp",
+    "width": 4096,
+    "height": 2048,
+    "kind": "existing-visualisation",
+    "description": "A bedroom visualisation with charcoal overhead storage, a recessed timber headboard, shelving and a desk beside the window.",
+    "alt": "Spherical bedroom visualisation with charcoal cupboards around a timber headboard, open shelving and a window-side desk",
+    "sourcePath": "/puruvankara/bedroom_4/images/4a58731ccc184c1aa6ee3474d08c9486.png"
+  }
+]

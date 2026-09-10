@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en-IN">
 <head>
-  <title>D5VirtualTour</title>
+  <title>Bedroom Design 4 · 360° Tour | Alankaar Interiors</title>
+  <meta name="description" content="Explore bedroom design 4 in an interactive 360-degree visualisation from Alankaar Interiors. Look around the room and compare four bedroom design ideas.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#24231f">
   <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   />
   <link rel="icon" href="favicon.ico">
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -27,21 +30,46 @@
       color: #ffffff;
       background-color: #000000;
     }
+
+    :root { --tour-bar-height: calc(64px + env(safe-area-inset-top, 0px)); }
+    .tour-navigation { box-sizing: border-box; position: fixed; z-index: 1000; inset: 0 0 auto; height: var(--tour-bar-height); padding: calc(10px + env(safe-area-inset-top, 0px)) max(14px, env(safe-area-inset-right, 0px)) 10px max(14px, env(safe-area-inset-left, 0px)); display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #24231f; border-bottom: 1px solid #49463f; font-family: Arial, Helvetica, sans-serif; }
+    .tour-navigation a { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 13px; font-size: 12px; font-weight: 600; line-height: 1.3; text-decoration: none; color: #fff; border: 1px solid #686157; border-radius: 3px; white-space: nowrap; }
+    .tour-navigation a:hover { background: #38352e; }
+    .tour-navigation a:focus-visible { outline: 3px solid #ff9800; outline-offset: 2px; }
+    .tour-navigation a[aria-current="page"] { color: #24231f; background: #ff9800; border-color: #ff9800; }
+    .tour-designs { display: flex; align-items: center; gap: 7px; }
+    .tour-designs a { min-width: 66px; }
+    #pano { position: absolute; top: var(--tour-bar-height); left: 0; width: 100%; height: calc(100% - var(--tour-bar-height)) !important; }
+    .tour-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    @media (max-width: 520px) {
+      .tour-navigation { gap: 8px; padding-inline: max(10px, env(safe-area-inset-left, 0px)) max(10px, env(safe-area-inset-right, 0px)); }
+      .tour-navigation a { font-size: 11px; padding-inline: 9px; }
+      .tour-designs { gap: 4px; }
+      .tour-designs a { min-width: 36px; }
+      .tour-design-word { display: none; }
+    }
+    @media (max-width: 340px) {
+      .tour-navigation { padding-inline: 6px; gap: 5px; }
+      .tour-navigation a { padding-inline: 7px; }
+      .tour-designs { gap: 3px; }
+      .tour-designs a { min-width: 34px; }
+    }
   </style>
 </head>
 <body>
+<header class="tour-navigation"><h1 class="tour-sr-only">Bedroom design 4: interactive visualisation</h1><a class="tour-back" href="/#ourdesign">← Back to designs</a><nav class="tour-designs" aria-label="Explore bedroom designs"><a href="/puruvankara/bedroom_1/index.html" aria-label="Bedroom design 1"><span class="tour-design-word">Design&nbsp;</span>1</a><a href="/puruvankara/bedroom_2/index.html" aria-label="Bedroom design 2"><span class="tour-design-word">Design&nbsp;</span>2</a><a href="/puruvankara/bedroom_3/index.html" aria-label="Bedroom design 3"><span class="tour-design-word">Design&nbsp;</span>3</a><a href="/puruvankara/bedroom_4/index.html" aria-label="Bedroom design 4" aria-current="page"><span class="tour-design-word">Design&nbsp;</span>4</a></nav></header>
 <canvas id="image_helper" style="width: 0; display: none"></canvas>
 
 <script src="tour.js"></script>
 <script src="d5.js"></script>
 
-<div id="pano" style="width: 100%; height: 100%">
+<div id="pano" role="main" aria-label="Interactive bedroom design 4" style="width: 100%; height: 100%">
   <noscript>
     <table style="width: 100%; height: 100%">
       <tr style="vertical-align: middle">
         <td>
           <div style="text-align: center">
-            ERROR:<br /><br />Javascript not activated<br /><br />
+            Enable JavaScript to explore this room.<br /><br /><a href="/#ourdesign" style="color: #ff9800">Return to our designs</a>
           </div>
         </td>
       </tr>

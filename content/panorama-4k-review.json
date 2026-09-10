@@ -1,0 +1,331 @@
+{
+  "model": "gpt-image-2",
+  "requestedSize": "3840x1920",
+  "generationMode": "imagegen CLI/API",
+  "designs": [
+    {
+      "id": "living-rooms-4k-01",
+      "source": "output/imagegen/panoramas-4k/living-rooms-4k-01.webp",
+      "sha256": "e4ee1e3fa12934fa3d81819d3d8582baeeb96d1940d6efdc05f0a951029436b2",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native detail and all six spherical views inspected. No broken wrap, blank wedges or major object duplication. Minor bowed architectural lines and a faint ceiling pole pinch remain in this illustrative concept."
+    },
+    {
+      "id": "living-rooms-4k-02",
+      "source": "output/imagegen/panoramas-4k/living-rooms-4k-02.webp",
+      "sha256": "83582c77d5bdca4622296f129bdaac7c4406d95b5fd6d856044e61ac7a7ef2b7",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: clear materials, coherent room coverage, no obvious broken wrap or blank poles. Minor synthetic architectural bowing remains."
+    },
+    {
+      "id": "living-rooms-4k-03",
+      "source": "output/imagegen/panoramas-4k/living-rooms-4k-03.webp",
+      "sha256": "6299e10bf79dd7f835c620583843723870cd3effbd371e8acd63397a370467b7",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: clear materials, coherent room coverage, no obvious broken wrap or blank poles. Minor synthetic architectural bowing remains. Decorative floor border curls near the nadir; opening pose adjusted toward furnished wall."
+    },
+    {
+      "id": "shops-4k-01",
+      "source": "output/imagegen/panoramas-4k/shops-4k-01.webp",
+      "sha256": "b92dcfdbec27e25872d9f60dd49eff5c3688783dc04eb0a206eccf11f39dc987",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: clear materials, coherent room coverage, no obvious broken wrap or blank poles. Minor synthetic architectural bowing remains."
+    },
+    {
+      "id": "shops-4k-02",
+      "source": "output/imagegen/panoramas-4k/shops-4k-02.webp",
+      "sha256": "059e07cf645b98e21a4ddb429c57aa7a30b2bcaffe23c93e6204f053ae7a2cbc",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: clear materials, coherent room coverage, no obvious broken wrap or blank poles. Minor synthetic architectural bowing remains."
+    },
+    {
+      "id": "shops-4k-03",
+      "source": "output/imagegen/panoramas-4k/shops-4k-03.webp",
+      "sha256": "8d4434104e9390d140d7021bf7660cc99e6cfe8b7ed4b6d176ce5dfa984d817c",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: clear materials, coherent room coverage, no obvious broken wrap or blank poles. Minor synthetic architectural bowing remains."
+    },
+    {
+      "id": "bathrooms-4k-01",
+      "source": "output/imagegen/panoramas-4k/bathrooms-4k-01.webp",
+      "sha256": "548590ae55aac4b42f573945029bee7694f13a444a71ae7e3f80e8fb0cd40691",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: clear materials, coherent room coverage, no obvious broken wrap or blank poles. Minor synthetic architectural bowing remains."
+    },
+    {
+      "id": "bathrooms-4k-02",
+      "source": "output/imagegen/panoramas-4k/bathrooms-4k-02.webp",
+      "sha256": "50f49dfa23464bad429595dee0993e281d877795bebc9b318778cdacdd679110",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: sharp materials, coherent fixtures and room coverage, no obvious split, blank wedge or major pole defect. No browser errors."
+    },
+    {
+      "id": "bathrooms-4k-03",
+      "source": "output/imagegen/panoramas-4k/bathrooms-4k-03.webp",
+      "sha256": "22c209bdd7287079b21c723fa730f386e677d7518d798977a828b2fe5a54f6ee",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: sharp materials, coherent fixtures and room coverage, no obvious split, blank wedge or major pole defect. No browser errors. Opening pose adjusted toward the vanity."
+    },
+    {
+      "id": "kitchens-4k-01",
+      "source": "output/imagegen/panoramas-4k/kitchens-4k-01.webp",
+      "sha256": "fcacb4b6207da18c67c04fc5a88fef800d7f6f2a60c2f4b2d511d4be5384fae2",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: sharp materials, coherent fixtures and room coverage, no obvious split, blank wedge or major pole defect. No browser errors."
+    },
+    {
+      "id": "kitchens-4k-02",
+      "source": "output/imagegen/panoramas-4k/kitchens-4k-02.webp",
+      "sha256": "9bab8d15006bb52759c38c30531d41669bac5aa63e49ed695484a2f5c27315e5",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: sharp materials, coherent fixtures and room coverage, no obvious split, blank wedge or major pole defect. No browser errors."
+    },
+    {
+      "id": "kitchens-4k-03",
+      "source": "output/imagegen/panoramas-4k/kitchens-4k-03.webp",
+      "sha256": "cce1626bb02fa473adb46655155d24d5ac4e53c01ad5f4b3e71ca7e7ad2fea37",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected: sharp materials, coherent fixtures and room coverage, no obvious split, blank wedge or major pole defect. No browser errors."
+    },
+    {
+      "id": "bedrooms-4k-01",
+      "source": "output/imagegen/panoramas-4k/bedrooms-4k-01.webp",
+      "sha256": "116594f5132ff70a028b1f04607a6410772bf7624c61952b3497992378ed9c2d",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings. Minor rug distortion near the nadir remains."
+    },
+    {
+      "id": "bedrooms-4k-02",
+      "source": "output/imagegen/panoramas-4k/bedrooms-4k-02.webp",
+      "sha256": "2d4c1a92eab5a227be66d133561a1dfa8df3c119781af94f2398ea96bef55e5b",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings."
+    },
+    {
+      "id": "bedrooms-4k-03",
+      "source": "output/imagegen/panoramas-4k/bedrooms-4k-03.webp",
+      "sha256": "e4e1aa520b34f4ea32f989a916b5e0f17893d56861ba3152d444a2920057371b",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings."
+    },
+    {
+      "id": "wardrobes-4k-01",
+      "source": "output/imagegen/panoramas-4k/wardrobes-4k-01.webp",
+      "sha256": "ecd1e2c041ec8d0e601ea84a7b8e8514823d026e251888d038b3eb5b9eed1335",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected. Coherent cabinetry, clear material detail and complete ceiling/floor, with no obvious broken wrap or major object issue. Opening angle selected to show cabinetry."
+    },
+    {
+      "id": "wardrobes-4k-02",
+      "source": "output/imagegen/panoramas-4k/wardrobes-4k-02.webp",
+      "sha256": "d60864b301d9778b2cfdb648371cc55211f7e4ac73673f6046d855b5c2b832ee",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected. Coherent cabinetry, clear material detail and complete ceiling/floor, with no obvious broken wrap or major object issue. Opening angle selected to show cabinetry."
+    },
+    {
+      "id": "wardrobes-4k-03",
+      "source": "output/imagegen/panoramas-4k/wardrobes-4k-03.webp",
+      "sha256": "478a11be6af435991c087a12c290c0932a7d7088da427abc8499f5ab0576e52d",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and six browser directions inspected. Coherent cabinetry, clear material detail and complete ceiling/floor, with no obvious broken wrap or major object issue. Opening angle selected to show cabinetry. Minor mirror-context inconsistency remains in the illustrative concept."
+    },
+    {
+      "id": "dining-4k-01",
+      "source": "output/imagegen/panoramas-4k/dining-4k-01.webp",
+      "sha256": "f76064887bf24573a58845976480c39b474dc5ef580aee49381499dd6898f7d0",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and all six browser directions inspected: clear materials, coherent wrap and furnishings, complete floor/ceiling, no blank wedges or major duplication. The generated room has seven chairs; display text omits the requested six-chair count."
+    },
+    {
+      "id": "dining-4k-02",
+      "source": "output/imagegen/panoramas-4k/dining-4k-02.webp",
+      "sha256": "cd340b12bf819e1cf05917f3761ae71e3c46daa73b3c7ee6c0fb9564da2a1d19",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and all six browser directions inspected: clear materials, coherent wrap and furnishings, complete floor/ceiling, no blank wedges or major duplication."
+    },
+    {
+      "id": "dining-4k-03",
+      "source": "output/imagegen/panoramas-4k/dining-4k-03.webp",
+      "sha256": "2859beab1eba3115fbbe84629d9117394608ffd8eb2d8116ebbd8d0d6f325848",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and all six browser directions inspected: clear materials, coherent wrap and furnishings, complete floor/ceiling, no blank wedges or major duplication."
+    },
+    {
+      "id": "pooja-4k-01",
+      "source": "output/imagegen/panoramas-4k/pooja-4k-01.webp",
+      "sha256": "1d212adc629ca7d8f5f715b7f8cb2f5c2367b7943cfdfc0529a3080d87f3f645",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and all six spherical directions inspected, including rear join and both poles. Clear stone, timber and brass detail, coherent room coverage and furnishings, no major projection or content defect."
+    },
+    {
+      "id": "pooja-4k-02",
+      "source": "output/imagegen/panoramas-4k/pooja-4k-02.webp",
+      "sha256": "7ab6d1ec8b2ab81951aed1a4fa5082ee30da6230dd51dd695854a8586ae3dc4c",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and all six spherical directions inspected, including rear join and both poles. Clear stone, timber and brass detail, coherent room coverage and furnishings, no major projection or content defect."
+    },
+    {
+      "id": "pooja-4k-03",
+      "source": "output/imagegen/panoramas-4k/pooja-4k-03.webp",
+      "sha256": "b20da95bf9dd46e132423a827cb2668983b3a2cbd33a5ce13aab2d769b9960ef",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native panorama and all six spherical directions inspected, including rear join and both poles. Clear stone, timber and brass detail, coherent room coverage and furnishings, no major projection or content defect."
+    },
+    {
+      "id": "kids-4k-01",
+      "source": "output/imagegen/panoramas-4k/kids-4k-01.webp",
+      "sha256": "3cf81b35aabc81338d6ea1c64a00b10c57e4b04458b0ff7f74039cb4121f2967",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings."
+    },
+    {
+      "id": "kids-4k-02",
+      "source": "output/imagegen/panoramas-4k/kids-4k-02.webp",
+      "sha256": "41a5d29a3d9b5c63659400cd0b9470907a4369b5122420569d7f74e3dbd76205",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings. The two sleeping surfaces adjoin; description uses shared sleeping area."
+    },
+    {
+      "id": "kids-4k-03",
+      "source": "output/imagegen/panoramas-4k/kids-4k-03.webp",
+      "sha256": "d58e2a4e0ca213713c17297d4eb3042daf347a522411b9320153f1dfb8a0efe0",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings."
+    },
+    {
+      "id": "workspaces-4k-01",
+      "source": "output/imagegen/panoramas-4k/workspaces-4k-01.webp",
+      "sha256": "c48647139a1125fe77342098afbd38993a379682fae5b77b57166ed94cded726",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear materials, coherent walls and furnishings, intact poles, no major split or duplicated room halves. Opening angle chosen to show the furnishings."
+    },
+    {
+      "id": "workspaces-4k-02",
+      "source": "output/imagegen/panoramas-4k/workspaces-4k-02.webp",
+      "sha256": "0c34ac779dde4b86cfb72ad59064acef01ddbe30bf908c9a2b0c8b07b0afc008",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and all six browser directions inspected: clear materials, coherent wrap and furnishings, complete floor/ceiling, no blank wedges or major duplication."
+    },
+    {
+      "id": "workspaces-4k-03",
+      "source": "output/imagegen/panoramas-4k/workspaces-4k-03.webp",
+      "sha256": "4857464fcf3fa6cef960378fc1705992862a8874b75e9c213390eac543c70dac",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and all six browser directions inspected: clear materials, coherent wrap and furnishings, complete floor/ceiling, no blank wedges or major duplication. Minor rug-edge distortion remains in the illustrative concept."
+    },
+    {
+      "id": "balconies-4k-01",
+      "source": "output/imagegen/panoramas-4k/balconies-4k-01.webp",
+      "sha256": "b13fc38017fbfd8a15e62782eb5902331011f6ddd5d71bdcb9882481e07f548e",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and all six browser directions inspected: clear materials, coherent wrap and furnishings, complete floor/ceiling, no blank wedges or major duplication."
+    },
+    {
+      "id": "balconies-4k-02",
+      "source": "output/imagegen/panoramas-4k/balconies-4k-02.webp",
+      "sha256": "7de457c4c8d3d92e03e5a49f7f534b61836c93f7393bac999bea54c9229a8d0b",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical views inspected. Coherent complete room, clean rear joins, clear furnishings, no blank wedges or repeated room halves. Opening angle selected for the furniture and outlook."
+    },
+    {
+      "id": "balconies-4k-03",
+      "source": "output/imagegen/panoramas-4k/balconies-4k-03.webp",
+      "sha256": "78db17c9cb4e8afee74d3eb03e65a57080b7d3810edd783470c732d02dc829e9",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical views inspected. Coherent complete room, clean rear joins, clear furnishings, no blank wedges or repeated room halves. Opening angle selected for the furniture and outlook. Minor pergola-slat termination inconsistency appears at the ceiling pole."
+    },
+    {
+      "id": "renovation-4k-01",
+      "source": "output/imagegen/panoramas-4k/renovation-4k-01.webp",
+      "sha256": "24624e694ef68b5d628cca58b4b6a74db3842b80ec171e62a26ada9d8c7223d1",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical views inspected. Coherent complete room, clean rear joins, clear furnishings, no blank wedges or repeated room halves. Opening angle selected for the furniture and outlook."
+    },
+    {
+      "id": "renovation-4k-02",
+      "source": "output/imagegen/panoramas-4k/renovation-4k-02.webp",
+      "sha256": "e0c40847f322a0d2f58aa9c1beca9be87b0f94bb1a428523e319692d05f03f84",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear material detail and coherent room coverage, with intact rear seam, ceiling and floor, no blank wedges or duplicated room halves. Mirror context is acceptable for an illustrative concept."
+    },
+    {
+      "id": "renovation-4k-03",
+      "source": "output/imagegen/panoramas-4k/renovation-4k-03.webp",
+      "sha256": "069d75674cfe0848f9e595788dca228cc252e9674016cbbae35567356953c9bc",
+      "width": 3840,
+      "height": 1920,
+      "status": "approved",
+      "review": "Native image and six spherical directions inspected. Clear material detail and coherent room coverage, with intact rear seam, ceiling and floor, no blank wedges or duplicated room halves. Mirror context is acceptable for an illustrative concept."
+    }
+  ]
+}

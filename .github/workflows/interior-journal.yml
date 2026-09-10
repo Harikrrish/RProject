@@ -1,0 +1,104 @@
+name: Interior journal research and draft
+
+on:
+  schedule:
+    # 03:30 UTC = 09:00 India time. Quality takes priority over filling a slot.
+    - cron: '30 3 * * 1,3,5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Validate setup without API calls or creating a draft
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: interior-journal
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    if: vars.BLOG_AUTOMATION_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.dry_run)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate automation
+        run: node --test tests/blog-automation.test.mjs
+      - name: Check for a pending editorial draft
+        id: pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pending_count=$(gh pr list --head automation/interior-journal --state open --json number --jq 'length')
+          echo "count=$pending_count" >> "$GITHUB_OUTPUT"
+          if [ "$pending_count" != "0" ]; then
+            echo 'A journal draft is awaiting review; no new API requests will be made.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          gh pr list --head automation/interior-journal --state all --limit 100 --json createdAt > "$RUNNER_TEMP/journal-history.json"
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import { cadenceReason, localDate } from './scripts/blog-lib.mjs';
+          const config = JSON.parse(fs.readFileSync('content/blog-config.json', 'utf8'));
+          const history = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/journal-history.json', 'utf8'));
+          const reason = cadenceReason(history.map((pr) => ({ createdOn: localDate(new Date(pr.createdAt), config.timezone) })), config, new Date(), true);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, 'cadence_ok=' + !reason + '\n');
+          if (reason) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, reason + '\n');
+          JS
+      - name: Research and prepare one article
+        id: generation
+        if: steps.pending.outputs.count == '0' && steps.pending.outputs.cadence_ok == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BLOG_MODEL: ${{ vars.OPENAI_BLOG_MODEL }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+          MANUAL_RUN: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          if [ "$MANUAL_RUN" = "true" ]; then args+=(--manual); fi
+          node scripts/blog-generate.mjs "${args[@]}" | tee "$RUNNER_TEMP/journal-result.json"
+          cat "$RUNNER_TEMP/journal-result.json" >> "$GITHUB_STEP_SUMMARY"
+          node -e 'const fs = require("node:fs"); const result = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + "/journal-result.json", "utf8")); fs.appendFileSync(process.env.GITHUB_OUTPUT, "generated=" + (result.generated === true) + "\n");'
+      - name: Render checked article
+        if: steps.generation.outputs.generated == 'true'
+        run: |
+          node scripts/blog-render.mjs
+          npm ci --ignore-scripts
+          npm run build
+          npm test
+      - name: Open editorial draft
+        if: steps.generation.outputs.generated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if [ -z "$(git status --porcelain -- content/posts content/research blog blogs.html sitemap.xml)" ]; then
+            echo 'No new content passed the gates.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git switch -C automation/interior-journal
+          git config user.name 'Alankaar Editorial Automation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/posts content/research blog blogs.html sitemap.xml
+          git commit -m 'Add researched interior journal draft'
+          if git ls-remote --exit-code --heads origin automation/interior-journal > /dev/null; then
+            git fetch origin refs/heads/automation/interior-journal:refs/remotes/origin/automation/interior-journal
+          fi
+          git push --force-with-lease origin automation/interior-journal
+          cat > "$RUNNER_TEMP/journal-pr.md" <<'BODY'
+          This draft answers a current Chennai interior-planning question using competitor coverage and checked primary sources. The article, local gallery image, source links, blog card and sitemap entry are ready to review.
+
+          Read the rendered article and its `content/research/` record. Confirm the advice, source support, image provenance and business details. Existing gallery images are labelled as design references; do not relabel them as completed client projects without evidence. Edit the JSON in `content/posts/`, then run `npm run blog:render` and `npm run build` after any copy change.
+
+          Automated checks verify source availability, recent source metadata, excerpts, article structure, deduplication, safe rendering and an editorial model assessment. These checks cannot guarantee factual accuracy or originality. Merge only after the article is suitable for customers. Merging adds the article to the next site deployment; this workflow does not deploy Firebase.
+          BODY
+          gh pr create --draft --base "$DEFAULT_BRANCH" --head automation/interior-journal --title 'Interior journal: researched article for review' --body-file "$RUNNER_TEMP/journal-pr.md"

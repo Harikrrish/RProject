@@ -1,0 +1,68 @@
+[
+  {
+    "id": "kitchen-reference",
+    "path": "/img/portfolio/15.webp",
+    "alt": "Light kitchen cabinets with a dark countertop and warm task lighting",
+    "caption": "Kitchen design reference from the existing Alankaar Interiors website gallery.",
+    "kind": "design-reference",
+    "credit": "Existing Alankaar Interiors website gallery",
+    "provenance": "Already used in this repository before the journal automation; photographer and original licence are not recorded. This is not evidence of an Alankaar client project.",
+    "sourceUrl": "https://alankaarinteriors.com/img/portfolio/15.webp",
+    "topics": ["kitchen", "materials", "lighting", "renovation"]
+  },
+  {
+    "id": "wardrobe-reference",
+    "path": "/img/portfolio/23.webp",
+    "alt": "Open wardrobe with hanging rails, drawers and a clothes shelf",
+    "caption": "Wardrobe design reference from the existing Alankaar Interiors website gallery.",
+    "kind": "design-reference",
+    "credit": "Existing Alankaar Interiors website gallery",
+    "provenance": "Already used in this repository before the journal automation; photographer and original licence are not recorded. This is not evidence of an Alankaar client project.",
+    "sourceUrl": "https://alankaarinteriors.com/img/portfolio/23.webp",
+    "topics": ["wardrobe", "storage", "bedroom", "small home"]
+  },
+  {
+    "id": "living-reference",
+    "path": "/img/portfolio/21.webp",
+    "alt": "Living room with a grey sofa, timber tables and natural light",
+    "caption": "Living room design reference from the existing Alankaar Interiors website gallery.",
+    "kind": "design-reference",
+    "credit": "Existing Alankaar Interiors website gallery",
+    "provenance": "Already used in this repository before the journal automation; photographer and original licence are not recorded. This is not evidence of an Alankaar client project.",
+    "sourceUrl": "https://alankaarinteriors.com/img/portfolio/21.webp",
+    "topics": ["layout", "living room", "budget", "ventilation"]
+  },
+  {
+    "id": "editorial-materials-and-plan",
+    "path": "/img/journal/materials-and-plan.webp",
+    "alt": "Timber and stone samples, fabric swatches and a brass handle beside a home floor plan",
+    "caption": "AI-generated illustration of materials and a floor plan, created to explain interior planning.",
+    "kind": "generated-illustration",
+    "credit": "AI-generated editorial illustration for Alankaar Interiors",
+    "provenance": "Created as an AI-generated editorial image for this website update. The materials, floor plan and scene are illustrative; they do not document a client project, specification, price or completed Alankaar work.",
+    "sourceUrl": "https://alankaarinteriors.com/img/journal/materials-and-plan.webp",
+    "topics": ["materials", "budget", "planning", "renovation", "finishes"]
+  },
+  {
+    "id": "editorial-kitchen-storage-detail",
+    "path": "/img/journal/kitchen-storage-detail.webp",
+    "alt": "Open kitchen drawers holding stainless steel cookware and cutlery beneath a pale countertop",
+    "caption": "AI-generated kitchen storage illustration showing ideas for cookware and cutlery drawers.",
+    "kind": "generated-illustration",
+    "credit": "AI-generated editorial illustration for Alankaar Interiors",
+    "provenance": "Created as an AI-generated editorial image for this website update. This is a kitchen storage concept, not a photograph of an installed product or a completed Alankaar client project. Dimensions and hardware performance cannot be inferred from the image.",
+    "sourceUrl": "https://alankaarinteriors.com/img/journal/kitchen-storage-detail.webp",
+    "topics": ["kitchen", "storage", "drawers", "cabinet", "layout"]
+  },
+  {
+    "id": "editorial-compact-apartment",
+    "path": "/img/journal/compact-apartment.webp",
+    "alt": "Compact living and dining area with a pale sofa, round coffee table and a balcony beyond sheer curtains",
+    "caption": "AI-generated illustration of a compact apartment layout, with shared living and dining space.",
+    "kind": "generated-illustration",
+    "credit": "AI-generated editorial illustration for Alankaar Interiors",
+    "provenance": "Created as an AI-generated editorial image for this website update. The apartment is an illustrative design concept, not a documented address, client home or completed Alankaar project.",
+    "sourceUrl": "https://alankaarinteriors.com/img/journal/compact-apartment.webp",
+    "topics": ["small home", "layout", "living room", "storage", "apartment", "ventilation"]
+  }
+]

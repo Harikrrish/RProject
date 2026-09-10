@@ -1,4 +1,4 @@
-﻿{
+{
 	"sceneArray": [
 		{
 			"cameraPos":
@@ -32,7 +32,7 @@
 			"depthWhiteDistance": 3000,
 			"depthBlackDistance": 0,
 			"sceneCameraPivotType": "Floor",
-			"resolution": "16K",
+			"resolution": "4096x2048 panorama; 2048x2048 cube faces",
 			"colorImageUrl": "images/4a58731ccc184c1aa6ee3474d08c9486.png",
 			"bgImageUrl": "images/4a58731ccc184c1aa6ee3474d08c9486_bg.png"
 		}

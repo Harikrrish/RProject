@@ -1,0 +1,3035 @@
+[
+  {
+    "id": "living-rooms-4k-01",
+    "envelope": {
+      "width": 7.2,
+      "depth": 6,
+      "height": 3.05,
+      "wallColor": "#e7dfd0",
+      "floorColor": "#cfbea3",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 4.4,
+        "height": 1.85,
+        "bottom": 0.65
+      },
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -2.8,
+        "width": 0.82,
+        "height": 2.55,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "sofa",
+        "x": 2.7,
+        "z": 0.7,
+        "width": 2.8,
+        "depth": 1,
+        "height": 0.92,
+        "rotation": -90,
+        "color": "#dbd1bf",
+        "accent": "#7e8266"
+      },
+      {
+        "type": "table",
+        "x": 1.45,
+        "z": 0.8,
+        "width": 1.8,
+        "depth": 0.9,
+        "height": 0.42,
+        "rotation": -90,
+        "color": "#d1bea0",
+        "shape": "oval",
+        "baseColor": "#765438"
+      },
+      {
+        "type": "cabinet",
+        "x": -3.22,
+        "z": 0,
+        "width": 2.8,
+        "depth": 0.5,
+        "height": 0.62,
+        "rotation": 90,
+        "color": "#78593f",
+        "accent": "#cbbb9d"
+      },
+      {
+        "type": "tv",
+        "x": -3.3,
+        "z": 0,
+        "width": 1.8,
+        "depth": 0.08,
+        "height": 1.02,
+        "rotation": 90,
+        "color": "#17191a",
+        "y": 1.52
+      },
+      {
+        "type": "armchair",
+        "x": -2,
+        "z": -2.1,
+        "width": 0.85,
+        "depth": 0.85,
+        "height": 0.95,
+        "rotation": 0,
+        "color": "#915f43",
+        "baseColor": "#302a23"
+      },
+      {
+        "type": "armchair",
+        "x": 2,
+        "z": -2.1,
+        "width": 0.85,
+        "depth": 0.85,
+        "height": 0.95,
+        "rotation": 0,
+        "color": "#915f43",
+        "baseColor": "#302a23"
+      },
+      {
+        "type": "round-table",
+        "x": -1.28,
+        "z": -2.28,
+        "width": 0.42,
+        "depth": 0.42,
+        "height": 0.53,
+        "rotation": 0,
+        "color": "#6b4e38"
+      },
+      {
+        "type": "round-table",
+        "x": 1.28,
+        "z": -2.28,
+        "width": 0.42,
+        "depth": 0.42,
+        "height": 0.53,
+        "rotation": 0,
+        "color": "#6b4e38"
+      },
+      {
+        "type": "round-table",
+        "x": 2.88,
+        "z": 2.35,
+        "width": 0.45,
+        "depth": 0.45,
+        "height": 0.5,
+        "rotation": 0,
+        "color": "#695038"
+      },
+      {
+        "type": "artwork",
+        "x": 3.5,
+        "z": 0.7,
+        "width": 1.6,
+        "depth": 0.04,
+        "height": 1.03,
+        "rotation": -90,
+        "color": "#b9a58a",
+        "y": 1.85,
+        "accent": "#796853"
+      },
+      {
+        "type": "lamp",
+        "x": 3.47,
+        "z": -0.65,
+        "width": 0.14,
+        "depth": 0.12,
+        "height": 0.6,
+        "rotation": -90,
+        "color": "#876b40",
+        "y": 1.9
+      },
+      {
+        "type": "lamp",
+        "x": 3.47,
+        "z": 2.13,
+        "width": 0.14,
+        "depth": 0.12,
+        "height": 0.6,
+        "rotation": -90,
+        "color": "#876b40",
+        "y": 1.9
+      },
+      {
+        "type": "plant",
+        "x": -3.18,
+        "z": -1.08,
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.63,
+        "rotation": 0,
+        "color": "#536845",
+        "y": 0.96
+      },
+      {
+        "type": "plant",
+        "x": 1.45,
+        "z": 0.8,
+        "width": 0.25,
+        "depth": 0.25,
+        "height": 0.45,
+        "rotation": 0,
+        "color": "#5f714b",
+        "y": 0.65
+      },
+      {
+        "type": "lamp",
+        "x": -3.15,
+        "z": 1.08,
+        "width": 0.22,
+        "depth": 0.22,
+        "height": 0.25,
+        "rotation": 0,
+        "color": "#e4cf94",
+        "y": 0.76
+      },
+      {
+        "type": "fan",
+        "x": 0,
+        "z": -0.7,
+        "width": 1.4,
+        "depth": 1.4,
+        "height": 0.22,
+        "rotation": 0,
+        "color": "#64462f",
+        "y": 2.78
+      }
+    ],
+    "highlights": [
+      {
+        "id": "window-chairs",
+        "title": "Chairs by the window",
+        "description": "Two leather chairs flank the broad window overlooking palms.",
+        "yaw": 180,
+        "pitch": -5
+      },
+      {
+        "id": "media-storage",
+        "title": "Walnut media storage",
+        "description": "The television sits above a low walnut cabinet with a pale stone section.",
+        "yaw": 80,
+        "pitch": -5
+      },
+      {
+        "id": "linen-seating",
+        "title": "Linen seating",
+        "description": "The cream sofa, green throw and oval stone table form the main seating area.",
+        "yaw": 285,
+        "pitch": -13
+      },
+      {
+        "id": "warm-light",
+        "title": "Art and wall lighting",
+        "description": "A neutral abstract artwork sits between two warm wall lights.",
+        "yaw": 285,
+        "pitch": 13
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.7,
+          1.1,
+          0.7
+        ]
+      },
+      {
+        "id": "window-side",
+        "title": "Window side",
+        "position": [
+          0,
+          1.5,
+          -1.8
+        ],
+        "target": [
+          2.7,
+          1.1,
+          0.7
+        ]
+      },
+      {
+        "id": "media-side",
+        "title": "Media side",
+        "position": [
+          -1.8,
+          1.5,
+          0.4
+        ],
+        "target": [
+          -3.2,
+          1.1,
+          0
+        ]
+      },
+      {
+        "id": "entry-side",
+        "title": "Entry side",
+        "position": [
+          -0.6,
+          1.5,
+          2.1
+        ],
+        "target": [
+          1.45,
+          1.1,
+          0.8
+        ]
+      }
+    ],
+    "notes": "Estimated from the actual native image and six pilot views. Front window, left TV cabinet, right sofa and two distinct window chairs are retained. Entry sits toward the back-left corner. Stone/wood cabinet detail and ceiling cove are simplified; this is an inferred single-room model, not measured geometry."
+  },
+  {
+    "id": "living-rooms-4k-02",
+    "envelope": {
+      "width": 6.8,
+      "depth": 6,
+      "height": 2.9,
+      "wallColor": "#d9cfbc",
+      "floorColor": "#c8ae84",
+      "floorStyle": "wood",
+      "wallColors": {
+        "front": "#d5c5a8",
+        "right": "#d9cfbc",
+        "back": "#d9cfbc",
+        "left": "#d9cfbc"
+      }
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": -1.05,
+        "width": 3.6,
+        "height": 2.45,
+        "bottom": 0.1
+      },
+      {
+        "type": "door",
+        "wall": "right",
+        "offset": 1.92,
+        "width": 0.85,
+        "height": 2.4,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "sofa",
+        "x": 2.55,
+        "z": 0.25,
+        "width": 3.05,
+        "depth": 1.05,
+        "height": 0.84,
+        "rotation": -90,
+        "color": "#e8e1d2",
+        "variant": "curved",
+        "accent": "#d7cebb"
+      },
+      {
+        "type": "round-table",
+        "x": 1.2,
+        "z": 0.55,
+        "width": 1.05,
+        "depth": 1.05,
+        "height": 0.33,
+        "rotation": 0,
+        "color": "#d4c3a3"
+      },
+      {
+        "type": "armchair",
+        "x": -2.45,
+        "z": -0.7,
+        "width": 0.88,
+        "depth": 0.92,
+        "height": 0.92,
+        "rotation": 90,
+        "color": "#a36333",
+        "baseColor": "#4c3524"
+      },
+      {
+        "type": "round-table",
+        "x": -2.62,
+        "z": -1.48,
+        "width": 0.33,
+        "depth": 0.33,
+        "height": 0.48,
+        "rotation": 0,
+        "color": "#292826"
+      },
+      {
+        "type": "lamp",
+        "x": -3.04,
+        "z": -0.38,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 1.85,
+        "rotation": 0,
+        "color": "#353127"
+      },
+      {
+        "type": "cabinet",
+        "x": -0.15,
+        "z": -2.73,
+        "width": 3.7,
+        "depth": 0.45,
+        "height": 0.48,
+        "rotation": 0,
+        "color": "#b99b70"
+      },
+      {
+        "type": "shelf",
+        "x": 2.25,
+        "z": -2.7,
+        "width": 0.6,
+        "depth": 0.42,
+        "height": 2.55,
+        "rotation": 0,
+        "color": "#654a2f",
+        "count": 5,
+        "accent": "#c3ac75"
+      },
+      {
+        "type": "plant",
+        "x": 0.9,
+        "z": -2.66,
+        "width": 0.26,
+        "depth": 0.26,
+        "height": 0.73,
+        "rotation": 0,
+        "color": "#65714c",
+        "y": 0.86
+      }
+    ],
+    "highlights": [
+      {
+        "id": "stone-wall",
+        "title": "Stone and oak storage",
+        "description": "A broad pale stone wall rises above the long, low oak cabinet.",
+        "yaw": 180,
+        "pitch": -2
+      },
+      {
+        "id": "curved-sofa",
+        "title": "Curved cream sofa",
+        "description": "The rounded sofa and low circular stone table occupy the right side.",
+        "yaw": 265,
+        "pitch": -14
+      },
+      {
+        "id": "reading-chair",
+        "title": "Leather reading chair",
+        "description": "A tobacco leather chair and slim floor lamp sit beside the glazing.",
+        "yaw": 85,
+        "pitch": -7
+      },
+      {
+        "id": "city-window",
+        "title": "Daylight and city views",
+        "description": "Full-height glazing brings daylight across the pale timber floor.",
+        "yaw": 105,
+        "pitch": 4
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.55,
+          1.1,
+          0.25
+        ]
+      },
+      {
+        "id": "window-aisle",
+        "title": "Window aisle",
+        "position": [
+          -1.1,
+          1.5,
+          -1.5
+        ],
+        "target": [
+          -2.45,
+          1.1,
+          -0.7
+        ]
+      },
+      {
+        "id": "console-side",
+        "title": "Console side",
+        "position": [
+          0.55,
+          1.5,
+          -1.6
+        ],
+        "target": [
+          -0.15,
+          1.1,
+          -2.73
+        ]
+      },
+      {
+        "id": "rear-floor",
+        "title": "Rear floor",
+        "position": [
+          -0.55,
+          1.5,
+          1.95
+        ],
+        "target": [
+          2.55,
+          1.1,
+          0.25
+        ]
+      }
+    ],
+    "notes": "Actual output has no television and no central rug. One curved sofa is right, one leather chair is left, stone panel and low oak cabinet are forward, and a narrow open shelf is at the front-right edge. Entry is on the right toward the rear. Wall curvature is approximated by a rectangular envelope."
+  },
+  {
+    "id": "living-rooms-4k-03",
+    "envelope": {
+      "width": 6.4,
+      "depth": 5.6,
+      "height": 2.95,
+      "wallColor": "#dfd3bd",
+      "floorColor": "#c4ad88",
+      "floorStyle": "stone",
+      "wallColors": {
+        "right": "#77764e",
+        "front": "#dfd3bd",
+        "left": "#dfd3bd",
+        "back": "#dfd3bd"
+      }
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": 0.9,
+        "width": 3.05,
+        "height": 1.65,
+        "bottom": 0.75
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": -1.9,
+        "width": 0.78,
+        "height": 2.35,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "sofa",
+        "x": 2.56,
+        "z": 1.22,
+        "width": 2.05,
+        "depth": 0.8,
+        "height": 0.94,
+        "rotation": -90,
+        "color": "#c7b99b",
+        "baseColor": "#715331",
+        "accent": "#687449"
+      },
+      {
+        "type": "armchair",
+        "x": 0.72,
+        "z": -0.5,
+        "width": 0.88,
+        "depth": 0.86,
+        "height": 0.92,
+        "rotation": 90,
+        "color": "#737a54",
+        "accent": "#a4784c"
+      },
+      {
+        "type": "round-table",
+        "x": 1.58,
+        "z": 1.28,
+        "width": 0.86,
+        "depth": 0.86,
+        "height": 0.36,
+        "rotation": 0,
+        "color": "#5e422e"
+      },
+      {
+        "type": "round-table",
+        "x": 1.43,
+        "z": 0.2,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.49,
+        "rotation": 0,
+        "color": "#8b7657",
+        "baseColor": "#674c30"
+      },
+      {
+        "type": "round-table",
+        "x": 2.7,
+        "z": 2.45,
+        "width": 0.42,
+        "depth": 0.42,
+        "height": 0.6,
+        "rotation": 0,
+        "color": "#998469",
+        "baseColor": "#705035"
+      },
+      {
+        "type": "lamp",
+        "x": 2.7,
+        "z": 2.45,
+        "width": 0.24,
+        "depth": 0.24,
+        "height": 0.38,
+        "rotation": 0,
+        "color": "#aa8840",
+        "y": 0.8
+      },
+      {
+        "type": "cabinet",
+        "x": 2.86,
+        "z": -1.52,
+        "width": 1.65,
+        "depth": 0.5,
+        "height": 0.76,
+        "rotation": -90,
+        "color": "#765234"
+      },
+      {
+        "type": "artwork",
+        "x": 3.12,
+        "z": -0.06,
+        "width": 1.48,
+        "depth": 0.04,
+        "height": 1.2,
+        "rotation": -90,
+        "color": "#baa27f",
+        "y": 1.83,
+        "accent": "#4f4231"
+      },
+      {
+        "type": "plant",
+        "x": 2.81,
+        "z": -1.98,
+        "width": 0.31,
+        "depth": 0.31,
+        "height": 0.55,
+        "rotation": 0,
+        "color": "#667346",
+        "y": 1.04
+      },
+      {
+        "type": "fan",
+        "x": 0,
+        "z": -0.35,
+        "width": 1.35,
+        "depth": 1.35,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#705032",
+        "y": 2.68
+      }
+    ],
+    "highlights": [
+      {
+        "id": "cane-sofa",
+        "title": "Cane and linen seating",
+        "description": "A cane-backed teak sofa sits against the muted olive wall.",
+        "yaw": 292,
+        "pitch": -8
+      },
+      {
+        "id": "heritage-window",
+        "title": "Timber-framed window",
+        "description": "The broad timber window and metal grille frame a leafy outlook.",
+        "yaw": 48,
+        "pitch": 3
+      },
+      {
+        "id": "sideboard-art",
+        "title": "Teak and textured art",
+        "description": "A low teak sideboard and a large abstract artwork share the olive wall.",
+        "yaw": 245,
+        "pitch": 3
+      },
+      {
+        "id": "occasional-tables",
+        "title": "Mixed occasional tables",
+        "description": "A green lounge chair faces two small tables in different wood and stone finishes.",
+        "yaw": 255,
+        "pitch": -22
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Room centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.56,
+          1.1,
+          1.22
+        ]
+      },
+      {
+        "id": "window-side",
+        "title": "Window side",
+        "position": [
+          -1.65,
+          1.5,
+          0.7
+        ],
+        "target": [
+          2.56,
+          1.1,
+          1.22
+        ]
+      },
+      {
+        "id": "front-floor",
+        "title": "Front floor",
+        "position": [
+          -0.35,
+          1.5,
+          -1.85
+        ],
+        "target": [
+          2.86,
+          1.1,
+          -1.52
+        ]
+      },
+      {
+        "id": "entry-aisle",
+        "title": "Entry aisle",
+        "position": [
+          -1.7,
+          1.5,
+          -1.15
+        ],
+        "target": [
+          1.58,
+          1.1,
+          1.28
+        ]
+      }
+    ],
+    "notes": "The selected image differs from the early prompt: the olive feature wall and sofa are on the right, the forward wall is mostly plain, and glazing sits toward the back-left. The geometric model uses a straight stone border rather than reproducing the synthetic curled floor-border artifact at the nadir. Cane weaving and border ornament are simplified."
+  },
+  {
+    "id": "shops-4k-01",
+    "envelope": {
+      "width": 8,
+      "depth": 6.6,
+      "height": 3,
+      "wallColor": "#d5c6aa",
+      "floorColor": "#c8b390",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": 0,
+        "width": 1,
+        "height": 2.5,
+        "bottom": 0
+      },
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": -1.8,
+        "width": 2.45,
+        "height": 2.5,
+        "bottom": 0
+      },
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 1.8,
+        "width": 2.45,
+        "height": 2.5,
+        "bottom": 0
+      },
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -0.2,
+        "width": 0.9,
+        "height": 2.4,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "clothing-rack",
+        "x": -3.57,
+        "z": -1.7,
+        "width": 1.38,
+        "depth": 0.64,
+        "height": 2.35,
+        "rotation": 90,
+        "color": "#a77c45",
+        "accent": "#c7b08b"
+      },
+      {
+        "type": "clothing-rack",
+        "x": -3.57,
+        "z": 0,
+        "width": 1.38,
+        "depth": 0.64,
+        "height": 2.35,
+        "rotation": 90,
+        "color": "#a77c45",
+        "accent": "#888568"
+      },
+      {
+        "type": "clothing-rack",
+        "x": -3.57,
+        "z": 1.7,
+        "width": 1.38,
+        "depth": 0.64,
+        "height": 2.35,
+        "rotation": 90,
+        "color": "#a77c45",
+        "accent": "#3d3b33"
+      },
+      {
+        "type": "table",
+        "x": -1.95,
+        "z": 0.5,
+        "width": 2,
+        "depth": 0.85,
+        "height": 0.74,
+        "rotation": 90,
+        "color": "#c5b497",
+        "shape": "oval",
+        "baseColor": "#ad9772"
+      },
+      {
+        "type": "counter",
+        "x": 3.05,
+        "z": -1.72,
+        "width": 1.1,
+        "depth": 0.72,
+        "height": 0.98,
+        "rotation": -90,
+        "color": "#c0b094",
+        "accent": "#d8cbb3"
+      },
+      {
+        "type": "bench",
+        "x": 3.34,
+        "z": 0.75,
+        "width": 2.4,
+        "depth": 0.67,
+        "height": 0.47,
+        "rotation": -90,
+        "color": "#c1ac8a",
+        "baseColor": "#946c39"
+      },
+      {
+        "type": "plant",
+        "x": -3.18,
+        "z": -2.88,
+        "width": 0.42,
+        "depth": 0.42,
+        "height": 1.6,
+        "rotation": 0,
+        "color": "#4c6c39"
+      },
+      {
+        "type": "plant",
+        "x": 3.17,
+        "z": -2.88,
+        "width": 0.43,
+        "depth": 0.43,
+        "height": 1.48,
+        "rotation": 0,
+        "color": "#526d3c"
+      },
+      {
+        "type": "plant",
+        "x": -1.95,
+        "z": 0.08,
+        "width": 0.25,
+        "depth": 0.25,
+        "height": 0.44,
+        "rotation": 0,
+        "color": "#697544",
+        "y": 0.98
+      },
+      {
+        "type": "lamp",
+        "x": 3.05,
+        "z": -2.06,
+        "width": 0.22,
+        "depth": 0.22,
+        "height": 0.39,
+        "rotation": 0,
+        "color": "#b39155",
+        "y": 1.18
+      },
+      {
+        "type": "screen",
+        "x": -0.2,
+        "z": 3.19,
+        "width": 0.9,
+        "depth": 0.12,
+        "height": 2.3,
+        "rotation": 180,
+        "color": "#b69d75"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "clothing-wall",
+        "title": "Oak clothing bays",
+        "description": "Three illuminated oak bays organise hanging clothes along the left wall.",
+        "yaw": 85,
+        "pitch": -3
+      },
+      {
+        "id": "stone-display",
+        "title": "Stone display table",
+        "description": "Folded clothes sit on a low stone display table beside the main aisle.",
+        "yaw": 115,
+        "pitch": -22
+      },
+      {
+        "id": "checkout-bench",
+        "title": "Checkout and seating",
+        "description": "A compact stone checkout and long upholstered bench sit on the right.",
+        "yaw": 275,
+        "pitch": -9
+      },
+      {
+        "id": "fitting-room",
+        "title": "Curtained fitting area",
+        "description": "A full-length curtain marks the fitting area at the rear.",
+        "yaw": 350,
+        "pitch": 0
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Main aisle",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          -3.57,
+          1.1,
+          0
+        ]
+      },
+      {
+        "id": "entrance-side",
+        "title": "Entrance side",
+        "position": [
+          0,
+          1.5,
+          -2.25
+        ],
+        "target": [
+          -3.57,
+          1.1,
+          -1.7
+        ]
+      },
+      {
+        "id": "checkout-side",
+        "title": "Checkout side",
+        "position": [
+          1.6,
+          1.5,
+          -0.85
+        ],
+        "target": [
+          3.05,
+          1.1,
+          -1.72
+        ]
+      },
+      {
+        "id": "rear-aisle",
+        "title": "Rear aisle",
+        "position": [
+          0.65,
+          1.5,
+          2.05
+        ],
+        "target": [
+          -1.95,
+          1.1,
+          0.5
+        ]
+      }
+    ],
+    "notes": "Reviewed actual boutique panorama and six views. Three clothing bays, one stone display table, one right checkout, one right bench and one curtained rear fitting area are retained. The screen approximates the fitting curtain; folded garments, shelf handbags and track lights are simplified. No jewellery cabinets or cafe tables are added."
+  },
+  {
+    "id": "shops-4k-02",
+    "envelope": {
+      "width": 7.6,
+      "depth": 6.4,
+      "height": 2.95,
+      "wallColor": "#baa588",
+      "floorColor": "#c8b493",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": 0,
+        "width": 1.65,
+        "height": 2.4,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "display-case",
+        "x": -3.48,
+        "z": -0.65,
+        "width": 0.95,
+        "depth": 0.46,
+        "height": 2.05,
+        "rotation": 90,
+        "color": "#68472f",
+        "variant": "glass",
+        "accent": "#ccb783"
+      },
+      {
+        "type": "display-case",
+        "x": -3.48,
+        "z": 0.62,
+        "width": 0.95,
+        "depth": 0.46,
+        "height": 2.05,
+        "rotation": 90,
+        "color": "#68472f",
+        "variant": "glass",
+        "accent": "#ccb783"
+      },
+      {
+        "type": "display-case",
+        "x": -3.48,
+        "z": 1.9,
+        "width": 0.95,
+        "depth": 0.46,
+        "height": 2.05,
+        "rotation": 90,
+        "color": "#68472f",
+        "variant": "glass",
+        "accent": "#ccb783"
+      },
+      {
+        "type": "counter",
+        "x": -2.48,
+        "z": -2.44,
+        "width": 1.2,
+        "depth": 0.55,
+        "height": 1.02,
+        "rotation": 0,
+        "color": "#67472f"
+      },
+      {
+        "type": "display-case",
+        "x": 2.8,
+        "z": -1.05,
+        "width": 1.45,
+        "depth": 0.67,
+        "height": 1.04,
+        "rotation": -90,
+        "color": "#755238",
+        "variant": "glass",
+        "accent": "#d8c29b"
+      },
+      {
+        "type": "display-case",
+        "x": 2.8,
+        "z": 0.82,
+        "width": 1.45,
+        "depth": 0.67,
+        "height": 1.04,
+        "rotation": -90,
+        "color": "#755238",
+        "variant": "glass",
+        "accent": "#d8c29b"
+      },
+      {
+        "type": "table",
+        "x": 1.15,
+        "z": 2.53,
+        "width": 1.4,
+        "depth": 0.76,
+        "height": 0.75,
+        "rotation": 0,
+        "color": "#65462f",
+        "baseColor": "#543825"
+      },
+      {
+        "type": "chair",
+        "x": 0.18,
+        "z": 2.53,
+        "width": 0.52,
+        "depth": 0.52,
+        "height": 0.9,
+        "rotation": 90,
+        "color": "#958366"
+      },
+      {
+        "type": "chair",
+        "x": 2.1,
+        "z": 2.53,
+        "width": 0.52,
+        "depth": 0.52,
+        "height": 0.9,
+        "rotation": -90,
+        "color": "#958366"
+      },
+      {
+        "type": "plant",
+        "x": 1.15,
+        "z": 2.63,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 0.48,
+        "rotation": 0,
+        "color": "#687049",
+        "y": 1.01
+      },
+      {
+        "type": "plant",
+        "x": -2.77,
+        "z": -2.45,
+        "width": 0.23,
+        "depth": 0.23,
+        "height": 0.45,
+        "rotation": 0,
+        "color": "#778153",
+        "y": 1.27
+      },
+      {
+        "type": "screen",
+        "x": -1.35,
+        "z": -3.12,
+        "width": 0.92,
+        "depth": 0.1,
+        "height": 2.6,
+        "rotation": 0,
+        "color": "#6a4a31"
+      },
+      {
+        "type": "screen",
+        "x": 1.35,
+        "z": -3.12,
+        "width": 0.92,
+        "depth": 0.1,
+        "height": 2.6,
+        "rotation": 0,
+        "color": "#6a4a31"
+      }
+    ],
+    "highlights": [
+      {
+        "id": "wall-cases",
+        "title": "Illuminated jewellery cabinets",
+        "description": "Three tall glass-fronted cases display jewellery along the left wall.",
+        "yaw": 75,
+        "pitch": -2
+      },
+      {
+        "id": "glass-counters",
+        "title": "Glass display counters",
+        "description": "Two low walnut and glass counters occupy the right side.",
+        "yaw": 265,
+        "pitch": -12
+      },
+      {
+        "id": "consultation-table",
+        "title": "Consultation table",
+        "description": "A timber table and two upholstered chairs form a quiet rear seating area.",
+        "yaw": 335,
+        "pitch": -14
+      },
+      {
+        "id": "front-entrance",
+        "title": "Glazed entrance",
+        "description": "A central glazed entrance is framed by dark walnut panels.",
+        "yaw": 180,
+        "pitch": 0
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Showroom centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.8,
+          1.1,
+          -1.05
+        ]
+      },
+      {
+        "id": "entrance-aisle",
+        "title": "Entrance aisle",
+        "position": [
+          0,
+          1.5,
+          -1.95
+        ],
+        "target": [
+          -2.48,
+          1.1,
+          -2.44
+        ]
+      },
+      {
+        "id": "display-aisle",
+        "title": "Display aisle",
+        "position": [
+          -1.85,
+          1.5,
+          0.6
+        ],
+        "target": [
+          -3.48,
+          1.1,
+          0.62
+        ]
+      },
+      {
+        "id": "consultation-approach",
+        "title": "Consultation approach",
+        "position": [
+          0.3,
+          1.5,
+          1.5
+        ],
+        "target": [
+          1.15,
+          1.1,
+          2.53
+        ]
+      }
+    ],
+    "notes": "Actual jewellery showroom: three tall wall cases left, two low display cases right, small front-left desk and rear-right consultation table with two chairs. Glass entrance is forward. Jewellery busts and trays are approximated within display primitives; no clothing inventory is used. Bronze ceiling tracks and stone veining are simplified."
+  },
+  {
+    "id": "shops-4k-03",
+    "envelope": {
+      "width": 7.5,
+      "depth": 6.5,
+      "height": 2.9,
+      "wallColor": "#e1d3b9",
+      "floorColor": "#cdbc9e",
+      "floorStyle": "terrazzo"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": -0.55,
+        "width": 4.15,
+        "height": 2.13,
+        "bottom": 0.32
+      },
+      {
+        "type": "door",
+        "wall": "front",
+        "offset": 2.55,
+        "width": 0.86,
+        "height": 2.48,
+        "bottom": 0
+      },
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -2.86,
+        "width": 0.8,
+        "height": 2.2,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "counter",
+        "x": -2.85,
+        "z": 0,
+        "width": 4.65,
+        "depth": 0.92,
+        "height": 1,
+        "rotation": 90,
+        "color": "#b39266",
+        "accent": "#d9cab1"
+      },
+      {
+        "type": "cabinet",
+        "x": -2.78,
+        "z": 0.1,
+        "width": 0.95,
+        "depth": 0.45,
+        "height": 0.56,
+        "rotation": 90,
+        "color": "#242728",
+        "y": 1.3,
+        "accent": "#4c4e4c"
+      },
+      {
+        "type": "display-case",
+        "x": -2.79,
+        "z": -1.76,
+        "width": 0.78,
+        "depth": 0.52,
+        "height": 0.52,
+        "rotation": 90,
+        "color": "#292a26",
+        "y": 1.27,
+        "variant": "glass",
+        "accent": "#c59d61"
+      },
+      {
+        "type": "bench",
+        "x": 3.23,
+        "z": 0,
+        "width": 4.8,
+        "depth": 0.68,
+        "height": 0.97,
+        "rotation": -90,
+        "color": "#9f4e2e",
+        "baseColor": "#8b6239",
+        "variant": "banquette"
+      },
+      {
+        "type": "table",
+        "x": 2.37,
+        "z": -1.86,
+        "width": 0.7,
+        "depth": 0.75,
+        "height": 0.74,
+        "rotation": 0,
+        "color": "#bb9662",
+        "baseColor": "#987441"
+      },
+      {
+        "type": "chair",
+        "x": 1.48,
+        "z": -1.86,
+        "width": 0.52,
+        "depth": 0.54,
+        "height": 0.83,
+        "rotation": 90,
+        "color": "#d8c8a9",
+        "baseColor": "#9e794b"
+      },
+      {
+        "type": "table",
+        "x": 2.37,
+        "z": -0.62,
+        "width": 0.7,
+        "depth": 0.75,
+        "height": 0.74,
+        "rotation": 0,
+        "color": "#bb9662",
+        "baseColor": "#987441"
+      },
+      {
+        "type": "chair",
+        "x": 1.48,
+        "z": -0.62,
+        "width": 0.52,
+        "depth": 0.54,
+        "height": 0.83,
+        "rotation": 90,
+        "color": "#d8c8a9",
+        "baseColor": "#9e794b"
+      },
+      {
+        "type": "table",
+        "x": 2.37,
+        "z": 0.62,
+        "width": 0.7,
+        "depth": 0.75,
+        "height": 0.74,
+        "rotation": 0,
+        "color": "#bb9662",
+        "baseColor": "#987441"
+      },
+      {
+        "type": "chair",
+        "x": 1.48,
+        "z": 0.62,
+        "width": 0.52,
+        "depth": 0.54,
+        "height": 0.83,
+        "rotation": 90,
+        "color": "#d8c8a9",
+        "baseColor": "#9e794b"
+      },
+      {
+        "type": "table",
+        "x": 2.37,
+        "z": 1.86,
+        "width": 0.7,
+        "depth": 0.75,
+        "height": 0.74,
+        "rotation": 0,
+        "color": "#bb9662",
+        "baseColor": "#987441"
+      },
+      {
+        "type": "chair",
+        "x": 1.48,
+        "z": 1.86,
+        "width": 0.52,
+        "depth": 0.54,
+        "height": 0.83,
+        "rotation": 90,
+        "color": "#d8c8a9",
+        "baseColor": "#9e794b"
+      },
+      {
+        "type": "pendant",
+        "x": -2.83,
+        "z": -1.55,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#bc9243",
+        "y": 2.12
+      },
+      {
+        "type": "pendant",
+        "x": -2.83,
+        "z": 0,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#bc9243",
+        "y": 2.12
+      },
+      {
+        "type": "pendant",
+        "x": -2.83,
+        "z": 1.55,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#bc9243",
+        "y": 2.12
+      },
+      {
+        "type": "pendant",
+        "x": 2.48,
+        "z": -1.55,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#bc9243",
+        "y": 2.12
+      },
+      {
+        "type": "pendant",
+        "x": 2.48,
+        "z": 0,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#bc9243",
+        "y": 2.12
+      },
+      {
+        "type": "pendant",
+        "x": 2.48,
+        "z": 1.55,
+        "width": 0.34,
+        "depth": 0.34,
+        "height": 0.23,
+        "rotation": 0,
+        "color": "#bc9243",
+        "y": 2.12
+      }
+    ],
+    "highlights": [
+      {
+        "id": "coffee-counter",
+        "title": "Coffee counter",
+        "description": "The oak service counter holds a black coffee machine and a glass pastry case.",
+        "yaw": 85,
+        "pitch": -6
+      },
+      {
+        "id": "banquette",
+        "title": "Terracotta banquette",
+        "description": "A long terracotta bench runs behind four small timber tables.",
+        "yaw": 280,
+        "pitch": -9
+      },
+      {
+        "id": "street-window",
+        "title": "Street-facing window",
+        "description": "A broad window and separate glazed door look onto a tree-lined street.",
+        "yaw": 180,
+        "pitch": 2
+      },
+      {
+        "id": "pendant-lighting",
+        "title": "Brass pendant lighting",
+        "description": "Warm brass pendants light the counter and seating row.",
+        "yaw": 270,
+        "pitch": 23
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Cafe aisle",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          2.37,
+          1.1,
+          0
+        ]
+      },
+      {
+        "id": "window-side",
+        "title": "Window side",
+        "position": [
+          0,
+          1.5,
+          -2.3
+        ],
+        "target": [
+          -2.79,
+          1.1,
+          -1.76
+        ]
+      },
+      {
+        "id": "counter-aisle",
+        "title": "Counter aisle",
+        "position": [
+          -1.6,
+          1.5,
+          0.35
+        ],
+        "target": [
+          -2.78,
+          1.1,
+          0.1
+        ]
+      },
+      {
+        "id": "rear-aisle",
+        "title": "Rear aisle",
+        "position": [
+          -0.5,
+          1.5,
+          2.4
+        ],
+        "target": [
+          2.37,
+          1.1,
+          1.86
+        ]
+      }
+    ],
+    "notes": "Actual cafe has one left service counter, one right banquette, four tables and four loose chairs, six pendants, a front street window and separate door. The small elevated black cabinet approximates the coffee machine; detailed grinder, inset sink and decorative back shelf are omitted from the simplified model. No retail clothing or jewellery inventory is added."
+  },
+  {
+    "id": "bathrooms-4k-01",
+    "envelope": {
+      "width": 6,
+      "depth": 5.4,
+      "height": 2.9,
+      "wallColor": "#daceb7",
+      "floorColor": "#d1c2a8",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 1.9,
+        "height": 1.65,
+        "bottom": 0.92
+      },
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": -1.85,
+        "width": 0.83,
+        "height": 2.35,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "vanity",
+        "x": -2.52,
+        "z": 0,
+        "width": 2.5,
+        "depth": 0.68,
+        "height": 0.8,
+        "rotation": 90,
+        "color": "#805a38",
+        "count": 2,
+        "accent": "#eee7da"
+      },
+      {
+        "type": "mirror",
+        "x": -2.92,
+        "z": 0,
+        "width": 2.4,
+        "depth": 0.04,
+        "height": 0.95,
+        "rotation": 90,
+        "color": "#c5d0cd",
+        "y": 1.65,
+        "accent": "#ac8d51"
+      },
+      {
+        "type": "tub",
+        "x": 0,
+        "z": -2.08,
+        "width": 1.95,
+        "depth": 0.86,
+        "height": 0.64,
+        "rotation": 0,
+        "color": "#f3eee5"
+      },
+      {
+        "type": "shower",
+        "x": 2.12,
+        "z": -0.8,
+        "width": 1.4,
+        "depth": 1.42,
+        "height": 2.35,
+        "rotation": -90,
+        "color": "#d1c3a9",
+        "accent": "#b19758"
+      },
+      {
+        "type": "toilet",
+        "x": 2.4,
+        "z": 1.65,
+        "width": 0.46,
+        "depth": 0.75,
+        "height": 0.49,
+        "rotation": -90,
+        "color": "#eee9df"
+      },
+      {
+        "type": "cabinet",
+        "x": 2.84,
+        "z": 1.65,
+        "width": 1.3,
+        "depth": 0.24,
+        "height": 1.18,
+        "rotation": -90,
+        "color": "#d9cbb2"
+      },
+      {
+        "type": "shelf",
+        "x": 2.8,
+        "z": -0.8,
+        "width": 0.68,
+        "depth": 0.14,
+        "height": 0.28,
+        "rotation": -90,
+        "color": "#c8b797",
+        "y": 1.27,
+        "count": 1,
+        "accent": "#e3c986"
+      },
+      {
+        "type": "plant",
+        "x": -1.97,
+        "z": -2.1,
+        "width": 0.4,
+        "depth": 0.4,
+        "height": 1.18,
+        "rotation": 0,
+        "color": "#647447"
+      },
+      {
+        "type": "plant",
+        "x": -2.5,
+        "z": 0.05,
+        "width": 0.23,
+        "depth": 0.23,
+        "height": 0.48,
+        "rotation": 0,
+        "color": "#6e7751",
+        "y": 1.05
+      },
+      {
+        "type": "plant",
+        "x": 2.77,
+        "z": 1.33,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 0.32,
+        "rotation": 0,
+        "color": "#657347",
+        "y": 1.35
+      }
+    ],
+    "highlights": [
+      {
+        "id": "double-vanity",
+        "title": "Double-basin vanity",
+        "description": "Two white basins share the floating walnut vanity and wide mirror.",
+        "yaw": 85,
+        "pitch": -6
+      },
+      {
+        "id": "freestanding-bath",
+        "title": "Freestanding bath",
+        "description": "An oval white bath sits below the large frosted window.",
+        "yaw": 180,
+        "pitch": -13
+      },
+      {
+        "id": "glass-shower",
+        "title": "Separate glass shower",
+        "description": "A brass-framed glass enclosure contains a rain shower and lit niche.",
+        "yaw": 268,
+        "pitch": -1
+      },
+      {
+        "id": "wall-hung-wc",
+        "title": "Wall-hung toilet",
+        "description": "The wall-hung toilet has a concealed cistern and a shallow display ledge.",
+        "yaw": 332,
+        "pitch": -15
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Bathroom centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          -2.52,
+          1.1,
+          0
+        ]
+      },
+      {
+        "id": "bath-approach",
+        "title": "Bath approach",
+        "position": [
+          0,
+          1.5,
+          -1.18
+        ],
+        "target": [
+          0,
+          0.65,
+          -2.08
+        ]
+      },
+      {
+        "id": "vanity-aisle",
+        "title": "Vanity aisle",
+        "position": [
+          -1.22,
+          1.5,
+          0.7
+        ],
+        "target": [
+          -2.52,
+          1.1,
+          0
+        ]
+      },
+      {
+        "id": "shower-approach",
+        "title": "Shower approach",
+        "position": [
+          0.95,
+          1.5,
+          0.65
+        ],
+        "target": [
+          2.12,
+          1.1,
+          -0.8
+        ]
+      }
+    ],
+    "notes": "Actual limestone bathroom includes one freestanding tub, one long double-basin vanity, one shower and one toilet. The mirror is a surface rather than an invented second room. Brass fittings and recessed niches are simplified; floor positions stay outside the tub, vanity and shower footprints."
+  },
+  {
+    "id": "bathrooms-4k-02",
+    "envelope": {
+      "width": 3.8,
+      "depth": 3.6,
+      "height": 2.7,
+      "wallColor": "#ddd9cc",
+      "floorColor": "#c5bba6",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": -0.58,
+        "width": 1.05,
+        "height": 0.42,
+        "bottom": 2.04
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": 0.55,
+        "width": 0.76,
+        "height": 2.23,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "vanity",
+        "x": -0.8,
+        "z": -1.48,
+        "width": 0.78,
+        "depth": 0.52,
+        "height": 0.83,
+        "rotation": 0,
+        "color": "#b49162",
+        "accent": "#eee9dd"
+      },
+      {
+        "type": "mirror",
+        "x": -0.8,
+        "z": -1.73,
+        "width": 0.69,
+        "depth": 0.06,
+        "height": 0.9,
+        "rotation": 0,
+        "color": "#c6cfca",
+        "y": 1.6,
+        "accent": "#b18c5f"
+      },
+      {
+        "type": "shower",
+        "x": 1.13,
+        "z": -0.82,
+        "width": 1.3,
+        "depth": 1.35,
+        "height": 2.3,
+        "rotation": -90,
+        "color": "#8e937c",
+        "accent": "#8c8e83"
+      },
+      {
+        "type": "toilet",
+        "x": 1.47,
+        "z": 0.95,
+        "width": 0.43,
+        "depth": 0.7,
+        "height": 0.48,
+        "rotation": -90,
+        "color": "#ece9e2"
+      },
+      {
+        "type": "cabinet",
+        "x": 1.78,
+        "z": 0.95,
+        "width": 1.12,
+        "depth": 0.17,
+        "height": 1.16,
+        "rotation": -90,
+        "color": "#ddd9cd"
+      },
+      {
+        "type": "shelf",
+        "x": 1.72,
+        "z": -0.95,
+        "width": 0.62,
+        "depth": 0.14,
+        "height": 0.22,
+        "rotation": -90,
+        "color": "#767c64",
+        "y": 1.34,
+        "count": 1
+      },
+      {
+        "type": "shelf",
+        "x": -0.8,
+        "z": -1.66,
+        "width": 0.67,
+        "depth": 0.2,
+        "height": 0.18,
+        "rotation": 0,
+        "color": "#a28158",
+        "y": 1.04,
+        "count": 1
+      },
+      {
+        "type": "plant",
+        "x": -0.55,
+        "z": -1.47,
+        "width": 0.15,
+        "depth": 0.15,
+        "height": 0.17,
+        "rotation": 0,
+        "color": "#63734a",
+        "y": 0.94
+      }
+    ],
+    "highlights": [
+      {
+        "id": "oak-vanity",
+        "title": "Compact oak vanity",
+        "description": "A small oak vanity combines one basin with mirrored storage above.",
+        "yaw": 133,
+        "pitch": -5
+      },
+      {
+        "id": "sage-shower",
+        "title": "Sage-tiled shower",
+        "description": "Vertical sage tiles line the glass shower enclosure and its small lit niche.",
+        "yaw": 235,
+        "pitch": 0
+      },
+      {
+        "id": "high-window",
+        "title": "High frosted window",
+        "description": "A slim frosted window brings daylight above the wash area.",
+        "yaw": 164,
+        "pitch": 24
+      },
+      {
+        "id": "compact-wc",
+        "title": "Compact toilet zone",
+        "description": "A wall-hung toilet and handheld spray fit beside the shower.",
+        "yaw": 302,
+        "pitch": -15
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Bathroom centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          1.13,
+          1.1,
+          -0.82
+        ]
+      },
+      {
+        "id": "door-side",
+        "title": "Door side",
+        "position": [
+          -0.95,
+          1.5,
+          0.4
+        ],
+        "target": [
+          -0.8,
+          1.1,
+          -1.48
+        ]
+      },
+      {
+        "id": "rear-clearance",
+        "title": "Rear clearance",
+        "position": [
+          0,
+          1.5,
+          1.03
+        ],
+        "target": [
+          1.47,
+          0.6,
+          0.95
+        ]
+      },
+      {
+        "id": "wash-area",
+        "title": "Wash-area approach",
+        "position": [
+          -0.23,
+          1.5,
+          -0.8
+        ],
+        "target": [
+          -0.8,
+          1.1,
+          -1.48
+        ]
+      }
+    ],
+    "notes": "Small bathroom with one basin, a corner shower, one toilet and a high window; there is no bathtub. Sage finish belongs to the shower enclosure, not the whole room. Curved source glass is approximated by the shower primitive. Tile scale, towel rail and tap detailing are inferred or simplified."
+  },
+  {
+    "id": "bathrooms-4k-03",
+    "envelope": {
+      "width": 5.6,
+      "depth": 4.8,
+      "height": 2.75,
+      "wallColor": "#d4cdbc",
+      "floorColor": "#c9c0ad",
+      "floorStyle": "terrazzo"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "left",
+        "offset": -1.35,
+        "width": 0.97,
+        "height": 1.22,
+        "bottom": 1.2
+      },
+      {
+        "type": "door",
+        "wall": "back",
+        "offset": 0,
+        "width": 0.84,
+        "height": 2.28,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "vanity",
+        "x": -2.38,
+        "z": 0.4,
+        "width": 2.2,
+        "depth": 0.62,
+        "height": 0.77,
+        "rotation": 90,
+        "color": "#474844",
+        "accent": "#55564f"
+      },
+      {
+        "type": "mirror",
+        "x": -2.73,
+        "z": 0.4,
+        "width": 1.75,
+        "depth": 0.05,
+        "height": 0.84,
+        "rotation": 90,
+        "color": "#c8d0c9",
+        "y": 1.66,
+        "accent": "#e6d59f"
+      },
+      {
+        "type": "shower",
+        "x": 2.02,
+        "z": -0.9,
+        "width": 1.26,
+        "depth": 1.42,
+        "height": 2.35,
+        "rotation": -90,
+        "color": "#bdb5a2",
+        "accent": "#454843"
+      },
+      {
+        "type": "toilet",
+        "x": 2.37,
+        "z": 1.03,
+        "width": 0.47,
+        "depth": 0.7,
+        "height": 0.5,
+        "rotation": -90,
+        "color": "#55564e"
+      },
+      {
+        "type": "shelf",
+        "x": 2.66,
+        "z": -0.8,
+        "width": 1.23,
+        "depth": 0.16,
+        "height": 0.29,
+        "rotation": -90,
+        "color": "#4b4a41",
+        "y": 1.21,
+        "count": 1,
+        "accent": "#cfbd87"
+      },
+      {
+        "type": "shelf",
+        "x": 2.66,
+        "z": 1.03,
+        "width": 1.17,
+        "depth": 0.16,
+        "height": 0.29,
+        "rotation": -90,
+        "color": "#4b4a41",
+        "y": 1.25,
+        "count": 1,
+        "accent": "#cfbd87"
+      },
+      {
+        "type": "plant",
+        "x": 2.55,
+        "z": 1.18,
+        "width": 0.19,
+        "depth": 0.19,
+        "height": 0.31,
+        "rotation": 0,
+        "color": "#727b4d",
+        "y": 1.49
+      },
+      {
+        "type": "plant",
+        "x": -2.36,
+        "z": 1.09,
+        "width": 0.21,
+        "depth": 0.21,
+        "height": 0.34,
+        "rotation": 0,
+        "color": "#6c7950",
+        "y": 0.97
+      }
+    ],
+    "highlights": [
+      {
+        "id": "graphite-vanity",
+        "title": "Graphite vanity",
+        "description": "A long dark vanity and softly backlit mirror stand against pale terrazzo.",
+        "yaw": 78,
+        "pitch": -3
+      },
+      {
+        "id": "walk-in-shower",
+        "title": "Walk-in shower",
+        "description": "A clear glass screen separates the rain shower from the open floor.",
+        "yaw": 250,
+        "pitch": -2
+      },
+      {
+        "id": "recessed-storage",
+        "title": "Lit storage niches",
+        "description": "Two long dark niches provide small shelves beside the shower and toilet.",
+        "yaw": 286,
+        "pitch": 0
+      },
+      {
+        "id": "frosted-daylight",
+        "title": "Frosted daylight",
+        "description": "The high frosted window brightens the terrazzo beside the vanity.",
+        "yaw": 109,
+        "pitch": 16
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Bathroom centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          -2.38,
+          1.1,
+          0.4
+        ]
+      },
+      {
+        "id": "vanity-approach",
+        "title": "Vanity approach",
+        "position": [
+          -1.25,
+          1.5,
+          -0.45
+        ],
+        "target": [
+          -2.38,
+          1.1,
+          0.4
+        ]
+      },
+      {
+        "id": "shower-approach",
+        "title": "Shower approach",
+        "position": [
+          0.84,
+          1.5,
+          -0.75
+        ],
+        "target": [
+          2.02,
+          1.1,
+          -0.9
+        ]
+      },
+      {
+        "id": "entry-side",
+        "title": "Entry side",
+        "position": [
+          0,
+          1.5,
+          1.58
+        ],
+        "target": [
+          2.37,
+          0.65,
+          1.03
+        ]
+      }
+    ],
+    "notes": "Actual graphite/terrazzo design has one wide single-basin vanity, one open glass shower, one dark toilet, two long niches and one left frosted window. The rear doorway joins across the panorama seam and is represented once. No bath or duplicate reflection room is added; oval mirror outline and terrazzo chips are simplified."
+  },
+  {
+    "id": "kitchens-4k-01",
+    "envelope": {
+      "width": 6.4,
+      "depth": 5.6,
+      "height": 2.85,
+      "wallColor": "#e7dfcd",
+      "floorColor": "#cbbd9e",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 2.4,
+        "height": 1.25,
+        "bottom": 1.12
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": 1.87,
+        "width": 0.82,
+        "height": 2.27,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "counter",
+        "x": -0.1,
+        "z": -2.43,
+        "width": 5.2,
+        "depth": 0.64,
+        "height": 0.9,
+        "rotation": 0,
+        "color": "#d9d2bf",
+        "accent": "#ded1b3"
+      },
+      {
+        "type": "counter",
+        "x": -2.8,
+        "z": -0.5,
+        "width": 3.2,
+        "depth": 0.64,
+        "height": 0.9,
+        "rotation": 90,
+        "color": "#e1dcca",
+        "accent": "#ded1b3"
+      },
+      {
+        "type": "counter",
+        "x": 2.8,
+        "z": -1.62,
+        "width": 1.58,
+        "depth": 0.64,
+        "height": 0.9,
+        "rotation": -90,
+        "color": "#dfd8c6",
+        "accent": "#ded1b3"
+      },
+      {
+        "type": "counter",
+        "x": 1.96,
+        "z": -0.48,
+        "width": 1.82,
+        "depth": 0.66,
+        "height": 0.9,
+        "rotation": 0,
+        "color": "#b9a079",
+        "accent": "#e6d8bb"
+      },
+      {
+        "type": "sink",
+        "x": 0,
+        "z": -2.43,
+        "width": 0.9,
+        "depth": 0.46,
+        "height": 0.13,
+        "rotation": 0,
+        "color": "#656764",
+        "y": 0.91
+      },
+      {
+        "type": "hob",
+        "x": -2.8,
+        "z": -0.35,
+        "width": 0.7,
+        "depth": 0.5,
+        "height": 0.08,
+        "rotation": 90,
+        "color": "#282b29",
+        "y": 0.94
+      },
+      {
+        "type": "cabinet",
+        "x": -2.94,
+        "z": -0.56,
+        "width": 3.14,
+        "depth": 0.37,
+        "height": 0.84,
+        "rotation": 90,
+        "color": "#e9e3d4",
+        "y": 2.14
+      },
+      {
+        "type": "cabinet",
+        "x": 2.96,
+        "z": -1.66,
+        "width": 1.58,
+        "depth": 0.37,
+        "height": 0.84,
+        "rotation": -90,
+        "color": "#e9e3d4",
+        "y": 2.14
+      },
+      {
+        "type": "cabinet",
+        "x": -1.91,
+        "z": -2.57,
+        "width": 1.28,
+        "depth": 0.38,
+        "height": 0.84,
+        "rotation": 0,
+        "color": "#e9e3d4",
+        "y": 2.14
+      },
+      {
+        "type": "cabinet",
+        "x": 1.91,
+        "z": -2.57,
+        "width": 1.28,
+        "depth": 0.38,
+        "height": 0.84,
+        "rotation": 0,
+        "color": "#e9e3d4",
+        "y": 2.14
+      },
+      {
+        "type": "cabinet",
+        "x": 2.79,
+        "z": 1.45,
+        "width": 0.85,
+        "depth": 0.72,
+        "height": 2.5,
+        "rotation": -90,
+        "color": "#dcd6c5",
+        "accent": "#2e302d"
+      },
+      {
+        "type": "fridge",
+        "x": 2.78,
+        "z": 0.42,
+        "width": 0.83,
+        "depth": 0.74,
+        "height": 2.08,
+        "rotation": -90,
+        "color": "#a4a6a0"
+      },
+      {
+        "type": "cabinet",
+        "x": -2.78,
+        "z": -0.35,
+        "width": 0.8,
+        "depth": 0.52,
+        "height": 0.28,
+        "rotation": 90,
+        "color": "#7b7e76",
+        "y": 1.72
+      },
+      {
+        "type": "plant",
+        "x": -2.77,
+        "z": 0.7,
+        "width": 0.22,
+        "depth": 0.22,
+        "height": 0.4,
+        "rotation": 0,
+        "color": "#597145",
+        "y": 1.12
+      },
+      {
+        "type": "plant",
+        "x": 2.55,
+        "z": -1.73,
+        "width": 0.22,
+        "depth": 0.22,
+        "height": 0.34,
+        "rotation": 0,
+        "color": "#67764c",
+        "y": 1.1
+      }
+    ],
+    "highlights": [
+      {
+        "id": "sink-window",
+        "title": "Sink below the window",
+        "description": "The sink is centred beneath the wide grilled window.",
+        "yaw": 180,
+        "pitch": -2
+      },
+      {
+        "id": "cooking-run",
+        "title": "Cooking and drawers",
+        "description": "The left run has a dark hob, extractor and broad drawers.",
+        "yaw": 88,
+        "pitch": -5
+      },
+      {
+        "id": "appliance-wall",
+        "title": "Tall appliance storage",
+        "description": "The refrigerator and stacked ovens are grouped on the right.",
+        "yaw": 287,
+        "pitch": 0
+      },
+      {
+        "id": "oak-peninsula",
+        "title": "Oak-sided peninsula",
+        "description": "A short pale counter projects into the room from the right-hand run.",
+        "yaw": 253,
+        "pitch": -17
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Kitchen centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1.1,
+          -2.43
+        ]
+      },
+      {
+        "id": "sink-approach",
+        "title": "Sink approach",
+        "position": [
+          0,
+          1.5,
+          -1.5
+        ],
+        "target": [
+          0,
+          0.95,
+          -2.43
+        ]
+      },
+      {
+        "id": "cooking-aisle",
+        "title": "Cooking aisle",
+        "position": [
+          -1.68,
+          1.5,
+          -0.3
+        ],
+        "target": [
+          -2.8,
+          0.95,
+          -0.35
+        ]
+      },
+      {
+        "id": "appliance-approach",
+        "title": "Appliance approach",
+        "position": [
+          1.28,
+          1.5,
+          1.28
+        ],
+        "target": [
+          2.79,
+          1.5,
+          1.45
+        ]
+      }
+    ],
+    "notes": "Actual image is a U-shaped warm-white kitchen with a short right peninsula, not a freestanding island. Sink is forward under glazing, hob and hood are left, refrigerator and ovens are right. Upper cabinets flank the window. The metal hood and oven tower use cabinet primitives; their opening details are approximate."
+  },
+  {
+    "id": "kitchens-4k-02",
+    "envelope": {
+      "width": 6,
+      "depth": 5.4,
+      "height": 2.8,
+      "wallColor": "#e2d7c3",
+      "floorColor": "#c8b99d",
+      "floorStyle": "terrazzo"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0.35,
+        "width": 1.95,
+        "height": 1.32,
+        "bottom": 1.11
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": 1.57,
+        "width": 0.84,
+        "height": 2.25,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "counter",
+        "x": -0.22,
+        "z": -2.32,
+        "width": 4.54,
+        "depth": 0.65,
+        "height": 0.91,
+        "rotation": 0,
+        "color": "#a76142",
+        "accent": "#777769"
+      },
+      {
+        "type": "counter",
+        "x": -2.58,
+        "z": -0.42,
+        "width": 3.15,
+        "depth": 0.66,
+        "height": 0.91,
+        "rotation": 90,
+        "color": "#ab6849",
+        "accent": "#777769"
+      },
+      {
+        "type": "cabinet",
+        "x": -2.78,
+        "z": -0.5,
+        "width": 3.05,
+        "depth": 0.38,
+        "height": 1.07,
+        "rotation": 90,
+        "color": "#e5dfd1",
+        "y": 2.14
+      },
+      {
+        "type": "sink",
+        "x": 0.35,
+        "z": -2.32,
+        "width": 0.83,
+        "depth": 0.44,
+        "height": 0.12,
+        "rotation": 0,
+        "color": "#5e625c",
+        "y": 0.94
+      },
+      {
+        "type": "hob",
+        "x": -2.58,
+        "z": -0.58,
+        "width": 0.71,
+        "depth": 0.48,
+        "height": 0.12,
+        "rotation": 90,
+        "color": "#272c28",
+        "y": 0.95
+      },
+      {
+        "type": "cabinet",
+        "x": -2.7,
+        "z": -0.58,
+        "width": 0.82,
+        "depth": 0.46,
+        "height": 0.22,
+        "rotation": 90,
+        "color": "#535951",
+        "y": 1.65
+      },
+      {
+        "type": "fridge",
+        "x": 2.43,
+        "z": -1.72,
+        "width": 0.83,
+        "depth": 0.75,
+        "height": 2.08,
+        "rotation": -90,
+        "color": "#a1a49e"
+      },
+      {
+        "type": "cabinet",
+        "x": 2.48,
+        "z": -1.72,
+        "width": 0.94,
+        "depth": 0.62,
+        "height": 0.49,
+        "rotation": -90,
+        "color": "#a45d40",
+        "y": 2.45
+      },
+      {
+        "type": "table",
+        "x": 2.61,
+        "z": 1.18,
+        "width": 2.08,
+        "depth": 0.64,
+        "height": 0.98,
+        "rotation": -90,
+        "color": "#bea27a",
+        "baseColor": "#bea27a"
+      },
+      {
+        "type": "chair",
+        "x": 1.8,
+        "z": 0.68,
+        "width": 0.52,
+        "depth": 0.52,
+        "height": 0.93,
+        "rotation": 90,
+        "color": "#a28455",
+        "accent": "#c6b384"
+      },
+      {
+        "type": "chair",
+        "x": 1.8,
+        "z": 1.68,
+        "width": 0.52,
+        "depth": 0.52,
+        "height": 0.93,
+        "rotation": 90,
+        "color": "#a28455",
+        "accent": "#c6b384"
+      },
+      {
+        "type": "shelf",
+        "x": -2.73,
+        "z": 0.79,
+        "width": 0.67,
+        "depth": 0.26,
+        "height": 0.54,
+        "rotation": 90,
+        "color": "#b29267",
+        "y": 2.15,
+        "count": 1
+      },
+      {
+        "type": "plant",
+        "x": 1.43,
+        "z": -2.31,
+        "width": 0.27,
+        "depth": 0.27,
+        "height": 0.66,
+        "rotation": 0,
+        "color": "#63774b",
+        "y": 1.25
+      },
+      {
+        "type": "plant",
+        "x": 2.62,
+        "z": 0.43,
+        "width": 0.21,
+        "depth": 0.21,
+        "height": 0.47,
+        "rotation": 0,
+        "color": "#6d7750",
+        "y": 1.23
+      }
+    ],
+    "highlights": [
+      {
+        "id": "terracotta-cabinets",
+        "title": "Terracotta cabinetry",
+        "description": "Warm terracotta base cabinets form an L around the preparation area.",
+        "yaw": 135,
+        "pitch": -11
+      },
+      {
+        "id": "courtyard-window",
+        "title": "Courtyard window",
+        "description": "A timber-framed window sits directly above the dark sink and tap.",
+        "yaw": 187,
+        "pitch": 1
+      },
+      {
+        "id": "gas-hob",
+        "title": "Hob and extractor",
+        "description": "The left counter holds the gas hob beneath pale upper cupboards.",
+        "yaw": 105,
+        "pitch": -1
+      },
+      {
+        "id": "breakfast-perch",
+        "title": "Two-seat breakfast perch",
+        "description": "A slim oak wall counter and two woven seats occupy the right side.",
+        "yaw": 285,
+        "pitch": -11
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Kitchen centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0.35,
+          1.1,
+          -2.32
+        ]
+      },
+      {
+        "id": "sink-aisle",
+        "title": "Sink aisle",
+        "position": [
+          0,
+          1.5,
+          -1.46
+        ],
+        "target": [
+          0.35,
+          0.95,
+          -2.32
+        ]
+      },
+      {
+        "id": "cooking-aisle",
+        "title": "Cooking aisle",
+        "position": [
+          -1.46,
+          1.5,
+          -0.3
+        ],
+        "target": [
+          -2.58,
+          0.95,
+          -0.58
+        ]
+      },
+      {
+        "id": "breakfast-approach",
+        "title": "Breakfast approach",
+        "position": [
+          0.67,
+          1.5,
+          1.43
+        ],
+        "target": [
+          2.61,
+          1,
+          1.18
+        ]
+      }
+    ],
+    "notes": "Distinct terracotta L-shaped layout, one tall refrigerator at front-right and an oak breakfast shelf with two woven stools along the right rear wall. No island, freestanding dining table or second appliance tower is visible. Desk primitive approximates the wall-supported breakfast shelf; chair primitives approximate tall stools."
+  },
+  {
+    "id": "kitchens-4k-03",
+    "envelope": {
+      "width": 6.2,
+      "depth": 6,
+      "height": 2.85,
+      "wallColor": "#d8cfbd",
+      "floorColor": "#c8bea8",
+      "floorStyle": "stone"
+    },
+    "openings": [
+      {
+        "type": "window",
+        "wall": "front",
+        "offset": 0,
+        "width": 2.9,
+        "height": 1.53,
+        "bottom": 0.84
+      },
+      {
+        "type": "door",
+        "wall": "left",
+        "offset": 2.17,
+        "width": 0.82,
+        "height": 2.28,
+        "bottom": 0
+      }
+    ],
+    "objects": [
+      {
+        "type": "counter",
+        "x": -2.7,
+        "z": -0.34,
+        "width": 3.74,
+        "depth": 0.67,
+        "height": 0.91,
+        "rotation": 90,
+        "color": "#805f43",
+        "accent": "#575a51"
+      },
+      {
+        "type": "counter",
+        "x": 2.7,
+        "z": -0.18,
+        "width": 3.36,
+        "depth": 0.67,
+        "height": 0.91,
+        "rotation": -90,
+        "color": "#78563b",
+        "accent": "#575a51"
+      },
+      {
+        "type": "sink",
+        "x": -2.7,
+        "z": -0.78,
+        "width": 0.82,
+        "depth": 0.46,
+        "height": 0.12,
+        "rotation": 90,
+        "color": "#6a726b",
+        "y": 0.94
+      },
+      {
+        "type": "hob",
+        "x": 2.7,
+        "z": -0.06,
+        "width": 0.88,
+        "depth": 0.51,
+        "height": 0.07,
+        "rotation": -90,
+        "color": "#262c28",
+        "y": 0.94
+      },
+      {
+        "type": "cabinet",
+        "x": 2.88,
+        "z": -0.2,
+        "width": 3.4,
+        "depth": 0.38,
+        "height": 1.12,
+        "rotation": -90,
+        "color": "#775438",
+        "y": 2.16
+      },
+      {
+        "type": "shelf",
+        "x": -2.88,
+        "z": -0.49,
+        "width": 3.25,
+        "depth": 0.3,
+        "height": 0.14,
+        "rotation": 90,
+        "color": "#bcaa88",
+        "y": 1.76,
+        "count": 1
+      },
+      {
+        "type": "cabinet",
+        "x": -2.69,
+        "z": 0.69,
+        "width": 0.63,
+        "depth": 0.67,
+        "height": 0.85,
+        "rotation": 90,
+        "color": "#b0b6b0",
+        "accent": "#535c55"
+      },
+      {
+        "type": "cabinet",
+        "x": 2.68,
+        "z": -2.43,
+        "width": 0.88,
+        "depth": 0.68,
+        "height": 2.53,
+        "rotation": -90,
+        "color": "#745238",
+        "accent": "#343b35"
+      },
+      {
+        "type": "fridge",
+        "x": 2.68,
+        "z": 2.13,
+        "width": 0.94,
+        "depth": 0.76,
+        "height": 2.12,
+        "rotation": -90,
+        "color": "#a7afa7"
+      },
+      {
+        "type": "plant",
+        "x": -2.79,
+        "z": -0.68,
+        "width": 0.27,
+        "depth": 0.27,
+        "height": 0.46,
+        "rotation": 0,
+        "color": "#53743f",
+        "y": 1.96
+      },
+      {
+        "type": "plant",
+        "x": 2.7,
+        "z": -1.45,
+        "width": 0.25,
+        "depth": 0.25,
+        "height": 0.42,
+        "rotation": 0,
+        "color": "#64734b",
+        "y": 1.14
+      }
+    ],
+    "highlights": [
+      {
+        "id": "galley-aisle",
+        "title": "Open galley aisle",
+        "description": "Two walnut counter runs frame an unobstructed central aisle.",
+        "yaw": 180,
+        "pitch": -11
+      },
+      {
+        "id": "wash-storage",
+        "title": "Wash and dishwashing run",
+        "description": "The left counter combines a sink, stainless dishwasher and open shelf.",
+        "yaw": 92,
+        "pitch": -7
+      },
+      {
+        "id": "cooking-wall",
+        "title": "Walnut cooking wall",
+        "description": "The dark hob sits below full-height walnut upper cabinetry on the right.",
+        "yaw": 274,
+        "pitch": -1
+      },
+      {
+        "id": "daylight-end",
+        "title": "Daylight at the end",
+        "description": "A broad window brings a green outlook to the end of the galley.",
+        "yaw": 180,
+        "pitch": 8
+      }
+    ],
+    "viewpoints": [
+      {
+        "id": "centre",
+        "title": "Galley centre",
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "target": [
+          0,
+          1.1,
+          -3
+        ]
+      },
+      {
+        "id": "window-end",
+        "title": "Window end",
+        "position": [
+          0,
+          1.5,
+          -2.1
+        ],
+        "target": [
+          -2.7,
+          0.95,
+          -0.78
+        ]
+      },
+      {
+        "id": "wash-aisle",
+        "title": "Wash aisle",
+        "position": [
+          -1.53,
+          1.5,
+          0.1
+        ],
+        "target": [
+          -2.7,
+          0.95,
+          -0.78
+        ]
+      },
+      {
+        "id": "cooking-aisle",
+        "title": "Cooking aisle",
+        "position": [
+          1.48,
+          1.5,
+          0.12
+        ],
+        "target": [
+          2.7,
+          0.95,
+          -0.06
+        ]
+      }
+    ],
+    "notes": "Actual galley has two opposing walnut runs, front window, left sink and dishwasher, right hob, a front-right oven tower and rear-right refrigerator. Back/left entry remains clear. The dishwasher and oven are cabinet primitives with steel/dark accents; there is no centre island or dining table."
+  }
+]

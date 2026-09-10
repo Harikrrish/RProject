@@ -1,0 +1,30 @@
+{
+  "source": "Testimonials present in the original supplied website (Git HEAD:index.html). Quotes and names preserved; no ratings or third-party verification invented.",
+  "reviews": [
+    {
+      "quote": "I never knew my home could feel this welcoming and still look like something out of a magazine. Alankaar Home Interior listened to what I needed and delivered beyond my expectations. Every guest I have compliments the design. Truly remarkable work!",
+      "name": "Emma S",
+      "role": "Homeowner"
+    },
+    {
+      "quote": "Opening my first restaurant was stressful, but the team at Alankaar Interiors made the design process enjoyable and exciting. They managed to capture the essence of my vision and turn it into a space that customers love. Sales have been booming, and I credit much of that to the incredible ambiance they created.",
+      "name": "Aarav K",
+      "role": "Restaurant Owner"
+    },
+    {
+      "quote": "Our office space needed to inspire creativity and hard work while feeling like a second home. Alankaar Home Interior nailed it! The layout, the light, the furniture - everything works together perfectly. Our team and our clients are always impressed. It's been a game-changer for our business.",
+      "name": "Sophia L",
+      "role": "Startup Founder"
+    },
+    {
+      "quote": "We wanted our house to reflect our culture and heritage while being modern and functional. The expertise and sensitivity Alankaar Interiors brought to this project were outstanding. Every space tells a story, and every detail feels like it belongs to us. We're so in love with our home!",
+      "name": "Raj P",
+      "role": "Homeowner"
+    },
+    {
+      "quote": "Opening my boutique was a dream come true, and the design team at Alankaar Interiors were the perfect partners. They understood my vision for a unique shopping experience and executed it with style and attention to detail. Customers often comment on how beautiful the store is, and it has truly set my business apart",
+      "name": "Maya D",
+      "role": "Boutique Owner"
+    }
+  ]
+}
